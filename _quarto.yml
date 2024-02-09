@@ -88,5 +88,3 @@ format:
     link-external-icon: false
     link-external-newwindow: true
 #    link-external-filter: '^(?:http:|https:)\/\/ougioukasb\.github\.io\/custom'
-
-editor: source
