@@ -1,0 +1,15 @@
+---
+title: "Contact"
+#description-meta: "{{< meta description-meta >}}"
+title-block-banner: false
+---
+
+<center>
+
+**Konstantinos I. bougioukas**
+
+
+E-mail: <mpougioukas@auth.gr>
+
+
+</center>

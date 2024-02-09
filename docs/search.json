@@ -1,23 +1,121 @@
 [
   {
-    "objectID": "projects.html#project-2",
-    "href": "projects.html#project-2",
-    "title": "Projects",
-    "section": "Project 2",
-    "text": "Project 2"
+    "objectID": "tutorials.html",
+    "href": "tutorials.html",
+    "title": "Tutorials",
+    "section": "",
+    "text": "Back to top"
   },
   {
-    "objectID": "projects.html#project-3",
-    "href": "projects.html#project-3",
-    "title": "Projects",
-    "section": "Project 3",
-    "text": "Project 3"
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "What’s New & Updated",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nOur paper is a suggested reading from the University of Cambridge\n\n\n\n\n\n\nnews\n\n\n\nOur work on how to keep up with medical information is a suggested reading from the University of Cambridge\n\n\n\n\n\nFeb 9, 2024\n\n\nKonstantinos I. Bougioukas\n\n\n\n\n\n\n\n\n\n\n\n\namstar2Vis is a new R package for AMSTAR 2 assessment presentation\n\n\n\n\n\n\npaper\n\n\n\nWe expect the “amstar2Vis” package to be useful for authors of overviews of reviews of healthcare interventions and methodologists who wish to rate and present the overall confidence in the results of the included SRs.\n\n\n\n\n\nFeb 5, 2024\n\n\nKonstantinos I. Bougioukas\n\n\n\n\n\n\n\n\n\n\n\n\nRecreation of the most popular covid-track plot using ggplot2\n\n\n\n\n\n\nvisualization\n\n\n\nFull recreation from scratch of the most popular covid-track plot using ggplot2 (Source of the original plot: Financial Times).\n\n\n\n\n\nFeb 9, 2023\n\n\nKonstantinos I. Bougioukas\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "posts/2024-02-cambridge/index.html",
+    "href": "posts/2024-02-cambridge/index.html",
+    "title": "Our paper is a suggested reading from the University of Cambridge",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "packages.html#overlap-of-primary-studies-in-overviews-of-reviews",
+    "href": "packages.html#overlap-of-primary-studies-in-overviews-of-reviews",
+    "title": "R packages",
+    "section": "Overlap of primary studies in overviews of reviews",
+    "text": "Overlap of primary studies in overviews of reviews\n\n\n\n\n\nccaR\nccaR provides functions for assessing and depicting primary study overlap across multiple reviews. The functions may be useful for methodologists and overview authors in exploring and communicating the degree of overlap in overview of reviews."
+  },
+  {
+    "objectID": "packages.html#critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2",
+    "href": "packages.html#critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2",
+    "title": "R packages",
+    "section": "Critical appraisal of systematic reviews based on the items of AMSTAR 2",
+    "text": "Critical appraisal of systematic reviews based on the items of AMSTAR 2\n\n\n\n\n\namstar2Vis\nWe present a free, open-source R package called “amstar2Vis” that provides easy-to-use functions for presenting the critical appraisal of systematic reviews in pertinent tables and graphs based on the items of AMSTAR 2 checklist."
+  },
+  {
+    "objectID": "packages.html#discrete-color-scales",
+    "href": "packages.html#discrete-color-scales",
+    "title": "R packages",
+    "section": "Discrete color scales",
+    "text": "Discrete color scales\n\n\n\n\n\nmusicolor\nDiscrete color scales generated from music album covers ready to be used in ggplot visualizations. Discrete colors from Dire Straits, Pink Floyd, and many other album covers."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Konstantinos I. bougioukas\nE-mail: mpougioukas@auth.gr\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Konstantinos I. Bougioukas MSc, PhD",
     "section": "",
-    "text": "Thanks for checking out my web site!"
+    "text": "E-mail\n  \n  \n    \n     Twitter\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     ORCID\n  \n  \n    \n     Scopus\n  \n  \n    \n     Google Scholar\n  \n  \n    \n     Research Gate\n  \n\n  \n  \n\n\nI am a research methodologist with a focus on evidence synthesis, a biostatistician, and an independent data visualization designer based in Greece. Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity and rigor of medical data analysis and visualization.\nI have developed a range of R packages in collaborative and independently, including: ccaR, amstar2Vis,musicolors (all available open source at github) and I am the author of the online, free textbook Practical Statistics in Medicine with R.\nAdditionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews (OMG-database), along with a website, STORYTELLING WITH R GRAPHS AND ChatGPT, where I recreate published figures sourced from scholarly articles, websites, or media sources ."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Konstantinos I. Bougioukas MSc, PhD",
+    "section": "",
+    "text": "I am a research methodologist with a focus on evidence synthesis, a biostatistician, and an independent data visualization designer based in Greece. Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity and rigor of medical data analysis and visualization.\nI have developed a range of R packages in collaborative and independently, including: ccaR, amstar2Vis,musicolors (all available open source at github) and I am the author of the online, free textbook Practical Statistics in Medicine with R.\nAdditionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews (OMG-database), along with a website, STORYTELLING WITH R GRAPHS AND ChatGPT, where I recreate published figures sourced from scholarly articles, websites, or media sources ."
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Konstantinos I. Bougioukas MSc, PhD",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  Visualizations ,  News , and  More »\n\n\n\n\n\n\n\n\n\n\nOur paper is a suggested reading from the University of Cambridge\n\n\nOur work on how to keep up with medical information is a suggested…\n\n\n\nKonstantinos I. Bougioukas\n\n\nFeb 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\namstar2Vis is a new R package for AMSTAR 2 assessment presentation\n\n\nWe expect the “amstar2Vis” package to be useful for authors of overviews…\n\n\n\nKonstantinos I. Bougioukas\n\n\nFeb 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecreation of the most popular covid-track plot using ggplot2\n\n\nFull recreation from scratch of the most popular covid-track plot using…\n\n\n\nKonstantinos I. Bougioukas\n\n\nFeb 9, 2023\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\n\nAll Posts »"
+  },
+  {
+    "objectID": "posts/2024-02-amstar2Vis/index.html#abstract",
+    "href": "posts/2024-02-amstar2Vis/index.html#abstract",
+    "title": "amstar2Vis is a new R package for AMSTAR 2 assessment presentation",
+    "section": "Abstract",
+    "text": "Abstract\nSystematic reviews (SRs) have an important role in the healthcare decision-making practice. Assessing the overall confidence in the results of SRs using quality assessment tools, such as “A MeaSurement Tool to Assess Systematic Reviews 2” (AMSTAR 2), is crucial since not all SRs are conducted using the most rigorous methods. In this article, we introduce a free, open-source R package called “amstar2Vis” https://github.com/bougioukas/amstar2Vis that provides easy-to-use functions for presenting the critical appraisal of SRs, based on the items of AMSTAR 2 checklist. An illustrative example is outlined, describing the steps involved in creating a detailed table with the item ratings and the overall confidence ratings, generating a stacked bar plot that shows the distribution of ratings as percentages of SRs for each AMSTAR 2 item, and creating a “ggplot2” graph that shows the distribution of overall confidence ratings (“Critically Low,” “Low,” “Moderate,” or “High”). We expect “amstar2Vis” to be useful for overview authors and methodologists who assess the quality of SRs with AMSTAR 2 checklist and facilitate the production of pertinent publication-ready tables and figures. Future research and applications could further investigate the functionality or potential improvements of our package."
+  },
+  {
+    "objectID": "posts/2024-02-amstar2Vis/index.html#links",
+    "href": "posts/2024-02-amstar2Vis/index.html#links",
+    "title": "amstar2Vis is a new R package for AMSTAR 2 assessment presentation",
+    "section": "Links",
+    "text": "Links\nPublished paper"
+  },
+  {
+    "objectID": "posts/2024-02-covid/index.html",
+    "href": "posts/2024-02-covid/index.html",
+    "title": "Recreation of the most popular covid-track plot using ggplot2",
+    "section": "",
+    "text": "Coronavirus deaths in Italy, Spain, the UK and US are increasing more rapidly than they did in China\n\n\n\nReferences\n\n\n\n\n\n\n     \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Total citations as of February 2024:"
+  },
+  {
+    "objectID": "publications.html#peer-reviewed-journal-papers",
+    "href": "publications.html#peer-reviewed-journal-papers",
+    "title": "Publications",
+    "section": "Peer-reviewed Journal Papers",
+    "text": "Peer-reviewed Journal Papers\nBougioukas KI, Liakos A, Tsapas A, Ntzani E, Haidich A-B. 2018. Preferred reporting items for overviews of systematic reviews including harms checklist: a pilot tool to be used for balanced reporting of benefits and harms. Journal of Clinical Epidemiology 2018;93:9–24. doi: 10.1016/j.jclinepi.2017.10.002."
+  },
+  {
+    "objectID": "publications.html#books-and-chapters",
+    "href": "publications.html#books-and-chapters",
+    "title": "Publications",
+    "section": "Books and Chapters",
+    "text": "Books and Chapters\nBougioukas K. Practical Statistics in Medicine with R (in press from Chapman & Hall/CRC Press | Taylor & Francis Group)\nBougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: 10.1007/978-3-319-92946-0_2"
+  },
+  {
+    "objectID": "publications.html#conference-proceeding",
+    "href": "publications.html#conference-proceeding",
+    "title": "Publications",
+    "section": "Conference Proceeding",
+    "text": "Conference Proceeding\nBougioukas K, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. [YouTube]"
   }
 ]

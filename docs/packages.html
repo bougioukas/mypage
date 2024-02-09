@@ -9,7 +9,7 @@
 <meta name="author" content="Konstantinos I. Bougioukas">
 <meta name="description" content="Meta-researcher MSc, PhD | Supporter of open and reproducible science">
 
-<title>Konstantinos I. Bougioukas - Konstantinos I. Bougioukas MSc, PhD</title>
+<title>Konstantinos I. Bougioukas - R packages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,11 +32,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,74 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Konstantinos I. Bougioukas - Konstantinos I. Bougioukas MSc, PhD">
-<meta property="og:description" content="Meta-researcher MSc, PhD | Supporter of open and reproducible science.">
-<meta property="og:image" content="https://bougioukas.github.io/files/profile/myprofile.jpg">
+<meta property="og:title" content="Konstantinos I. Bougioukas - R packages">
+<meta property="og:image" content="https://bougioukas.github.io/files/myprofile.jpeg">
 <meta property="og:site_name" content="Konstantinos I. Bougioukas">
-<meta name="twitter:title" content="Konstantinos I. Bougioukas - Konstantinos I. Bougioukas MSc, PhD">
-<meta name="twitter:description" content="Meta-researcher MSc, PhD | Supporter of open and reproducible science.">
-<meta name="twitter:image" content="https://bougioukas.github.io/files/profile/myprofile.jpg">
+<meta name="twitter:title" content="Konstantinos I. Bougioukas - R packages">
+<meta name="twitter:image" content="https://bougioukas.github.io/files/myprofile.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -184,7 +123,7 @@ window.Quarto = {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html"> 
+    <a class="nav-link active" href="./packages.html" aria-current="page"> 
 <span class="menu-text">R packages</span></a>
   </li>  
   <li class="nav-item">
@@ -215,161 +154,79 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overlap-of-primary-studies-in-overviews-of-reviews" id="toc-overlap-of-primary-studies-in-overviews-of-reviews" class="nav-link active" data-scroll-target="#overlap-of-primary-studies-in-overviews-of-reviews">Overlap of primary studies in overviews of reviews</a></li>
+  <li><a href="#critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2" id="toc-critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2" class="nav-link" data-scroll-target="#critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2">Critical appraisal of systematic reviews based on the items of AMSTAR 2</a></li>
+  <li><a href="#discrete-color-scales" id="toc-discrete-color-scales" class="nav-link" data-scroll-target="#discrete-color-scales">Discrete color scales</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content column-page">
-  <div class="about-entity">
-    <img src="files/profile/myprofile.jpg" class="about-image
-  rounded " style="width: 50%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Konstantinos I. Bougioukas MSc, PhD</h1>
+<h1 class="title">R packages</h1>
 </div>
-<div class="quarto-title-meta column-page">
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="mailto:mpougioukas@auth.gr" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">E-mail</span>
-  </a>
-  <a href="https://twitter.com/Bugiukas" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://linkedin.com/in/konstantinos-i-bougioukas-abb13267" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://orcid.org/0000-0002-6533-1391" class="about-link" rel="" target="">
-    <i class="bi bi-lightbulb"></i>
-     <span class="about-link-text">ORCID</span>
-  </a>
-  <a href="https://www.scopus.com/authid/detail.uri?authorId=57200209201" class="about-link" rel="" target="">
-    <i class="bi bi-archive"></i>
-     <span class="about-link-text">Scopus</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=gMbkadsAAAAJ" class="about-link" rel="" target="">
-    <i class="bi bi-google"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-  <a href="https://www.researchgate.net/profile/Konstantinos-Bougioukas" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-pdf"></i>
-     <span class="about-link-text">Research Gate</span>
-  </a>
+
+
+<p><br></p>
+<section id="overlap-of-primary-studies-in-overviews-of-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="overlap-of-primary-studies-in-overviews-of-reviews">Overlap of primary studies in overviews of reviews</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-2">
+<p><img src=".\files/images/hex-ccaR.png" class="img-fluid"></p>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About me</h2>
-<p>I am a research methodologist with a focus on evidence synthesis, a biostatistician, and an independent data visualization designer based in Greece. Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity and rigor of medical data analysis and visualization.</p>
-<p>I have developed a range of R packages in collaborative and independently, including: <a href="https://github.com/thdiakon/ccaR"><code>ccaR</code></a>, <a href="https://github.com/bougioukas/amstar2Vis"><code>amstar2Vis</code></a>,<a href="https://github.com/bougioukas/musicolor"><code>musicolors</code></a> (all available open source at <a href="https://github.com/bougioukas/">github</a>) and I am the author of the online, free textbook <a href="https://practical-stats-med-r.netlify.app/">Practical Statistics in Medicine with R</a>.</p>
-<p>Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews (<a href="https://overviews-database.netlify.app/">OMG-database</a>), along with a website, <a href="https://bougioukas.github.io/storytelling/">STORYTELLING WITH R GRAPHS AND ChatGPT</a>, where I recreate published figures sourced from scholarly articles, websites, or media sources .</p>
+<div class="g-col-12 g-col-md-10">
+<p><a href="https://github.com/thdiakon/ccaR">ccaR</a></p>
+<p>ccaR provides functions for assessing and depicting primary study overlap across multiple reviews. The functions may be useful for methodologists and overview authors in exploring and communicating the degree of overlap in overview of reviews.</p>
+</div>
+</div>
 </section>
-</div></div>
+<section id="critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2" class="level2">
+<h2 class="anchored" data-anchor-id="critical-appraisal-of-systematic-reviews-based-on-the-items-of-amstar-2">Critical appraisal of systematic reviews based on the items of AMSTAR 2</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-2">
+<p><img src=".\files/images/hex-amstar2Vis.png" class="img-fluid"></p>
 </div>
-
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=visualization">Visualizations</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="news" data-listing-date-sort="1707429600000" data-listing-file-modified-sort="1707504010518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<a href="./posts/2024-02-cambridge/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/2024-02-cambridge/cambridge.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Our paper is a suggested reading from the University of Cambridge
-</h5>
-<div class="card-text listing-description">
-Our work on how to keep up with medical information is a suggested…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Konstantinos I. Bougioukas
-</div>
-<div class="listing-date">
-Feb 9, 2024
+<div class="g-col-12 g-col-md-10">
+<p><a href="https://github.com/bougioukas/amstar2Vis">amstar2Vis</a></p>
+<p>We present a free, open-source R package called “amstar2Vis” that provides easy-to-use functions for presenting the critical appraisal of systematic reviews in pertinent tables and graphs based on the items of AMSTAR 2 checklist.</p>
 </div>
 </div>
+<p><br></p>
+</section>
+<section id="discrete-color-scales" class="level2">
+<h2 class="anchored" data-anchor-id="discrete-color-scales">Discrete color scales</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-2">
+<p><img src=".\files/images/hex-musicolor.png" class="img-fluid"></p>
+</div>
+<div class="g-col-12 g-col-md-10">
+<p><a href="https://github.com/bougioukas/musicolor">musicolor</a></p>
+<p>Discrete color scales generated from music album covers ready to be used in ggplot visualizations. Discrete colors from Dire Straits, Pink Floyd, and many other album covers.</p>
 </div>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="paper" data-listing-date-sort="1707084000000" data-listing-file-modified-sort="1707505298861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<a href="./posts/2024-02-amstar2Vis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/2024-02-amstar2Vis/bars.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-amstar2Vis is a new R package for AMSTAR 2 assessment presentation
-</h5>
-<div class="card-text listing-description">
-We expect the “amstar2Vis” package to be useful for authors of overviews…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Konstantinos I. Bougioukas
-</div>
-<div class="listing-date">
-Feb 5, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="visualization" data-listing-date-sort="1675893600000" data-listing-file-modified-sort="1707505179216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
-<a href="./posts/2024-02-covid/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img data-src="./posts/2024-02-covid/covid.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Recreation of the most popular covid-track plot using ggplot2
-</h5>
-<div class="card-text listing-description">
-Full recreation from scratch of the most popular covid-track plot using…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Konstantinos I. Bougioukas
-</div>
-<div class="listing-date">
-Feb 9, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-<nav id="recent-posts-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
-
-
 
 
 </section>
@@ -395,6 +252,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

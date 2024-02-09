@@ -1,19 +1,81 @@
 ---
-title: "About Me"
+title: "Konstantinos I. Bougioukas MSc, PhD"
+#description-meta: "{{<p meta description-meta >}}"
+image: files/profile/myprofile.jpg
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+
 about:
-  id: me
-  template: broadside
-  image: img/profile.png
+  id: hero-heading
+  template: trestles
+  image-width: 50%
+  links:
+    - icon: envelope
+      text: E-mail
+      href: mailto:mpougioukas@auth.gr
+#    - icon: github
+#      text: Github
+#      href: https://github.com/drganghe
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/Bugiukas
+#    - icon: mastodon
+#      text: Mastodon
+#      href: https://mastodon.social/@bougioukas      
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/konstantinos-i-bougioukas-abb13267
+    - icon: lightbulb
+      text: ORCID
+      href: https://orcid.org/0000-0002-6533-1391
+    - icon: archive
+      text: Scopus
+      href: https://www.scopus.com/authid/detail.uri?authorId=57200209201
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=gMbkadsAAAAJ
+    - icon: file-earmark-pdf
+      text: Research Gate
+      href: https://www.researchgate.net/profile/Konstantinos-Bougioukas
+
+listing:
+  - id: recent-posts
+    contents: /posts
+    type: grid
+    max-items: 3
+    page-size: 0 #set as 0 will remove the page setting
+    fields: [image, date, title, author, description]
+    max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
 ---
 
-:::{#me}
 
-## Goals
 
-## Education
+:::{#hero-heading}
 
-## Experience
+## About me
+
+I am a research methodologist with a focus on evidence synthesis, a biostatistician, and an independent data visualization designer based in Greece.
+Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity and rigor of medical data analysis and visualization. 
+
+I have developed a range of R packages in collaborative and independently, including: [`ccaR`](https://github.com/thdiakon/ccaR), [`amstar2Vis`](https://github.com/bougioukas/amstar2Vis),[`musicolors`](https://github.com/bougioukas/musicolor) (all available open source at [github](https://github.com/bougioukas/)) and I am the author of the online, free textbook [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/).
+
+Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews ([OMG-database](https://overviews-database.netlify.app/)), along with a website, [
+STORYTELLING WITH R GRAPHS AND ChatGPT](https://bougioukas.github.io/storytelling/), where I recreate published figures sourced from scholarly articles, websites, or media sources .
+
 
 :::
 
-Thanks for checking out my web site!
+## Recent Posts
+Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;,
+&nbsp;[Visualizations](posts.qmd#category=visualization)&nbsp;,
+&nbsp;[News](posts.qmd#category=news)&nbsp;, and &nbsp;[More »](/posts.qmd)
+
+:::{#recent-posts}
+:::
+
+<p align="right">[All Posts »](/posts.qmd)</p>

@@ -1,0 +1,69 @@
+---
+title: "R packages"
+#description-meta: "{{< meta description-meta >}}"
+title-block-banner: false
+---
+
+<br>
+
+## Overlap of primary studies in overviews of reviews
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/files/images/hex-ccaR.png)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+
+[ccaR](https://github.com/thdiakon/ccaR)
+
+ccaR provides functions for assessing and depicting primary study overlap across multiple reviews. The functions may be useful for methodologists and overview authors in exploring and communicating the degree of overlap in overview of reviews.
+:::
+
+:::
+
+
+
+
+## Critical appraisal of systematic reviews based on the items of AMSTAR 2
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/files/images/hex-amstar2Vis.png)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+
+[amstar2Vis](https://github.com/bougioukas/amstar2Vis)
+
+We present a free, open-source R package called “amstar2Vis” that provides easy-to-use functions for presenting the critical appraisal of systematic reviews in pertinent tables and graphs based on the items of AMSTAR 2 checklist.
+
+:::
+
+:::
+
+
+<br>
+
+## Discrete color scales
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+![](/files/images/hex-musicolor.png)
+
+:::
+
+::: {.g-col-12 .g-col-md-10}
+
+[musicolor](https://github.com/bougioukas/musicolor)
+
+Discrete color scales generated from music album covers ready to be used in ggplot visualizations. Discrete colors from Dire Straits, Pink Floyd, and many other album covers.
+
+:::
+
+:::

@@ -1,0 +1,18 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-02-cambridge/index.html",
+      "/posts/2024-02-amstar2Vis/index.html",
+      "/posts/2024-02-covid/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2024-02-cambridge/index.html",
+      "/posts/2024-02-amstar2Vis/index.html",
+      "/posts/2024-02-covid/index.html"
+    ]
+  }
+]

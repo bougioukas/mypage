@@ -1,0 +1,19 @@
+---
+title: "Our paper is a suggested reading from the University of Cambridge"
+description: "Our work on how to keep up with medical information is a suggested reading from the University of Cambridge"
+author: "Konstantinos I. Bougioukas"
+date: "2024-02-09"
+categories: [news]
+image: "cambridge.jpg"
+css: /custom.css
+#draft: true
+---
+
+[![](cambridge.jpg)](https://libguides.cam.ac.uk/keepuptodate)
+
+
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

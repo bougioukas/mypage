@@ -1,0 +1,48 @@
+---
+title: "Publications"
+#description-meta: "{{< meta description-meta >}}"
+#page-layout: full
+title-block-banner: false
+css: /custom.css
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+<!--Include academic icons or bottons-->
+{{< include /files/includes/_academic.qmd >}}
+
+
+Total citations as of February 2024:
+
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 571 (h-index = 30) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 862 (h-index = 11, i10-index = 11) 
+
+ 
+ 
+
+## Peer-reviewed Journal Papers
+
+**Bougioukas KI**, Liakos A, Tsapas A, Ntzani E, Haidich A-B. 2018. Preferred reporting items for overviews of systematic reviews including harms checklist: a pilot tool to be used for balanced reporting of benefits and harms. *Journal of Clinical Epidemiology* 2018;93:9–24. doi: [10.1016/j.jclinepi.2017.10.002](https://doi.org/10.1016/j.jclinepi.2017.10.002). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2017.10.002" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2017.10.002" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+
+<center><hr style="width:50%"></center>
+
+ 
+
+## Books and Chapters
+
+
+Bougioukas K. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 
+
+Bougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2)
+
+ 
+
+## Conference Proceeding
+
+Bougioukas K, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. \[[YouTube](https://www.youtube.com/watch?v=7Asp-HkMoks&t=14s)\]
+
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

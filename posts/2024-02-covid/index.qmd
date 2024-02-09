@@ -1,0 +1,26 @@
+---
+title: "Recreation of the most popular covid-track plot using ggplot2"
+description: "Full recreation from scratch of the most popular covid-track plot using ggplot2 (Source of the original plot: Financial Times)."
+author: 
+    - name: Konstantinos I. Bougioukas 
+date: "2023-02-09"
+categories: [visualization]
+image: "covid.png"
+css: /custom.css
+#draft: true
+---
+
+
+![Coronavirus deaths in Italy, Spain, the UK and US are increasing more rapidly than they did in China](covid.png)
+
+
+
+### References
+
+::: {#refs}
+:::
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
