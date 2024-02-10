@@ -7,7 +7,7 @@ author:
   - name: Konstantinos Pamporis
   - name: Emmanouil Bouras
   - name: Anna-Bettina Haidich
-date: "2024-02-09"
+date: "2024-02-05"
 categories: [paper]
 image: "bars.png"
 citation:

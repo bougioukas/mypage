@@ -17,6 +17,35 @@
 <generator>quarto-1.4.549</generator>
 <lastBuildDate>Thu, 08 Feb 2024 22:00:00 GMT</lastBuildDate>
 <item>
+  <title>Our paper is a suggested reading from the University of Cambridge</title>
+  <dc:creator>Konstantinos Bougioukas</dc:creator>
+  <link>https://bougioukas.github.io/posts/2024-02-cambridge/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://libguides.cam.ac.uk/keepuptodate"><img src="https://bougioukas.github.io/posts/2024-02-cambridge/cambridge.jpg" class="img-fluid"></a></p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_x"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>news</category>
+  <guid>https://bougioukas.github.io/posts/2024-02-cambridge/</guid>
+  <pubDate>Thu, 08 Feb 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://bougioukas.github.io/posts/2024-02-cambridge/cambridge.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2</title>
   <dc:creator>Konstantinos Bougioukas</dc:creator>
   <dc:creator>Paschalis Karakasis</dc:creator>
@@ -96,7 +125,7 @@ https://quarto.org/docs/authoring/includes.html
   title = {amstar2Vis: {An} {R} Package for Presenting the Critical
     Appraisal of Systematic Reviews Based on the Items of {AMSTAR} 2},
   journal = {Research Synthesis Methods},
-  date = {2024-02-09},
+  date = {2024-02-05},
   url = {https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1705},
   doi = {10.1002/jrsm.1705},
   langid = {en}
@@ -110,37 +139,8 @@ Methods</em>, February. <a href="https://doi.org/10.1002/jrsm.1705">https://doi.
 </div></div></section></div> ]]></description>
   <category>paper</category>
   <guid>https://bougioukas.github.io/posts/2024-02-amstar2Vis/</guid>
-  <pubDate>Thu, 08 Feb 2024 22:00:00 GMT</pubDate>
+  <pubDate>Sun, 04 Feb 2024 22:00:00 GMT</pubDate>
   <media:content url="https://bougioukas.github.io/posts/2024-02-amstar2Vis/bars.png" medium="image" type="image/png" height="74" width="144"/>
-</item>
-<item>
-  <title>Our paper is a suggested reading from the University of Cambridge</title>
-  <dc:creator>Konstantinos Bougioukas</dc:creator>
-  <link>https://bougioukas.github.io/posts/2024-02-cambridge/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://libguides.cam.ac.uk/keepuptodate"><img src="https://bougioukas.github.io/posts/2024-02-cambridge/cambridge.jpg" class="img-fluid"></a></p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_x"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>news</category>
-  <guid>https://bougioukas.github.io/posts/2024-02-cambridge/</guid>
-  <pubDate>Thu, 08 Feb 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://bougioukas.github.io/posts/2024-02-cambridge/cambridge.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Recreation of the most popular covid-track plot using ggplot2</title>
