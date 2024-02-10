@@ -15,6 +15,7 @@ citation:
   container-title: "Research Synthesis Methods"
   doi: "10.1002/jrsm.1705"
   available-date: "2024-02-05"
+  url: https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1705
 google-scholar: true
 css: /custom.css
 #draft: true
