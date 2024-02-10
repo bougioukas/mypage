@@ -43,12 +43,18 @@ Bouras E, Karakioulaki M, **Bougioukas KI**, Aivaliotis M, Tzimagiorgis G, Chour
 <center><hr style="width:50%"></center>
 
 
-Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bougioukas KI**, Ioannides D. Total IgE, eosinophils, and interleukins 16, 17A, and 23 correlations in severe bullous pemphigoid and treatment implications. *Dermatologic Therapy* 2020;33:e13958. doi: [10.1111/dth.13958](10.1111/dth.13958https://doi.org/10.1111/dth.13958).
+Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bougioukas KI**, Ioannides D. Total IgE, eosinophils, and interleukins 16, 17A, and 23 correlations in severe bullous pemphigoid and treatment implications. *Dermatologic Therapy* 2020;33:e13958. doi: [10.1111/dth.13958](https://doi.org/10.1111/dth.13958).
 <span class="__dimensions_badge_embed__" data-doi="10.1111/dth.13958" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1111/dth.13958" data-hide-no-mentions="true" class="altmetric-embed"></div>    
 
 
 <center><hr style="width:50%"></center>
 
+
+
+Bougioukas KI, Bouras EC, Avgerinos KI, Dardavessis T, Haidich A-B. How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis. Health Information & Libraries Journal 2020;37:254–92. doi: [10.1111/hir.12318](https://doi.org/10.1111/hir.12318).
+<span class="__dimensions_badge_embed__" data-doi="10.1111/hir.12318" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1111/hir.12318" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+
+<center><hr style="width:50%"></center>
 
  
  
