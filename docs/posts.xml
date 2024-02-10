@@ -46,8 +46,12 @@ https://quarto.org/docs/authoring/includes.html
   <media:content url="https://bougioukas.github.io/posts/2024-02-cambridge/cambridge.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>amstar2Vis is a new R package for AMSTAR 2 assessment presentation</title>
+  <title>amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2</title>
   <dc:creator>Konstantinos Bougioukas</dc:creator>
+  <dc:creator>Paschalis Karakasis</dc:creator>
+  <dc:creator>Konstantinos Pamporis</dc:creator>
+  <dc:creator>Emmanouil Bouras</dc:creator>
+  <dc:creator>Anna-Bettina Haidich</dc:creator>
   <link>https://bougioukas.github.io/posts/2024-02-amstar2Vis/</link>
   <description><![CDATA[ 
 
@@ -115,9 +119,11 @@ https://quarto.org/docs/authoring/includes.html
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{bougioukas2024,
-  author = {Bougioukas, Konstantinos},
-  title = {amstar2Vis Is a New {R} Package for {AMSTAR} 2 Assessment
-    Presentation},
+  author = {Bougioukas, Konstantinos and Karakasis, Paschalis and
+    Pamporis, Konstantinos and Bouras, Emmanouil and Haidich,
+    Anna-Bettina},
+  title = {amstar2Vis: {An} {R} Package for Presenting the Critical
+    Appraisal of Systematic Reviews Based on the Items of {AMSTAR} 2},
   journal = {Research Synthesis Methods},
   date = {2024-02-05},
   url = {https://bougioukas.github.io/posts/2024-02-amstar2Vis},
@@ -125,8 +131,10 @@ https://quarto.org/docs/authoring/includes.html
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-bougioukas2024" class="csl-entry quarto-appendix-citeas">
-Bougioukas, Konstantinos. 2024. <span>“amstar2Vis Is a New R Package for
-AMSTAR 2 Assessment Presentation.”</span> <em>Research Synthesis
+Bougioukas, Konstantinos, Paschalis Karakasis, Konstantinos Pamporis,
+Emmanouil Bouras, and Anna-Bettina Haidich. 2024. <span>“amstar2Vis: An
+R Package for Presenting the Critical Appraisal of Systematic Reviews
+Based on the Items of AMSTAR 2.”</span> <em>Research Synthesis
 Methods</em>, February. <a href="https://doi.org/10.1002/jrsm.1705">https://doi.org/10.1002/jrsm.1705</a>.
 </div></div></section></div> ]]></description>
   <category>paper</category>

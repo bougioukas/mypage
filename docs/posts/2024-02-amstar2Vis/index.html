@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-02-05">
 <meta name="description" content="Meta-researcher MSc, PhD | Supporter of open and reproducible science">
 
-<title>Konstantinos I. Bougioukas - amstar2Vis is a new R package for AMSTAR 2 assessment presentation</title>
+<title>Konstantinos I. Bougioukas - amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,20 +72,24 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../custom.css">
-<meta property="og:title" content="Konstantinos I. Bougioukas - amstar2Vis is a new R package for AMSTAR 2 assessment presentation">
+<meta property="og:title" content="Konstantinos I. Bougioukas - amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2">
 <meta property="og:description" content="We expect the “amstar2Vis” package to be useful for authors of overviews of reviews of healthcare interventions and methodologists who wish to rate and present the overall confidence in the results of the included SRs.">
 <meta property="og:image" content="https://bougioukas.github.io/posts/2024-02-amstar2Vis/bars.png">
 <meta property="og:site_name" content="Konstantinos I. Bougioukas">
 <meta property="og:image:height" content="992">
 <meta property="og:image:width" content="1920">
-<meta name="twitter:title" content="Konstantinos I. Bougioukas - amstar2Vis is a new R package for AMSTAR 2 assessment presentation">
+<meta name="twitter:title" content="Konstantinos I. Bougioukas - amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2">
 <meta name="twitter:description" content="We expect the “amstar2Vis” package to be useful for authors of overviews of reviews of healthcare interventions and methodologists who wish to rate and present the overall confidence in the results of the included SRs.">
 <meta name="twitter:image" content="https://bougioukas.github.io/posts/2024-02-amstar2Vis/bars.png">
 <meta name="twitter:image-height" content="992">
 <meta name="twitter:image-width" content="1920">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="citation_title" content="amstar2Vis is a new R package for AMSTAR 2 assessment presentation">
+<meta name="citation_title" content="amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2">
 <meta name="citation_author" content="Konstantinos Bougioukas">
+<meta name="citation_author" content="Paschalis Karakasis">
+<meta name="citation_author" content="Konstantinos Pamporis">
+<meta name="citation_author" content="Emmanouil Bouras">
+<meta name="citation_author" content="Anna-Bettina Haidich">
 <meta name="citation_publication_date" content="2024-02-05">
 <meta name="citation_cover_date" content="2024-02-05">
 <meta name="citation_year" content="2024">
@@ -200,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">amstar2Vis is a new R package for AMSTAR 2 assessment presentation</h1>
+<h1 class="title">amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2</h1>
   <div class="quarto-categories">
     <div class="quarto-category">paper</div>
   </div>
@@ -216,9 +220,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Konstantinos Bougioukas </p>
+             <p>Paschalis Karakasis </p>
+             <p>Konstantinos Pamporis </p>
+             <p>Emmanouil Bouras </p>
+             <p>Anna-Bettina Haidich </p>
           </div>
   </div>
     
@@ -298,9 +306,11 @@ https://quarto.org/docs/authoring/includes.html
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{bougioukas2024,
-  author = {Bougioukas, Konstantinos},
-  title = {amstar2Vis Is a New {R} Package for {AMSTAR} 2 Assessment
-    Presentation},
+  author = {Bougioukas, Konstantinos and Karakasis, Paschalis and
+    Pamporis, Konstantinos and Bouras, Emmanouil and Haidich,
+    Anna-Bettina},
+  title = {amstar2Vis: {An} {R} Package for Presenting the Critical
+    Appraisal of Systematic Reviews Based on the Items of {AMSTAR} 2},
   journal = {Research Synthesis Methods},
   date = {2024-02-05},
   url = {https://bougioukas.github.io/posts/2024-02-amstar2Vis},
@@ -308,8 +318,10 @@ https://quarto.org/docs/authoring/includes.html
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-bougioukas2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Bougioukas, Konstantinos. 2024. <span>“amstar2Vis Is a New R Package for
-AMSTAR 2 Assessment Presentation.”</span> <em>Research Synthesis
+Bougioukas, Konstantinos, Paschalis Karakasis, Konstantinos Pamporis,
+Emmanouil Bouras, and Anna-Bettina Haidich. 2024. <span>“amstar2Vis: An
+R Package for Presenting the Critical Appraisal of Systematic Reviews
+Based on the Items of AMSTAR 2.”</span> <em>Research Synthesis
 Methods</em>, February. <a href="https://doi.org/10.1002/jrsm.1705">https://doi.org/10.1002/jrsm.1705</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

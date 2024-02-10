@@ -1,8 +1,12 @@
 ---
-title: "amstar2Vis is a new R package for AMSTAR 2 assessment presentation"
+title: "amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2"
 description: "We expect the “amstar2Vis” package to be useful for authors of overviews of reviews of healthcare interventions and methodologists who wish to rate and present the overall confidence in the results of the included SRs."
 author: 
   - name: Konstantinos Bougioukas
+  - name: Paschalis Karakasis
+  - name: Konstantinos Pamporis
+  - name: Emmanouil Bouras
+  - name: Anna-Bettina Haidich
 date: "2024-02-05"
 categories: [paper]
 image: "bars.png"
