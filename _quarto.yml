@@ -23,7 +23,7 @@ website:
         href: posts.qmd#category=visualization
       - text: Publications
         menu:
-          - text: Selected Papers
+          - text: Highlights
             href: posts.qmd#category=paper
           - text: List of Publications
             href: publications.qmd
