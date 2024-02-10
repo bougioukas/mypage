@@ -32,7 +32,9 @@ AMSTAR 2 item.](bars.png)
 ## Paper
 amstar2Vis: An R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2. **Konstantinos I. Bougioukas**, Paschalis Karakasis, Konstantinos Pamporis, Emmanouil Bouras, Anna-Bettina Haidich
 *Research Synthesis Methods* (2024)   
-DOI: [10.1002/jrsm.1705](https://doi.org/10.1002/jrsm.1705)     
+DOI: [10.1002/jrsm.1705](https://doi.org/10.1002/jrsm.1705) <span class="__dimensions_badge_embed__" data-doi="10.1002/jrsm.1705" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1002/jrsm.1705" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
 :::
 
 ## Abstract

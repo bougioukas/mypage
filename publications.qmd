@@ -22,28 +22,36 @@ Total citations as of February 2024:
 
 ## Peer-reviewed Journal Papers
 
-**Bougioukas KI**, Liakos A, Tsapas A, Ntzani E, Haidich A-B. Preferred reporting items for overviews of systematic reviews including harms checklist: a pilot tool to be used for balanced reporting of benefits and harms. *Journal of Clinical Epidemiology* 2018;93:9–24. doi: [10.1016/j.jclinepi.2017.10.002](https://doi.org/10.1016/j.jclinepi.2017.10.002). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2017.10.002" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2017.10.002" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+**Bougioukas KI**, Liakos A, Tsapas A, Ntzani E, Haidich A-B. Preferred reporting items for overviews of systematic reviews including harms checklist: a pilot tool to be used for balanced reporting of benefits and harms. *Journal of Clinical Epidemiology* 2018;93:9–24. doi: [10.1016/j.jclinepi.2017.10.002](https://doi.org/10.1016/j.jclinepi.2017.10.002). 
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2017.10.002" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2017.10.002" data-hide-no-mentions="true" class="altmetric-embed"></div>     
 
 <center><hr style="width:50%"></center>
 
 
 
-Avgerinos KI, Spyrou N, **Bougioukas KI**, Kapogiannis D. Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review of randomized controlled trials. *Experimental Gerontology* 2018;108:166–73. doi: [10.1016/j.exger.2018.04.013](https://doi.org/10.1016/j.exger.2018.04.013). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.exger.2018.04.013" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.exger.2018.04.013" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+Avgerinos KI, Spyrou N, **Bougioukas KI**, Kapogiannis D. Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review of randomized controlled trials. *Experimental Gerontology* 2018;108:166–73. doi: [10.1016/j.exger.2018.04.013](https://doi.org/10.1016/j.exger.2018.04.013).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.exger.2018.04.013" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.exger.2018.04.013" data-hide-no-mentions="true" class="altmetric-embed"></div>     
 
 <center><hr style="width:50%"></center>
 
 
-**Bougioukas KI**, Bouras E, Apostolidou-Kiouti F, Kokkali S, Arvanitidou M, Haidich A-B. Reporting guidelines on how to write a complete and transparent abstract for overviews of systematic reviews of health care interventions. *Journal of Clinical Epidemiology* 2019;106:70–9. doi:  [10.1016/j.jclinepi.2018.10.005](https://doi.org/10.1016/j.jclinepi.2018.10.005). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2018.10.005" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2018.10.005" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+**Bougioukas KI**, Bouras E, Apostolidou-Kiouti F, Kokkali S, Arvanitidou M, Haidich A-B. Reporting guidelines on how to write a complete and transparent abstract for overviews of systematic reviews of health care interventions. *Journal of Clinical Epidemiology* 2019;106:70–9. doi:  [10.1016/j.jclinepi.2018.10.005](https://doi.org/10.1016/j.jclinepi.2018.10.005). 
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2018.10.005" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2018.10.005" data-hide-no-mentions="true" class="altmetric-embed"></div>     
 
 <center><hr style="width:50%"></center>
 
 
-Bouras E, Karakioulaki M, **Bougioukas KI**, Aivaliotis M, Tzimagiorgis G, Chourdakis M. Gene promoter methylation and cancer: An umbrella review. *Gene* 2019;710:333–40. doi: [10.1016/j.gene.2019.06.023](https://doi.org/10.1016/j.gene.2019.06.023). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.gene.2019.06.023" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.gene.2019.06.023" data-hide-no-mentions="true" class="altmetric-embed"></div>    
+Bouras E, Karakioulaki M, **Bougioukas KI**, Aivaliotis M, Tzimagiorgis G, Chourdakis M. Gene promoter methylation and cancer: An umbrella review. *Gene* 2019;710:333–40. doi: [10.1016/j.gene.2019.06.023](https://doi.org/10.1016/j.gene.2019.06.023). 
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.gene.2019.06.023" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.gene.2019.06.023" data-hide-no-mentions="true" class="altmetric-embed"></div>    
 
 <center><hr style="width:50%"></center>
 
 
 Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bougioukas KI**, Ioannides D. Total IgE, eosinophils, and interleukins 16, 17A, and 23 correlations in severe bullous pemphigoid and treatment implications. *Dermatologic Therapy* 2020;33:e13958. doi: [10.1111/dth.13958](https://doi.org/10.1111/dth.13958).
+
 <span class="__dimensions_badge_embed__" data-doi="10.1111/dth.13958" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1111/dth.13958" data-hide-no-mentions="true" class="altmetric-embed"></div>    
 
 
@@ -52,13 +60,16 @@ Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bo
 
 
 **Bougioukas KI**, Bouras EC, Avgerinos KI, Dardavessis T, Haidich A-B. How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis. *Health Information & Libraries Journal* 2020;37:254–92. doi: [10.1111/hir.12318](https://doi.org/10.1111/hir.12318).
+
 <span class="__dimensions_badge_embed__" data-doi="10.1111/hir.12318" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1111/hir.12318" data-hide-no-mentions="true" class="altmetric-embed"></div>   
 
 <center><hr style="width:50%"></center>
 
 
 
-**Bougioukas KI**, Vounzoulaki E, Mantsiou CD, Savvides ED, Karakosta C, Diakonidis T, Tsapas A, Haidich A-B. Methods for depicting overlap in overviews of systematic reviews: An introduction to static tabular and graphical displays. *Journal of Clinical Epidemiology* 2021;132:34–45. doi: [10.1016/j.jclinepi.2020.12.004](https://doi.org/10.1016/j.jclinepi.2020.12.004). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2020.12.004" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2020.12.004" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+**Bougioukas KI**, Vounzoulaki E, Mantsiou CD, Savvides ED, Karakosta C, Diakonidis T, Tsapas A, Haidich A-B. Methods for depicting overlap in overviews of systematic reviews: An introduction to static tabular and graphical displays. *Journal of Clinical Epidemiology* 2021;132:34–45. doi: [10.1016/j.jclinepi.2020.12.004](https://doi.org/10.1016/j.jclinepi.2020.12.004).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2020.12.004" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2020.12.004" data-hide-no-mentions="true" class="altmetric-embed"></div>   
 
 
 <center><hr style="width:50%"></center>
@@ -72,7 +83,9 @@ Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bo
 
 Bougioukas K. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 
 
-Bougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2)
+Bougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2). <span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-319-92946-0_2" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/978-3-319-92946-0_2" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+
+
 
  
 
