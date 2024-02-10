@@ -49,7 +49,7 @@ We present a free, open-source R package called “amstar2Vis” that provides e
 
 <br>
 
-## Discrete color scales
+## Discrete color scales from music album covers
 
 ::: {.grid}
 
