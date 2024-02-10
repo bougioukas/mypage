@@ -18,7 +18,7 @@
 <lastBuildDate>Thu, 08 Feb 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Our paper is a suggested reading from the University of Cambridge</title>
-  <dc:creator>Konstantinos I. Bougioukas</dc:creator>
+  <dc:creator>Konstantinos Bougioukas</dc:creator>
   <link>https://bougioukas.github.io/posts/2024-02-cambridge/</link>
   <description><![CDATA[ 
 
@@ -47,7 +47,7 @@ https://quarto.org/docs/authoring/includes.html
 </item>
 <item>
   <title>amstar2Vis is a new R package for AMSTAR 2 assessment presentation</title>
-  <dc:creator>Konstantinos I. Bougioukas</dc:creator>
+  <dc:creator>Konstantinos Bougioukas</dc:creator>
   <link>https://bougioukas.github.io/posts/2024-02-amstar2Vis/</link>
   <description><![CDATA[ 
 
@@ -114,8 +114,8 @@ https://quarto.org/docs/authoring/includes.html
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{i. bougioukas2024,
-  author = {I. Bougioukas, Konstantinos},
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{bougioukas2024,
+  author = {Bougioukas, Konstantinos},
   title = {amstar2Vis Is a New {R} Package for {AMSTAR} 2 Assessment
     Presentation},
   journal = {Research Synthesis Methods},
@@ -124,9 +124,9 @@ https://quarto.org/docs/authoring/includes.html
   doi = {10.1002/jrsm.1705},
   langid = {en}
 }
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-i. bougioukas2024" class="csl-entry quarto-appendix-citeas">
-I. Bougioukas, Konstantinos. 2024. <span>“amstar2Vis Is a New R Package
-for AMSTAR 2 Assessment Presentation.”</span> <em>Research Synthesis
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-bougioukas2024" class="csl-entry quarto-appendix-citeas">
+Bougioukas, Konstantinos. 2024. <span>“amstar2Vis Is a New R Package for
+AMSTAR 2 Assessment Presentation.”</span> <em>Research Synthesis
 Methods</em>, February. <a href="https://doi.org/10.1002/jrsm.1705">https://doi.org/10.1002/jrsm.1705</a>.
 </div></div></section></div> ]]></description>
   <category>paper</category>
@@ -136,7 +136,7 @@ Methods</em>, February. <a href="https://doi.org/10.1002/jrsm.1705">https://doi.
 </item>
 <item>
   <title>Recreation of the most popular covid-track plot using ggplot2</title>
-  <dc:creator>Konstantinos I. Bougioukas</dc:creator>
+  <dc:creator>Konstantinos Bougioukas</dc:creator>
   <link>https://bougioukas.github.io/posts/2024-02-covid/</link>
   <description><![CDATA[ 
 

@@ -1,7 +1,7 @@
 ---
 title: "Our paper is a suggested reading from the University of Cambridge"
 description: "Our work on how to keep up with medical information is a suggested reading from the University of Cambridge"
-author: "Konstantinos I. Bougioukas"
+author: "Konstantinos Bougioukas"
 date: "2024-02-09"
 categories: [news]
 image: "cambridge.jpg"

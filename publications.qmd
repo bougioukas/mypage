@@ -39,7 +39,7 @@ Bougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetr
 
 ## Conference Proceeding
 
-Bougioukas K, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. \[[YouTube](https://www.youtube.com/watch?v=7Asp-HkMoks&t=14s)\]
+**Bougioukas KI**, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. \[[YouTube](https://www.youtube.com/watch?v=7Asp-HkMoks&t=14s)\]
 
 
 

@@ -2,7 +2,7 @@
 title: "Recreation of the most popular covid-track plot using ggplot2"
 description: "Full recreation from scratch of the most popular covid-track plot using ggplot2 (Source of the original plot: Financial Times)."
 author: 
-    - name: Konstantinos I. Bougioukas 
+    - name: Konstantinos Bougioukas 
 date: "2023-02-09"
 categories: [visualization]
 image: "covid.png"
