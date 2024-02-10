@@ -6,11 +6,11 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
-  page-size: 50
+  page-size: 35
   categories: true
   sort-ui: true
   filter-ui: true
-  feed: true
+#  feed: true
 #page-layout: full
 page-navigation: true
 title-block-banner: false
