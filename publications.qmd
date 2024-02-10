@@ -51,10 +51,18 @@ Delli FS, Sotiriou E, Lazaridou E, Apalla Z, Lallas A, Vakirlis E, Gerou S, **Bo
 
 
 
-Bougioukas KI, Bouras EC, Avgerinos KI, Dardavessis T, Haidich A-B. How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis. Health Information & Libraries Journal 2020;37:254–92. doi: [10.1111/hir.12318](https://doi.org/10.1111/hir.12318).
+**Bougioukas KI**, Bouras EC, Avgerinos KI, Dardavessis T, Haidich A-B. How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis. *Health Information & Libraries Journal* 2020;37:254–92. doi: [10.1111/hir.12318](https://doi.org/10.1111/hir.12318).
 <span class="__dimensions_badge_embed__" data-doi="10.1111/hir.12318" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1111/hir.12318" data-hide-no-mentions="true" class="altmetric-embed"></div>   
 
 <center><hr style="width:50%"></center>
+
+
+
+**Bougioukas KI**, Vounzoulaki E, Mantsiou CD, Savvides ED, Karakosta C, Diakonidis T, Tsapas A, Haidich A-B. Methods for depicting overlap in overviews of systematic reviews: An introduction to static tabular and graphical displays. *Journal of Clinical Epidemiology* 2021;132:34–45. doi: [10.1016/j.jclinepi.2020.12.004](https://doi.org/10.1016/j.jclinepi.2020.12.004). <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2020.12.004" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2020.12.004" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+
+
+<center><hr style="width:50%"></center>
+
 
  
  
