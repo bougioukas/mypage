@@ -78,7 +78,7 @@ STORYTELLING WITH R GRAPHS AND ChatGPT](https://bougioukas.github.io/storytellin
 
 `r fa("pen-to-square", fill = "#1DC5CE")` **Academic publications**
 
-I have contributed to more than 30 peer-reviewed research papers published in high-impact journals including: *BMJ-British Medical Journal* [IF=96.2], *Current Problems in Cardiology* [IF=16.5], *Metabolism* [IF=9.8], *Research Synthesis Methods* [IF=9.3], *Journal of Clinical Epidemiology* [IF=7.4], *Critical Reviews in Oncology/Hematology* [IF=6.6], *Journal of Dentistry* [IF=4.9], and *PLoS Computational Biology* [IF=4.8].
+I have contributed to more than 30 peer-reviewed research papers published in high-impact journals including: *BMJ-British Medical Journal*, *Current Problems in Cardiology*, *Metabolism*, *Research Synthesis Methods*, *Journal of Clinical Epidemiology*, *Critical Reviews in Oncology/Hematology*, *Journal of Dentistry*, and *PLoS Computational Biology*.
 
 :::
 
