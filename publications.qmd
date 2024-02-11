@@ -300,19 +300,26 @@ Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranid
 
 ## Books and Chapters
 
+**Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.
 
-**Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 
 
-**Bougioukas K**, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2). <span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-319-92946-0_2" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/978-3-319-92946-0_2" data-hide-no-mentions="true" class="altmetric-embed"></div>   
-
+**Bougioukas K**, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2). 
+<span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-319-92946-0_2" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/978-3-319-92946-0_2" data-hide-no-mentions="true" class="altmetric-embed"></div>   
 
 
  
 
-## Conference Proceeding
+## International Conference Proceedings
 
 **Bougioukas KI**, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. \[[YouTube](https://www.youtube.com/watch?v=7Asp-HkMoks&t=14s)\]
 
+
+**Bougioukas K**, Vounzoulaki E, Mantsiou M, Savvides E, Karakosta C, Diakonidis T, Tsapas A, Haidich AB. Methods for depicting overlap in overviews of systematic reviews: The ccaR package. [AUEB-NKUA-Indiana-FSFH Conference in Biostatistics & Health Analytics](https://aueb-analytics.wixsite.com/biostats-conf), Aegina, 4-6 July 2022.
+
+
+**Bougioukas KI**, Pagkalidou E, Avgerinou E, Tsapas A, Ntzani E, Smyrnakis E, Haidich AB. Overviews of Systematic Reviews with drugs, herbal medicine or dietary supplements. [9th Conference of the Eastern Mediterranean Region of the International Biometrics Society (EMR‐IBS)](http://www2.stat-athens.aueb.gr/~emribs/page/emr2017.html), Thessaloniki, Greece, 8-12 May 2017.
+
+ 
 
 
 <!--Include social share buttons-->

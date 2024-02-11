@@ -116,13 +116,13 @@
     "href": "publications.html#books-and-chapters",
     "title": "Publications",
     "section": "Books and Chapters",
-    "text": "Books and Chapters\nBougioukas K. Practical Statistics in Medicine with R (in press from Chapman & Hall/CRC Press | Taylor & Francis Group)\nBougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: 10.1007/978-3-319-92946-0_2."
+    "text": "Books and Chapters\nBougioukas K. Practical Statistics in Medicine with R (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.\nBougioukas K, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: 10.1007/978-3-319-92946-0_2."
   },
   {
-    "objectID": "publications.html#conference-proceeding",
-    "href": "publications.html#conference-proceeding",
+    "objectID": "publications.html#international-conference-proceedings",
+    "href": "publications.html#international-conference-proceedings",
     "title": "Publications",
-    "section": "Conference Proceeding",
-    "text": "Conference Proceeding\nBougioukas KI, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. [YouTube]"
+    "section": "International Conference Proceedings",
+    "text": "International Conference Proceedings\nBougioukas KI, Diakonidis T, Mavromanoli A, Haidich AB. ccaR: a package for assessing primary study overlap across SRs in overviews. ESMARConf2023, 27-31 March 2023. [YouTube]\nBougioukas K, Vounzoulaki E, Mantsiou M, Savvides E, Karakosta C, Diakonidis T, Tsapas A, Haidich AB. Methods for depicting overlap in overviews of systematic reviews: The ccaR package. AUEB-NKUA-Indiana-FSFH Conference in Biostatistics & Health Analytics, Aegina, 4-6 July 2022.\nBougioukas KI, Pagkalidou E, Avgerinou E, Tsapas A, Ntzani E, Smyrnakis E, Haidich AB. Overviews of Systematic Reviews with drugs, herbal medicine or dietary supplements. 9th Conference of the Eastern Mediterranean Region of the International Biometrics Society (EMR‐IBS), Thessaloniki, Greece, 8-12 May 2017."
   }
 ]
