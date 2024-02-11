@@ -275,6 +275,24 @@ Karakasis P, Stalikas N, Patoulias D, Pamporis K, Karagiannidis E, Sagris M, Sta
 
 
 
+Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranidis A, et al. The reporting completeness and transparency of systematic reviews of prognostic prediction models for COVID-19 was poor: a methodological overview of systematic reviews. *Journal of Clinical Epidemiology* 2024. doi: [10.1016/j.jclinepi.2024.111264](https://doi.org/10.1016/j.jclinepi.2024.111264).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jclinepi.2024.111264" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.jclinepi.2024.111264" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+
+
+
+
+**Bougioukas KI**, Karakasis P, Pamporis K, Bouras E, Haidich A-B. amstar2Vis: an R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2. *Research Synthesis Methods* 2024. doi: [10.1002/jrsm.1705](https://doi.org/10.1002/jrsm.1705).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1002/jrsm.1705" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1002/jrsm.1705" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
 
 
  
