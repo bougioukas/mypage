@@ -53,6 +53,7 @@ listing:
       - "title asc"
 ---
 
+
 ```{r}
 #| include: false
 library(fontawesome)
