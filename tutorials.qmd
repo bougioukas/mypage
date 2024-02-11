@@ -3,20 +3,3 @@ title: "Tutorials"
 #description-meta: "{{< meta description-meta >}}"
 title-block-banner: false
 ---
-
-
-
-```{r}
-#| include: false
-library(fontawesome)
-```
-
-
-
-::: content-box-purple
-
-`r fa("pen-to-square", fill = "#1DC5CE")` **Academic publications**
-
-I have contributed to more than 30 peer-reviewed research papers published in high-impa
-
-:::
