@@ -53,6 +53,11 @@ listing:
       - "title asc"
 ---
 
+```{r}
+#| include: false
+library(fontawesome)
+```
+
 
 
 :::{#hero-heading}
@@ -68,7 +73,13 @@ I am the author of the online, free textbook [Practical Statistics in Medicine w
 Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews ([OMG-database](https://overviews-database.netlify.app/)), along with a website, [
 STORYTELLING WITH R GRAPHS AND ChatGPT](https://bougioukas.github.io/storytelling/), where I recreate published figures sourced from scholarly articles, websites, or media sources.
 
+
+::: content-box-purple
+`r fa("pen-to-square", fill = "#1DC5CE")` **Academic publications**
+
 I have contributed to more than 30 peer-reviewed research papers published in high-impact journals such as *BMJ-British Medical Journal* [IF=96.2], *Current Problems in Cardiology* [IF=16.5], *Metabolism* [IF=9.8], *Research Synthesis Methods* [IF=9.3], *Journal of Clinical Epidemiology* [IF=7.4], *Critical Reviews in Oncology/Hematology* [IF=6.6], *Journal of Dentistry* [IF=4.9], and *PLoS Computational Biology* [IF=4.8].
+
+:::
 
 :::
 
