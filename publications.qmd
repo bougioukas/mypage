@@ -300,14 +300,21 @@ Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranid
 
 ## Books and Chapters
 
-**Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.
-
-
-**Bougioukas K**, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2). 
-<span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-319-92946-0_2" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/978-3-319-92946-0_2" data-hide-no-mentions="true" class="altmetric-embed"></div>   
+![](img/img_mybook.png){style="float: left; margin-right: 20px;" fig-align="left" width="80"} **Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.
 
 
  
+
+ 
+
+
+![](img/img_book_chapter.png){style="float: left; margin-right: 20px;" fig-align="left" width="80"} **Bougioukas K**, Haidich A-B. Medical Biostatistics: Basic Concepts. In: Papademetriou V, Andreadis EA, Geladari C, editors. Manag. Hypertens. Curr. Pract. Appl. Landmark Trials, Cham: Springer International Publishing; 2019, p. 19–53. doi: [10.1007/978-3-319-92946-0_2](https://doi.org/10.1007/978-3-319-92946-0_2). 
+<span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-319-92946-0_2" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/978-3-319-92946-0_2" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
+
+<br>
+<br>
+<br>
 
 ## International Conference Proceedings
 
