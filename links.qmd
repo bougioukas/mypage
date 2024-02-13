@@ -18,9 +18,9 @@ title-block-banner: false
 
 <br>
 
+
 ## Data visualization
 
-<br>
 
 ![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
 
@@ -37,12 +37,13 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 <br>
 
 
-## Open Science
+## Research Methods and Open Science
 
+![](img/physics_today.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Global movement to reform researcher assessment gains traction [(paper)](https://pubs.aip.org/physicstoday/article/76/10/22/2912125)
 
+<br>
 
-
-
+![](img/epi.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}A 24‑step guide on how to design, conduct, and successfully publish a systematic review and meta‑analysis in medical research [(paper)](https://link.springer.com/article/10.1007/s10654-019-00576-5)
 
 
  
