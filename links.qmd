@@ -1,5 +1,5 @@
 ---
-title: "Useful links related to data visualization"
+title: "Useful links"
 #description-meta: "{{< meta description-meta >}}"
 title-block-banner: false
 ---
@@ -8,34 +8,36 @@ title-block-banner: false
 <br>
 
 
-## Statistics
+## Statistics and Epidemiology
 
-
+![](img/epi2.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Epidemiologist R Handbook [(online handbook)](https://epirhandbook.com/en/index.html)
 
 
 
 
 
 <br>
-
+<br>
 
 ## Data visualization
 
 
-![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
+![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
 
+<br>
 
-![](img/vis100.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"}1 dataset 100 visualizations [ (website)](https://100.datavizproject.com/)
+![](img/vis100.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}1 dataset 100 visualizations [ (website)](https://100.datavizproject.com/)
 
+<br>
 
-![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"}Ten simple rules for designing graphical
+![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for designing graphical
 abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011789)
 
 
 
 
 <br>
-
+<br>
 
 ## Research Methods and Open Science
 
@@ -43,7 +45,7 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 <br>
 
-![](img/turing.png){style="float: left; margin-right: 20px;" fig-align="left" width="35"}The Turing Way handbook to reproducible, ethical and collaborative data science [(website)](https://the-turing-way.netlify.app/index.html)
+![](img/turing.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Turing Way handbook to reproducible, ethical and collaborative data science [(online handbook)](https://the-turing-way.netlify.app/index.html)
 
 <br>
 
@@ -62,5 +64,19 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 ![](img/hilj.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis [(paper)](https://onlinelibrary.wiley.com/doi/full/10.1111/hir.12318)
 
 
+<br>
 
+![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for good research practice [(paper)](https://doi.org/10.1371/journal.pcbi.1010139)
+
+<br>
+
+![](img/cochrane.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Cochrane Handbook for Systematic Reviews of Interventions [(online handbook)](https://training.cochrane.org/handbook)
+
+<br>
+
+![](img/jbi.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}JBI Manual for Evidence Synthesis [(online manual)](https://jbi-global-wiki.refined.site/space/MANUAL/4687404/About+this+Manual)
+
+<br>
+
+![](img/equator.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}EQUATOR network [(website)](https://www.equator-network.org/)
  
