@@ -10,6 +10,7 @@ website:
   title: "Konstantinos I. Bougioukas"
   image: "/files/myprofile.jpeg"
   description: "Meta-researcher MSc, PhD | Supporter of open and reproducible science."
+  favicon: "img/logo.png"
  
   navbar:
     background: light
