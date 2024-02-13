@@ -35,11 +35,7 @@ website:
       - text: Posts
         href: posts.qmd
       - text: Links
-        menu:
-          - text: Statistics
-            href: links_stats.qmd       
-          - text: Visualization
-            href: links_vis.qmd  
+        href: links.qmd
       - text: Contact
         href: contact.qmd   
     

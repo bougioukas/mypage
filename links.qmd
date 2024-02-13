@@ -1,0 +1,48 @@
+---
+title: "Useful links related to data visualization"
+#description-meta: "{{< meta description-meta >}}"
+title-block-banner: false
+---
+
+
+<br>
+
+
+## Statistics
+
+
+
+
+
+
+
+<br>
+
+## Data visualization
+
+<br>
+
+![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
+
+
+![](img/vis100.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"}1 dataset 100 visualizations [ (website)](https://100.datavizproject.com/)
+
+
+![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="25"}Ten simple rules for designing graphical
+abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011789)
+
+
+
+
+<br>
+
+
+## Open Science
+
+
+
+
+
+
+
+ 
