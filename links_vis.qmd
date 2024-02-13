@@ -1,17 +1,10 @@
 ---
-title: "Useful links"
+title: "Useful links related to data visualization"
 #description-meta: "{{< meta description-meta >}}"
 title-block-banner: false
 ---
 
 
-## Statistics
-
-
-
-
-
-## Data visualization
 
 ![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="30"}[The R Graph Gallery](https://r-graph-gallery.com/)
 
