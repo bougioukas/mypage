@@ -4,6 +4,11 @@ title: "R packages"
 title-block-banner: false
 ---
 
+
+I have contributed to the following three open-source R packages:
+
+
+
 <br>
 
 ## Overlap of primary studies in overviews of reviews

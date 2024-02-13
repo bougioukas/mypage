@@ -1,0 +1,8 @@
+---
+title: "Teaching"
+#description-meta: "{{< meta description-meta >}}"
+title-block-banner: false
+---
+
+
+I taught Biostatistics and R practical sessions for a few years at the Aristotle University of Thessaloniki in Greece.
