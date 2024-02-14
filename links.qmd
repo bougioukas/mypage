@@ -25,6 +25,10 @@ title-block-banner: false
 ## Data visualization
 
 
+![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The R Graph Gallery [ (website)](https://r-graph-gallery.com/index.html)
+
+<br>
+
 ![](img/cover_ggplot2.jpg){style="float: left; margin-right: 20px;" fig-align="left" width="45"} ggplot2: Elegant Graphics for Data Analysis (3e)
 
 [(on-line version of the textbook-3rd edition)](https://ggplot2-book.org/)
