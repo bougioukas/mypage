@@ -12,6 +12,9 @@ title-block-banner: false
 
 ![](img/epi2.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Epidemiologist R Handbook [(online handbook)](https://epirhandbook.com/en/index.html)
 
+<br>
+
+![](img/stats_in_med_journal.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Tutorials in Biostatistics Papers [(collection of papers)](https://onlinelibrary.wiley.com/page/journal/10970258/homepage/tutorials.htm)
 
 
 
@@ -23,6 +26,11 @@ title-block-banner: false
 
 
 ![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
+
+<br>
+
+![](img/catalogue.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} The Data Visualisation Catalogue [(website)](https://datavizcatalogue.com/index.html)
+
 
 <br>
 

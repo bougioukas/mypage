@@ -14,8 +14,8 @@ css: /custom.css
 
 Total citations as of February 2024:
 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 574 (h-index = 10) 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 866 (h-index = 11, i10-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 577 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 870 (h-index = 11, i10-index = 11) 
 
  
  
