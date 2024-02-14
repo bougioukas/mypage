@@ -25,9 +25,21 @@ title-block-banner: false
 ## Data visualization
 
 
-![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} The R Graph Gallery [(website)](https://r-graph-gallery.com/)
+![](img/cover_ggplot2.jpg){style="float: left; margin-right: 20px;" fig-align="left" width="45"} ggplot2: Elegant Graphics for Data Analysis (3e)
+
+[(on-line version of the textbook-3rd edition)](https://ggplot2-book.org/)
+
+
 
 <br>
+
+![](img/cabacoff_cover.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Modern Data Visualization with R
+
+[(on-line version of the textbook)](https://rkabacoff.github.io/datavis/)
+
+
+<br>
+
 
 ![](img/catalogue.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} The Data Visualisation Catalogue [(website)](https://datavizcatalogue.com/index.html)
 

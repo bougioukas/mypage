@@ -69,7 +69,7 @@ I am a research methodologist with a focus on evidence synthesis, a biostatistic
 Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity, rigor and reproducibility of medical data analysis and visualization.
 
 
-I have extensive experience teaching Biostatistics and leading R practical sessions at the Aristotle University of Thessaloniki. Complementing my teaching role, I authored the online, free textbook [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/). 
+I have extensive experience teaching Biostatistics and leading R practical sessions at the Aristotle University of Thessaloniki. Complementing my teaching role, I authored the open-access, online version of the textbook [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/). 
 Over the years, I've contributed to the R community by developing three R packages in collaborative and independently: [`ccaR`](https://github.com/thdiakon/ccaR), [`amstar2Vis`](https://github.com/bougioukas/amstar2Vis),[`musicolor`](https://github.com/bougioukas/musicolor) (all available open source at [github](https://github.com/bougioukas/)).
 Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews ([OMG-database](https://overviews-database.netlify.app/)), along with a website, [
 STORYTELLING WITH R GRAPHS AND ChatGPT](https://bougioukas.github.io/storytelling/), where I recreate published figures sourced from scholarly articles, websites, or media sources.
