@@ -66,6 +66,13 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 
 
+<br>
+
+![](img/colorspace.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes [ (website)](https://colorspace.r-forge.r-project.org/index.html)
+
+
+
+
 
 <br>
 <br>
