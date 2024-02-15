@@ -17,6 +17,13 @@ title-block-banner: false
 ![](img/stats_in_med_journal.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Tutorials in Biostatistics Papers [(collection of papers)](https://onlinelibrary.wiley.com/page/journal/10970258/homepage/tutorials.htm)
 
 
+<br>
+
+![](img/MA.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Doing Meta-Analysis with R: A Hands-On Guide 
+
+[(on-line version of the textbook)](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
+
+
 
 
 <br>
@@ -92,6 +99,8 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 ![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for good research practice [(paper)](https://doi.org/10.1371/journal.pcbi.1010139)
 
+
+
 <br>
 
 ![](img/cochrane.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Cochrane Handbook for Systematic Reviews of Interventions [(online handbook)](https://training.cochrane.org/handbook)
@@ -107,3 +116,19 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 <br> 
 
 ![](img/dora.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Declaration on Research Assessment (DORA) [(website)](https://sfdora.org/)
+
+
+<br> 
+
+![](img/cos.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Center for Open Science (COS) [(website)](https://www.cos.io/)
+
+
+<br>
+
+![](img/reproducibilitea.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}ReproducibiliTea [(website)](https://reproducibilitea.org/)
+
+
+
+
+
+
