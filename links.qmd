@@ -83,6 +83,11 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 <br>
 
+![](img/lights.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}LIGHTS A living inventory of methods guidance papers [(website)](https://lights.science/)
+
+
+<br>
+
 ![](img/turing.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Turing Way handbook to reproducible, ethical and collaborative data science [(online handbook)](https://the-turing-way.netlify.app/index.html)
 
 <br>
