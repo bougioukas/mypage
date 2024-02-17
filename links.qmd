@@ -62,7 +62,7 @@ title-block-banner: false
 <br>
 
 ![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for designing graphical
-abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011789)
+abstracts [(paper)](https://doi.org/10.1371/journal.pcbi.1011789)
 
 
 
@@ -79,7 +79,7 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 ## Research Methods and Open Science
 
-![](img/physics_today.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Global movement to reform researcher assessment gains traction [(paper)](https://pubs.aip.org/physicstoday/article/76/10/22/2912125)
+![](img/physics_today.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Global movement to reform researcher assessment gains traction [(paper)](https://doi.org/10.1063/PT.3.5323)
 
 <br>
 
@@ -92,10 +92,15 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 
 <br>
 
-![](img/epi.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}A 24‑step guide on how to design, conduct, and successfully publish a systematic review and meta‑analysis in medical research [(paper)](https://link.springer.com/article/10.1007/s10654-019-00576-5)
+![](img/epi.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}A 24‑step guide on how to design, conduct, and successfully publish a systematic review and meta‑analysis in medical research [(paper)](https://doi.org/10.1007/s10654-019-00576-5)
 
 <br>
 
+
+
+![](img/rsm.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Investigating and dealing with publication bias and other reporting biases in meta-analyses of health research: A review [(paper)](https://doi.org/10.1002/jrsm.1468)
+
+<br>
 
 
 ![](img/right_review.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Right Review [(website)](https://rightreview.knowledgetranslation.net/)
@@ -104,12 +109,18 @@ abstracts [(paper)](https://journals.plos.org/ploscompbiol/article?id=10.1371/jo
 <br>
 
 
-![](img/hilj.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis [(paper)](https://onlinelibrary.wiley.com/doi/full/10.1111/hir.12318)
+![](img/hilj.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}How to keep up to date with medical information using web-based resources: a systematised review and narrative synthesis [(paper)](https://doi.org/10.1111/hir.12318)
 
 
 <br>
 
 ![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for good research practice [(paper)](https://doi.org/10.1371/journal.pcbi.1010139)
+
+
+
+<br>
+
+![](img/ten_rules.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Ten simple rules for implementing open and reproducible research practices after attending a training course [(paper)](https://doi.org/10.1371/journal.pcbi.1010750)
 
 
 
