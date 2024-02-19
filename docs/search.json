@@ -88,7 +88,7 @@
     "href": "links.html#data-visualization",
     "title": "Useful links",
     "section": "Data visualization",
-    "text": "Data visualization\nThe R Graph Gallery (website)\n\n ggplot2: Elegant Graphics for Data Analysis (3e)\n(on-line version of the textbook-3rd edition)\n\n Modern Data Visualization with R\n(on-line version of the textbook)\n\n The Data Visualisation Catalogue (website)\n\n1 dataset 100 visualizations (website)\n\nTen simple rules for designing graphical abstracts (paper)\n\ncolorspace: A Toolbox for Manipulating and Assessing Colors and Palettes (website)"
+    "text": "Data visualization\nThe R Graph Gallery (website)\n\nThe Science of Visual Data Communication: What Works (paper)\n\n ggplot2: Elegant Graphics for Data Analysis (3e)\n(on-line version of the textbook-3rd edition)\n\n Modern Data Visualization with R\n(on-line version of the textbook)\n\n The Data Visualisation Catalogue (website)\n\n1 dataset 100 visualizations (website)\n\nTen simple rules for designing graphical abstracts (paper)\n\ncolorspace: A Toolbox for Manipulating and Assessing Colors and Palettes (website)"
   },
   {
     "objectID": "links.html#research-methods-and-open-science",

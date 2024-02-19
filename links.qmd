@@ -34,6 +34,14 @@ title-block-banner: false
 
 ![](img/r_gallery.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The R Graph Gallery [ (website)](https://r-graph-gallery.com/index.html)
 
+
+<br>
+
+
+![](img/pspi.jpg){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Science of Visual Data Communication: What Works [(paper)](https://doi.org/10.1177/15291006211051956)
+
+
+
 <br>
 
 ![](img/cover_ggplot2.jpg){style="float: left; margin-right: 20px;" fig-align="left" width="45"} ggplot2: Elegant Graphics for Data Analysis (3e)
