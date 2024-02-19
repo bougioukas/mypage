@@ -5,7 +5,7 @@ title-block-banner: false
 ---
 
 
-I have contributed to the following three R packages (all available open source at [github](https://github.com/bougioukas/)):
+I have contributed to the following three R packages (all available open source at [github](https://github.com/bougioukas/)).
 
 
 
@@ -29,7 +29,7 @@ ccaR provides functions for assessing and depicting primary study overlap across
 
 :::
 
-
+<br>
 
 
 ## Critical appraisal of systematic reviews based on the items of AMSTAR 2
@@ -52,6 +52,7 @@ We present a free, open-source R package called “amstar2Vis” that provides e
 :::
 
 
+<br>
 <br>
 
 ## Discrete color scales from music album covers
