@@ -5,7 +5,7 @@ title-block-banner: false
 ---
 
 
-I have contributed to the following three open-source R packages:
+I have contributed to the following three R packages (all available open source at [github](https://github.com/bougioukas/)):
 
 
 

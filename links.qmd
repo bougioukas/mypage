@@ -65,6 +65,11 @@ title-block-banner: false
 
 <br>
 
+![](img/fdv.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Fundamentals of Data Visualization [(on-line version of the textbook)](https://clauswilke.com/dataviz/)
+
+
+<br>
+
 ![](img/vis100.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}1 dataset 100 visualizations [ (website)](https://100.datavizproject.com/)
 
 <br>
