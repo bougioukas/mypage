@@ -69,9 +69,9 @@ I am a research methodologist with a focus on evidence synthesis, a biostatistic
 Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity, rigor and reproducibility of medical data analysis and visualization.
 
 
-I have extensive experience teaching Biostatistics and leading R practical sessions at the Aristotle University of Thessaloniki. Complementing my teaching role, I authored the open-access, online version of the textbook [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/). 
-Over the years, I've contributed to the R community by developing three open source R packages in collaborative and independently: [ccaR, amstar2Vis, musicolor](/packages.qmd).
-Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews ([OMG-database](https://overviews-database.netlify.app/)), along with a website, [RECREATING DATA VISUALIZATIONS IN R](https://bougioukas.github.io/storytelling/), where I recreate published data visualizations sourced from scholarly articles, websites, or media sources.
+I have extensive experience teaching Biostatistics and leading R practical sessions at the Aristotle University of Thessaloniki. Complementing my teaching role, I authored the free, online version of the textbook ["Practical Statistics in Medicine with R"](https://practical-stats-med-r.netlify.app/). 
+Over the years, I've contributed to the R community by developing three open source R packages in collaborative and independently: ["ccaR", "amstar2Vis", "musicolor"](/packages.qmd).
+Additionally, I maintain the first database that contains a list of a large number of healthcare overviews of reviews (["OMG-database"](https://overviews-database.netlify.app/)), along with a website, ["RECREATING DATA VISUALIZATIONS IN R"](https://bougioukas.github.io/storytelling/), where I recreate published data visualizations sourced from scholarly articles, websites, or media sources.
 
 
 `r fa("pen-to-square", fill = "#1DC5CE")` **Academic publications**
