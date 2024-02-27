@@ -17,6 +17,35 @@ Total citations as of February 2024:
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 591 (h-index = 10) 
 - [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 878 (h-index = 11, i10-index = 11) 
 
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-align: left
+#| fig-cap: "Source: Google Scholar Citations."
+#| fig-width: 6.0
+#| fig-height: 3.5
+
+library(highcharter)
+
+dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
+
+dat |> 
+  hchart('column', hcaes(x = year, y = citations), color = "#7652F8",
+         style = list(fontWeight = "bold", fontSize = "30px"),
+         name = "citations") |>  
+  hc_xAxis(title = list(text = "Citations by Year")) |> 
+  hc_add_theme(hc_theme_bloom())
+
+```
+
+
+
+
+
+
  
  
 
