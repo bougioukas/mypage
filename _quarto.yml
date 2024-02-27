@@ -90,5 +90,4 @@ format:
     footnotes-hover: true
     link-external-icon: false
     link-external-newwindow: true
-    code-link: false
 #    link-external-filter: '^(?:http:|https:)\/\/bougioukas\.github\.io\/custom'
