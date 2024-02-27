@@ -14,8 +14,8 @@ css: /custom.css
 
 Total citations as of February 2024:
 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 586 (h-index = 10) 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 873 (h-index = 11, i10-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 591 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 878 (h-index = 11, i10-index = 11) 
 
  
  
@@ -292,6 +292,17 @@ Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranid
 
 
 <center><hr style="width:50%"></center>
+
+
+
+
+K.P. Puchner, V. Giannakou, A. Veizis, **K. Bougioukas**, S. Hargreaves, A. Benos, E. Kondilis. COVID-19 vaccination roll-out and uptake among refugees and migrants in Greece: a retrospective analysis of national vaccination routine data. *Public Health* 2024. doi: [10.1016/j.puhe.2024.01.010](https://doi.org/10.1016/j.puhe.2024.01.010).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.puhe.2024.01.010" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.puhe.2024.01.010" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
 
 
 
