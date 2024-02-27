@@ -12,6 +12,18 @@ css: /custom.css
 {{< include /files/includes/_academic.qmd >}}
 
 
+
+
+
+
+
+::: {.grid}
+
+::: {.g-col-6}
+
+<br>
+<br>
+
 Total citations as of February 2024:
 
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 591 (h-index = 10) 
@@ -19,14 +31,18 @@ Total citations as of February 2024:
 
 
 
+:::
+  
+::: {.g-col-6}
+
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| fig-align: left
 #| fig-cap: "Source: Google Scholar Citations."
-#| fig-width: 3.0
-#| fig-height: 1.5
+#| out-width: 3.5in
+#| out-height: 2.5in
 
 #library(highcharter)
 library(htmlwidgets)
@@ -41,24 +57,34 @@ dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
 
 
 library(plotly)
+
 #g <- ggplot(dat, aes(x = year, y = citations))+
   #geom_col()
 
 #ggplotly(g)
 
-p <- plot_ly(dat,
+#plot_ly(dat, x = ~year, y = ~citations) |> 
+  #add_trace(type = "bar", hovertemplate = ~ paste("<b>Year:</b> ", year, "<br />", "<b>Citations:</b> ", citations), hoverinfo = "text")
+
+
+plot_ly(dat,
   x = ~year,
-  y = ~citations,
-  name = "SF Zoo",
-  type = "bar"
+  y = ~citations) |> 
+  add_bars(
+  color = I("#7652F8"),
+  #marker = list(color = "#7652F8"),
+hovertemplate = ~paste('<b>Citations</b>: %{y}',
+                        '<br><b>Year</b>: %{x} <extra></extra>'),
+width = 0.4
 )
 
-p
-
-
-
-
 ```
+
+
+:::
+  
+:::  
+
 
 
 
