@@ -41,19 +41,19 @@ dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
 
 
 library(plotly)
-g <- ggplot(dat, aes(x = year, y = citations))+
-  geom_col()
+#g <- ggplot(dat, aes(x = year, y = citations))+
+  #geom_col()
 
-ggplotly(g)
+#ggplotly(g)
 
-#p <- plot_ly(dat,
-  #x = ~year,
-  #y = ~citations,
-  #name = "SF Zoo",
-  #type = "bar"
-#)
+p <- plot_ly(dat,
+  x = ~year,
+  y = ~citations,
+  name = "SF Zoo",
+  type = "bar"
+)
 
-#p
+p
 
 
 
