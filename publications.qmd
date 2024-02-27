@@ -296,7 +296,7 @@ Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranid
 
 
 
-K.P. Puchner, V. Giannakou, A. Veizis, **K. Bougioukas**, S. Hargreaves, A. Benos, E. Kondilis. COVID-19 vaccination roll-out and uptake among refugees and migrants in Greece: a retrospective analysis of national vaccination routine data. *Public Health* 2024. doi: [10.1016/j.puhe.2024.01.010](https://doi.org/10.1016/j.puhe.2024.01.010).
+Puchner KP, Giannakou V, Veizis A, **Bougioukas K**, Hargreaves S, Benos A, Kondilis E. COVID-19 vaccination roll-out and uptake among refugees and migrants in Greece: a retrospective analysis of national vaccination routine data. *Public Health* 2024. doi: [10.1016/j.puhe.2024.01.010](https://doi.org/10.1016/j.puhe.2024.01.010).
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.puhe.2024.01.010" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.puhe.2024.01.010" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 
