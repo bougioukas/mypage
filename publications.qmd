@@ -32,12 +32,12 @@ library(highcharter)
 
 dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
 
-dat |> 
-  hchart('column', hcaes(x = year, y = citations), color = "#7652F8",
-         style = list(fontWeight = "bold", fontSize = "30px"),
-         name = "citations") |>  
-  hc_xAxis(title = list(text = "Citations by Year")) |> 
-  hc_add_theme(hc_theme_bloom())
+#dat |> 
+  #hchart('column', hcaes(x = year, y = citations), color = "#7652F8",
+         #style = list(fontWeight = "bold", fontSize = "30px"),
+         #name = "citations") |>  
+  #hc_xAxis(title = list(text = "Citations by Year")) |> 
+  #hc_add_theme(hc_theme_bloom())
 
 ```
 
