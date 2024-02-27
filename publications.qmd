@@ -28,7 +28,7 @@ Total citations as of February 2024:
 #| fig-width: 6.0
 #| fig-height: 3.5
 
-library(highcharter)
+#library(highcharter)
 
 dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
 
@@ -39,10 +39,15 @@ dat <- readxl::read_excel(here::here("data", "citations.xlsx"))
   #hc_xAxis(title = list(text = "Citations by Year")) |> 
   #hc_add_theme(hc_theme_bloom())
 
+
+library(plotly)
+g <- ggplot(dat, aes(x = year, y = citations))+
+  geom_col()
+
+ggplotly(g)
+
+
 ```
-
-
-
 
 
 
