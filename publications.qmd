@@ -19,7 +19,7 @@ css: /custom.css
 
 ::: {.grid}
 
-::: {.g-col-5}
+::: {.g-col-12 .g-col-md-5}
 
 <br>
 
@@ -31,7 +31,7 @@ css: /custom.css
 
 :::
   
-::: {.g-col-7}
+::: {.g-col-12 .g-col-md-7}
 
 ```{r}
 #| echo: false
