@@ -52,11 +52,16 @@ plot_ly(dat,
   add_bars(
   color = I("#7652F8"),
   #marker = list(color = "#7652F8"),
-hovertemplate = ~paste('<b>Citations</b>: %{y}',
-                        '<br><b>Year</b>: %{x} <extra></extra>'),
+hovertemplate = ~paste('<b>Citations</b>: %{y} <extra></extra>'),
+                        #'<br><b>Year</b>: %{x} <extra></extra>'),
 width = 0.4
 ) |> 
-  layout(margin = list(b = 90),
+  config(modeBarButtonsToRemove = c('select', 'hoverClosestCartesian', 
+                                    'hoverCompareCartesian',
+                                    'lasso2d', 'toImage'),
+         displaylogo = FALSE) |> 
+  layout(margin = list(b = 90), hovermode = 'x',
+         xaxis = list(fixedrange = TRUE), yaxis = list(fixedrange = TRUE),
     annotations = list(x = 1, y = -0.36, text = "Source: Google Scholar Citations.", 
       showarrow = F, xref='paper', yref='paper', 
       xanchor='right', yanchor='auto', xshift=0, yshift=0,
