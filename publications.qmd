@@ -24,9 +24,9 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 878 (h-index = 11) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 598 (h-index = 10) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 536 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 880 (h-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 600 (h-index = 10) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 537 (h-index = 10) 
 - [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 731 (h-index = 10) 
 
 :::
