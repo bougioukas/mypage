@@ -376,7 +376,7 @@ Seliniotaki AK, **Bougioukas KI**, Lithoxopoulou M, Moutzouri S, Diamanti E, Zia
 
 ## Books and Chapters
 
-![](img/img_mybook.png){style="float: left; margin-right: 20px;" fig-align="left" width="80"} **Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in press from Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.
+![](img/img_mybook.png){style="float: left; margin-right: 20px;" fig-align="left" width="80"} **Bougioukas K**. [Practical Statistics in Medicine with R](https://practical-stats-med-r.netlify.app/) (in progress; Chapman & Hall/CRC Press | Taylor & Francis Group) 2024.
 
 
  
