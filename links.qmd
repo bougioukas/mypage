@@ -154,8 +154,12 @@ abstracts [(paper)](https://doi.org/10.1371/journal.pcbi.1011789)
 
 ![](img/reproducibilitea.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}ReproducibiliTea [(website)](https://reproducibilitea.org/)
 
+<br>
+
+![](img/octopus.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Octopus platform [(website)](https://www.octopus.ac/)
 
 
+<br>
 
-
+![](img/searchRxiv.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}searchRxiv Sharing search strategies for better evidence synthesis [(website)](https://www.cabidigitallibrary.org/journal/searchrxiv)
 
