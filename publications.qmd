@@ -343,7 +343,6 @@ Talimtzi P, Ntolkeras A, Kostopoulos G, **Bougioukas KI**, Pagkalidou E, Ouranid
 
 
 
-
 **Bougioukas KI**, Karakasis P, Pamporis K, Bouras E, Haidich A-B. amstar2Vis: an R package for presenting the critical appraisal of systematic reviews based on the items of AMSTAR 2. *Research Synthesis Methods* 2024. doi: [10.1002/jrsm.1705](https://doi.org/10.1002/jrsm.1705).
 
 <span class="__dimensions_badge_embed__" data-doi="10.1002/jrsm.1705" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1002/jrsm.1705" data-hide-no-mentions="true" class="altmetric-embed"></div>  
