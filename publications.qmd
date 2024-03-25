@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 915 (h-index = 11) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 616 (h-index = 10) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 551 (h-index = 10) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 761 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 928 (h-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 622 (h-index = 10) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 553 (h-index = 10) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 769 (h-index = 10) 
 
 :::
   
