@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 928 (h-index = 11) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 622 (h-index = 10) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 553 (h-index = 10) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 769 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 934 (h-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 628 (h-index = 10) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 560 (h-index = 10) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 773 (h-index = 10) 
 
 :::
   
@@ -369,6 +369,12 @@ Seliniotaki AK, **Bougioukas KI**, Lithoxopoulou M, Moutzouri S, Diamanti E, Zia
 
 <center><hr style="width:50%"></center>
 
+
+
+Overview of systematic reviews (Umbrella review) comparing endovascular to best medical treatment for large-vessel occlusion acute ischemic stroke. *Therapeutic Advances in Neurological Disorders* 2004 (accepted).
+
+
+<center><hr style="width:50%"></center>
 
 
  
