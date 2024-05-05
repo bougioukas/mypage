@@ -14,7 +14,7 @@ css: /custom.css
 
 <br>
 
-## Total citations as of April 2024
+## Total citations as of May 2024
 
 
 ::: {.grid}
@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 957 (h-index = 11) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 655 (h-index = 10) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 581 (h-index = 10) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 797 (h-index = 10) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 976 (h-index = 11) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 664 (h-index = 10) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 584 (h-index = 10) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 809 (h-index = 10) 
 
 :::
   
@@ -371,10 +371,21 @@ Seliniotaki AK, **Bougioukas KI**, Lithoxopoulou M, Moutzouri S, Diamanti E, Zia
 
 
 
-Overview of systematic reviews (Umbrella review) comparing endovascular to best medical treatment for large-vessel occlusion acute ischemic stroke. *Therapeutic Advances in Neurological Disorders* 2004 (accepted).
+Safouris A, Palaiodimou L, Katsanos AH, Kargiotis O, **Bougioukas KI**, Psychogios K, Sidiropoulou T, Spiliopoulos S, Psychogios M-N, Magoufis G, Turc G, Tsivgoulis G. Overview of systematic reviews comparing endovascular to best medical treatment for large-vessel occlusion acute ischaemic stroke: an umbrella review. *Therapeutic Advances in Neurological Disorders* 2004.
+doi: [10.1177/17562864241246938](https://doi.org/10.1177/17562864241246938).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1177/17562864241246938" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1177/17562864241246938" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 
 
 <center><hr style="width:50%"></center>
+
+Pamporis K, Karakasis P, Sagris M, Zarifis I, **Bougioukas KI**, Pagkalidou E, Milaras N, Samaras A, Theofilis P, Fragakis N, Tousoulis D, Xanthos T, Giannakoulas G. Mineralocorticoid receptor antagonists in heart failure with reduced ejection fraction: a systematic review and network meta-analysis of 32 randomized trials. *Current Problems in Cardiology* 2024; 0:0–0. doi: [10.1016/j.cpcardiol.2024.102615](https://doi.org/10.1016/j.cpcardiol.2024.102615).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.cpcardiol.2024.102615" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1016/j.cpcardiol.2024.102615" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
 
 
  
