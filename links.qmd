@@ -16,6 +16,11 @@ title-block-banner: false
 
 ![](img/stats_in_med_journal.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Tutorials in Biostatistics Papers [(collection of papers)](https://onlinelibrary.wiley.com/page/journal/10970258/homepage/tutorials.htm)
 
+<br>
+
+
+![](img/bbr.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Biostatistics for Biomedical Research [(on-line)](https://hbiostat.org/bbr/)
+
 
 <br>
 
