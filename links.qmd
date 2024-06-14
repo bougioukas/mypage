@@ -19,7 +19,7 @@ title-block-banner: false
 <br>
 
 
-![](img/bbr.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Biostatistics for Biomedical Research [(on-line)](https://hbiostat.org/bbr/)
+![](img/bbr.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Biostatistics for Biomedical Research [(on-line handbook)](https://hbiostat.org/bbr/)
 
 
 <br>
