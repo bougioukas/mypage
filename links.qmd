@@ -105,7 +105,7 @@ abstracts [(paper)](https://doi.org/10.1371/journal.pcbi.1011789)
 
 <br>
 
-![](img/turing.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Turing Way handbook to reproducible, ethical and collaborative data science [(online handbook)](https://the-turing-way.netlify.app/index.html)
+![](img/turing.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}The Turing Way handbook to reproducible, ethical and collaborative data science [(online handbook)](https://book.the-turing-way.org/)
 
 <br>
 
