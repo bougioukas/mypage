@@ -66,8 +66,7 @@ library(fontawesome)
 ## About me
 
 I am a research methodologist with a focus on evidence synthesis, a biostatistician, and an independent data visualization enthusiast based in Greece.
-Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity, rigor and reproducibility of medical data analysis and visualization.
-
+Driven by a profound interest in meta-research within the medical domain, I am deeply engaged in exploring avenues to enhance the integrity, rigor, and reproducibility of medical data analysis and visualization. Recently, I have also begun exploring the applications of artificial intelligence in healthcare and evidence synthesis tasks, aiming to optimize decision-making processes and research outcomes.
 
 I have extensive experience teaching Biostatistics and leading R practical sessions at the Aristotle University of Thessaloniki. Complementing my teaching role, I authored the free, online version of the textbook ["Practical Statistics in Medicine with R"](https://practical-stats-med-r.netlify.app/). 
 Over the years, I've contributed to the R community by developing three open source R packages in collaborative and independently: ["ccaR", "amstar2Vis", "musicolor"](/packages.qmd).
