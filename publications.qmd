@@ -386,7 +386,7 @@ Pamporis K, Karakasis P, Sagris M, Zarifis I, **Bougioukas KI**, Pagkalidou E, M
 
 <center><hr style="width:50%"></center>
 
-Lunny C, Kanji S, Thabet P, Haidich A-B, **Bougioukas KI**, Pieper D. Assessing the methodological quality and risk of bias of systematic reviews: primer for authors of overviews of systematic reviews *BMJ Medicine* 2024; 0:0–0. doi: [10.1136/bmjmed-2023-000604](https://doi.org/10.1136/bmjmed-2023-000604).
+Lunny C, Kanji S, Thabet P, Haidich A-B, **Bougioukas KI**, Pieper D. Assessing the methodological quality and risk of bias of systematic reviews: primer for authors of overviews of systematic reviews. *BMJ Medicine* 2024; 0:0–0. doi: [10.1136/bmjmed-2023-000604](https://doi.org/10.1136/bmjmed-2023-000604).
 
 <span class="__dimensions_badge_embed__" data-doi="10.1136/bmjmed-2023-000604" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1136/bmjmed-2023-000604" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 

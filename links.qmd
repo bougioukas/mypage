@@ -147,6 +147,11 @@ abstracts [(paper)](https://doi.org/10.1371/journal.pcbi.1011789)
 
 ![](img/equator.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}EQUATOR network [(website)](https://www.equator-network.org/)
  
+<br>
+
+![](img/latitudes.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}LATITUDES network [(website)](https://www.latitudes-network.org/)
+ 
+ 
 <br> 
 
 ![](img/dora.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"} Declaration on Research Assessment (DORA) [(website)](https://sfdora.org/)
