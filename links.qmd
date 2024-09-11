@@ -139,6 +139,12 @@ abstracts [(paper)](https://doi.org/10.1371/journal.pcbi.1011789)
 
 ![](img/cochrane.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Cochrane Handbook for Systematic Reviews of Interventions [(online handbook)](https://training.cochrane.org/handbook)
 
+
+<br>
+
+![](img/testing_treatments.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}Testing Treatments (available in 15 languages). [(online handbook)](https://training.cochrane.org/online-learning/knowledge-translation/testing-treatments)
+
+
 <br>
 
 ![](img/jbi.png){style="float: left; margin-right: 20px;" fig-align="left" width="45"}JBI Manual for Evidence Synthesis [(online manual)](https://jbi-global-wiki.refined.site/space/MANUAL)

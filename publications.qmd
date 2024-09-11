@@ -14,7 +14,7 @@ css: /custom.css
 
 <br>
 
-## Total citations as of June 2024
+## Total citations as of September 2024
 
 
 ::: {.grid}
