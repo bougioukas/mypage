@@ -77,7 +77,6 @@ width = 0.4
 
 
 
-
 ## Peer-reviewed Journal Papers
 
 **Bougioukas KI**, Liakos A, Tsapas A, Ntzani E, Haidich A-B. Preferred reporting items for overviews of systematic reviews including harms checklist: a pilot tool to be used for balanced reporting of benefits and harms. *Journal of Clinical Epidemiology* 2018;93:9–24. doi: [10.1016/j.jclinepi.2017.10.002](https://doi.org/10.1016/j.jclinepi.2017.10.002). 
