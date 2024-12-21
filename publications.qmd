@@ -14,7 +14,7 @@ css: /custom.css
 
 <br>
 
-## Total citations as of September 2024
+## Total citations as of December 2024
 
 
 ::: {.grid}
@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1198 (h-index = 12) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 815 (h-index = 11) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 743 (h-index = 10) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 999 (h-index = 12) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1333 (h-index = 13) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 921 (h-index = 11) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 853 (h-index = 12) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1122 (h-index = 12) 
 
 :::
   
