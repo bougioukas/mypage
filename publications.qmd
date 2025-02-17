@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1333 (h-index = 13) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 921 (h-index = 11) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 853 (h-index = 12) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1122 (h-index = 12) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1412 (h-index = 13) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 977 (h-index = 12) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 910 (h-index = 12) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1197 (h-index = 13) 
 
 :::
   
@@ -385,13 +385,33 @@ Pamporis K, Karakasis P, Sagris M, Zarifis I, **Bougioukas KI**, Pagkalidou E, M
 
 <center><hr style="width:50%"></center>
 
-Lunny C, Kanji S, Thabet P, Haidich A-B, **Bougioukas KI**, Pieper D. Assessing the methodological quality and risk of bias of systematic reviews: primer for authors of overviews of systematic reviews. *BMJ Medicine* 2024; 0:0–0. doi: [10.1136/bmjmed-2023-000604](https://doi.org/10.1136/bmjmed-2023-000604).
+Lunny C, Kanji S, Thabet P, Haidich A-B, **Bougioukas KI**, Pieper D. Assessing the methodological quality and risk of bias of systematic reviews: primer for authors of overviews of systematic reviews. *BMJ Medicine* 2024; 3. doi: [10.1136/bmjmed-2023-000604](https://doi.org/10.1136/bmjmed-2023-000604).
 
 <span class="__dimensions_badge_embed__" data-doi="10.1136/bmjmed-2023-000604" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1136/bmjmed-2023-000604" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 
 
 <center><hr style="width:50%"></center>
 
+Seliniotaki AK, Lithoxopoulou M, Virgiliou C, Gika H, Dokoumetzidis A, **Bougioukas KI**, et al. Efficacy and Safety of Mydriatic Microdrops for Retinopathy of Prematurity Screening: The MyMiROPS Randomized Clinical Trial. *JAMA Ophthalmology* 2024. [10.1001/jamaophthalmol.2024.5462](https://doi.org/10.1001/jamaophthalmol.2024.5462).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1001/jamaophthalmol.2024.5462" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1001/jamaophthalmol.2024.5462" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+Bartzoulianou RC, Coleman AL, Wilson MR, Harris A, **Bougioukas KI**, Pappas T, et al. Factors Associated with Corneal Hysteresis in an Elderly White Population: The Thessaloniki Eye Study. *Journal of Glaucoma* 2025; doi: [10.1097/IJG.0000000000002541](https://doi.org/10.1097/IJG.0000000000002541).
+
+<span class="__dimensions_badge_embed__" data-doi="10.1097/IJG.0000000000002541" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1097/IJG.0000000000002541" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+Karakosta C, Samiotaki M, Bisoukis A, **Bougioukas KI**, Panayotou G, Papaconstantinou D, et al. Differential Signaling Pathways Identified in Aqueous Humor, Anterior Capsule, and Crystalline Lens of Age-Related, Diabetic, and Post-Vitrectomy Cataract. *Proteomes* 2025;13:7. [10.3390/proteomes13010007](https://doi.org/10.3390/proteomes13010007).
+
+<span class="__dimensions_badge_embed__" data-doi="10.3390/proteomes13010007" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.3390/proteomes13010007" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
 
 
  
