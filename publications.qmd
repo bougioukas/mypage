@@ -14,7 +14,7 @@ css: /custom.css
 
 <br>
 
-## Total citations as of December 2024
+## Total citations as of March 2025
 
 
 ::: {.grid}
@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1412 (h-index = 13) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 977 (h-index = 12) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 910 (h-index = 12) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1197 (h-index = 13) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1419 (h-index = 13) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 989 (h-index = 12) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 924 (h-index = 12) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1217 (h-index = 13) 
 
 :::
   
@@ -409,6 +409,14 @@ Bartzoulianou RC, Coleman AL, Wilson MR, Harris A, **Bougioukas KI**, Pappas T, 
 Karakosta C, Samiotaki M, Bisoukis A, **Bougioukas KI**, Panayotou G, Papaconstantinou D, et al. Differential Signaling Pathways Identified in Aqueous Humor, Anterior Capsule, and Crystalline Lens of Age-Related, Diabetic, and Post-Vitrectomy Cataract. *Proteomes* 2025;13:7. [10.3390/proteomes13010007](https://doi.org/10.3390/proteomes13010007).
 
 <span class="__dimensions_badge_embed__" data-doi="10.3390/proteomes13010007" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.3390/proteomes13010007" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+Anestiadou E, Stamiris S, Ioannidis O, Symeonidis S, Bitsianis S, **Bougioukas K**, Karagiannis T, Kotidis E, Pramateftakis M-G, Mantzoros I, et al. Comparison of Negative Pressure Wound Therapy Systems and Conventional Non-Pressure Dressings on Surgical Site Infection Rate After Stoma Reversal: Systematic Review and Meta-Analysis of Randomized Controlled Trials. *Journal of Clinical Medicine* 2025; 14(5):1654. [10.3390/jcm14051654](https://doi.org/10.3390/jcm14051654).
+
+
+<span class="__dimensions_badge_embed__" data-doi="10.3390/jcm14051654" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.3390/jcm14051654" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 
 
 <center><hr style="width:50%"></center>
