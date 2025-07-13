@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1419 (h-index = 13) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 989 (h-index = 12) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 924 (h-index = 12) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1217 (h-index = 13) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1657 (h-index = 16) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 1160 (h-index = 13) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 1097 (h-index = 12) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1413 (h-index = 14) 
 
 :::
   
@@ -420,6 +420,24 @@ Anestiadou E, Stamiris S, Ioannidis O, Symeonidis S, Bitsianis S, **Bougioukas K
 
 
 <center><hr style="width:50%"></center>
+
+Ying X, **Bougioukas KI**, Pieper D, Mayo-Wilson E. Weighted corrected covered area (wCCA): A measure of informational overlap among reviews. *Research Synthesis Methods* 2025; 16(4):701-708. [10.1017/rsm.2025.19](https://doi.org/10.1017/rsm.2025.19).
+
+
+<span class="__dimensions_badge_embed__" data-doi="10.1017/rsm.2025.19" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1017/rsm.2025.19" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+
+Karvouniaris M, Koulenti D, **Bougioukas KI**, Pagkalidou E, Paramythiotou E, Haidich A-B. Nebulized Antibiotics for Preventing and Treating Gram-Negative Respiratory Infections in Critically Ill Patients: An Overview of Reviews. *Antibiotics* 2025; 14(4):370. [10.3390/antibiotics14040370](https://doi.org/10.3390/antibiotics14040370).
+
+
+<span class="__dimensions_badge_embed__" data-doi="10.3390/antibiotics14040370" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.3390/antibiotics14040370" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
 
 
  
