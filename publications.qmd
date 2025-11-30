@@ -14,7 +14,7 @@ css: /custom.css
 
 <br>
 
-## Total citations as of October 2025
+## Total citations as of November 2025
 
 
 ::: {.grid}
@@ -24,10 +24,10 @@ css: /custom.css
 <br>
 
 
-- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1865 (h-index = 16) 
-- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 1294 (h-index = 13) 
-- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 1224 (h-index = 14) 
-- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1586 (h-index = 15) 
+- [Google Scholar](https://scholar.google.com/citations?user=gMbkadsAAAAJ): 1976 (h-index = 18) 
+- [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200209201): 1383 (h-index = 14) 
+- [Web of Science](https://www.webofscience.com/wos/author/record/ABE-7673-2020): 1295 (h-index = 14) 
+- [Research Gate](https://www.researchgate.net/profile/Konstantinos-Bougioukas): 1678 (h-index = 16) 
 
 :::
   
@@ -443,6 +443,16 @@ Karakosta C, Kiraly P, Bisoukis A, **Bougioukas KI**, Fischer D.M. Morphological
 
 
 <span class="__dimensions_badge_embed__" data-doi="10.1007/s40123-025-01226-8" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1007/s40123-025-01226-8" data-hide-no-mentions="true" class="altmetric-embed"></div>  
+
+
+<center><hr style="width:50%"></center>
+
+
+Karakosta C, Samiotaki M, Bisoukis A, **Bougioukas KI**, Panayotou G, Kyriakidou N, Moschou K, Moschos M.M. Comparative Proteomic Analysis of Aqueous Humor, Anterior Lens Capsules, and Crystalline Lenses in Different Human Cataract Subtypes Versus Healthy Controls. *Proteomes* 2025; 13(4):62. 
+[10.3390/proteomes13040062](https://doi.org/10.3390/proteomes13040062).
+
+
+<span class="__dimensions_badge_embed__" data-doi="10.3390/proteomes13040062" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.3390/proteomes13040062" data-hide-no-mentions="true" class="altmetric-embed"></div>  
 
 
 <center><hr style="width:50%"></center>
