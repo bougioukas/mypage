@@ -10,6 +10,8 @@ css: /custom.css
 #draft: true
 ---
 
+​
+
 ## Permutation Tests
 
 Permutation tests, also known as randomization or re-randomization tests, approximate the null distribution of a test statistic by resampling in a manner consistent with the null hypothesis, a concept originating in Fisher’s early work on randomized experiments. They are especially useful when parametric assumptions, such as normality, are questionable or when sample sizes are small.
@@ -111,7 +113,7 @@ In this case, we only need to determine which observations go into the first gro
 $$M = \ ^nC_{n_1} = \binom{n}{n_1} = \frac{n!}{n_1! \, (n - n_1)!}$$ This represents choosing $n_1$ observations out of $n$ to be in Group 1. The remaining $n_2 = n - n_1$ observations then automatically form Group 2.
 
 ::: callout-note
-# A simple Example
+# A simple example
 
 Let's consider a total of $n=4$ observations that are to be split into two groups: Group A with $n_1=2$ observations and Group B with $n_2=2$ observations. The pooled data set, $\mathbf{X}$, is fixed as the set of values $\{a_1, a_2, b_1, b_2\}$.
 
@@ -432,7 +434,7 @@ Finally, we create the histogram of the computed T statistics that is the exact 
 ```{r}
 hist(T_perm, breaks = 50, col = rgb(0.8, 1, 0.8), 
      main = "Exact Permutation Distribution",
-     xlab = "Test Statistic", xlim = c(-15, 15))
+     xlab = "Test Statistic T", xlim = c(-15, 15))
 ```
 
 **Step 5: Calculate the p-value**
@@ -444,7 +446,9 @@ p_value_exact <- (sum(T_perm >= T_obs) + sum(T_perm <= -T_obs)) / M
 p_value_exact
 ```
 
-The extreme values of T statistic, which are unlikely under the null hypothesis, are highlighted in a light red color. The upper tail corresponds to $T \ge T_{\text{obs}}$, and the lower tail corresponds to $T \le -T_{\text{obs}}$.
+​
+
+The extreme values of T statistic, which are unlikely under the null hypothesis, are highlighted in a light red color. The upper tail corresponds to $T \ge T^{\text{obs}}$, and the lower tail corresponds to $T \le -T^{\text{obs}}$.
 
 ```{r}
 # Histogram of permutation distribution with colored tails
@@ -453,7 +457,7 @@ colors <- ifelse(h$mids >= T_obs | h$mids <= -T_obs,
                  rgb(1, 0, 0, 0.5), rgb(0.8, 1, 0.8))
 
 plot(h, col = colors, main = "Exact Permutation Distribution",
-     xlab = "Test Statistic", xlim = c(-15, 15))
+     xlab = "Test Statistic T", xlim = c(-15, 15))
 abline(v = T_obs, col = "darkred", lwd = 2, lty = 2)
 text(T_obs, max(h$counts) * 0.95,
      bquote(T^{obs} == .(round(T_obs, 2))),

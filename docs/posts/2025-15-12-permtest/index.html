@@ -285,6 +285,7 @@ window.Quarto = {
 </header>
 
 
+<p>​</p>
 <section id="permutation-tests" class="level2">
 <h2 class="anchored" data-anchor-id="permutation-tests">Permutation Tests</h2>
 <p>Permutation tests, also known as randomization or re-randomization tests, approximate the null distribution of a test statistic by resampling in a manner consistent with the null hypothesis, a concept originating in Fisher’s early work on randomized experiments. They are especially useful when parametric assumptions, such as normality, are questionable or when sample sizes are small.</p>
@@ -349,7 +350,7 @@ Z_i =
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-A simple Example
+A simple example
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -730,7 +731,7 @@ p
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(T_perm, <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">col =</span> <span class="fu">rgb</span>(<span class="fl">0.8</span>, <span class="dv">1</span>, <span class="fl">0.8</span>), </span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Exact Permutation Distribution"</span>,</span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Test Statistic"</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">15</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Test Statistic T"</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">15</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -748,7 +749,8 @@ p
 <pre><code>[1] 0.01787102</code></pre>
 </div>
 </div>
-<p>The extreme values of T statistic, which are unlikely under the null hypothesis, are highlighted in a light red color. The upper tail corresponds to <span class="math inline">\(T \ge T_{\text{obs}}\)</span>, and the lower tail corresponds to <span class="math inline">\(T \le -T_{\text{obs}}\)</span>.</p>
+<p>​</p>
+<p>The extreme values of T statistic, which are unlikely under the null hypothesis, are highlighted in a light red color. The upper tail corresponds to <span class="math inline">\(T \ge T^{\text{obs}}\)</span>, and the lower tail corresponds to <span class="math inline">\(T \le -T^{\text{obs}}\)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of permutation distribution with colored tails</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="fu">hist</span>(T_perm, <span class="at">breaks =</span> <span class="dv">50</span>, <span class="at">plot =</span> <span class="cn">FALSE</span>)</span>
@@ -756,7 +758,7 @@ p
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">rgb</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="fl">0.5</span>), <span class="fu">rgb</span>(<span class="fl">0.8</span>, <span class="dv">1</span>, <span class="fl">0.8</span>))</span>
 <span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(h, <span class="at">col =</span> colors, <span class="at">main =</span> <span class="st">"Exact Permutation Distribution"</span>,</span>
-<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Test Statistic"</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">15</span>))</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Test Statistic T"</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">15</span>))</span>
 <span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> T_obs, <span class="at">col =</span> <span class="st">"darkred"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
 <span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(T_obs, <span class="fu">max</span>(h<span class="sc">$</span>counts) <span class="sc">*</span> <span class="fl">0.95</span>,</span>
 <span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>     <span class="fu">bquote</span>(T<span class="sc">^</span>{obs} <span class="sc">==</span> .(<span class="fu">round</span>(T_obs, <span class="dv">2</span>))),</span>
