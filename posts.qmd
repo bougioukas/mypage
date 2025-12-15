@@ -1,6 +1,6 @@
 ---
 title: "What’s New & Updated"
-subtitle: "Posts about papers, data visualizations, news, and more"
+subtitle: "Posts about papers, statistics, data visualizations, news, and more"
 #description-meta: "{{< meta description-meta >}}"
 listing:
   contents: posts

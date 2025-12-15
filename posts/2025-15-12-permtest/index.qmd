@@ -4,7 +4,7 @@ description: "Permutation tests pproximate the null distribution of a test stati
 author: 
     - name: Konstantinos Bougioukas 
 date: "2025-12-15"
-categories: [visualization]
+categories: [Statistics]
 image: "permtest.png"
 css: /custom.css
 #draft: true
