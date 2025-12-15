@@ -387,7 +387,7 @@ p
 +
 \mathbf{I}\!\left(T^{(m)} \le -T^{\text{obs}}\right)
 \Big],
-&amp; if \ \ T_{\text{obs}} &gt; 0,
+&amp; if \ \ T^{\text{obs}} &gt; 0,
 \\[1.2em]
 \displaystyle
 \frac{1}{M}
@@ -397,7 +397,7 @@ p
 +
 \mathbf{I}\!\left(T^{(m)} \ge -T^{\text{obs}}\right)
 \Big],
-&amp; if \ \ T_{\text{obs}} &lt; 0.
+&amp; if \ \ T^{\text{obs}} &lt; 0.
 \end{cases}
 \]</span></p>
 <p>or more compactly</p>
@@ -758,8 +758,9 @@ p
 <span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(h, <span class="at">col =</span> colors, <span class="at">main =</span> <span class="st">"Exact Permutation Distribution"</span>,</span>
 <span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Test Statistic"</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">15</span>, <span class="dv">15</span>))</span>
 <span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> T_obs, <span class="at">col =</span> <span class="st">"darkred"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(T_obs, <span class="fu">max</span>(h<span class="sc">$</span>counts) <span class="sc">*</span> <span class="fl">0.98</span>, <span class="fu">paste0</span>(<span class="st">"T_obs = "</span>, T_obs), </span>
-<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"darkred"</span>, <span class="at">cex =</span> <span class="dv">1</span>, <span class="at">font =</span> <span class="dv">2</span>, <span class="at">adj =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(T_obs, <span class="fu">max</span>(h<span class="sc">$</span>counts) <span class="sc">*</span> <span class="fl">0.95</span>,</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>     <span class="fu">bquote</span>(T<span class="sc">^</span>{obs} <span class="sc">==</span> .(<span class="fu">round</span>(T_obs, <span class="dv">2</span>))),</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"darkred"</span>, <span class="at">cex =</span> <span class="dv">1</span>, <span class="at">font =</span> <span class="dv">2</span>, <span class="at">adj =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -811,7 +812,7 @@ mean of x mean of y
    64.125    53.375 </code></pre>
 </div>
 </div>
-<p>In this example, the results are highly consistent. Both the exact Permutation Test (<span class="math inline">\(p = 0.0179\)</span>) and the two-sample T-test (<span class="math inline">\(p = 0.0192\)</span>) yield exceptionally close p-values.</p>
+<p>In this example, the results are highly consistent. Both the exact Permutation Test (<span class="math inline">\(p = 0.0179\)</span>) and the two-sample T-test (<span class="math inline">\(p = 0.0192\)</span>) yield close p-values.</p>
 
 
 </section>

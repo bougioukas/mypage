@@ -157,7 +157,7 @@ p
 +
 \mathbf{I}\!\left(T^{(m)} \le -T^{\text{obs}}\right)
 \Big],
-& if \ \ T_{\text{obs}} > 0,
+& if \ \ T^{\text{obs}} > 0,
 \\[1.2em]
 \displaystyle
 \frac{1}{M}
@@ -167,7 +167,7 @@ p
 +
 \mathbf{I}\!\left(T^{(m)} \ge -T^{\text{obs}}\right)
 \Big],
-& if \ \ T_{\text{obs}} < 0.
+& if \ \ T^{\text{obs}} < 0.
 \end{cases}
 $$
 
@@ -455,7 +455,8 @@ colors <- ifelse(h$mids >= T_obs | h$mids <= -T_obs,
 plot(h, col = colors, main = "Exact Permutation Distribution",
      xlab = "Test Statistic", xlim = c(-15, 15))
 abline(v = T_obs, col = "darkred", lwd = 2, lty = 2)
-text(T_obs, max(h$counts) * 0.98, paste0("T_obs = ", T_obs), 
+text(T_obs, max(h$counts) * 0.95,
+     bquote(T^{obs} == .(round(T_obs, 2))),
      col = "darkred", cex = 1, font = 2, adj = c(0.5, 0))
 
 ```
@@ -487,6 +488,6 @@ Let's formally apply the two-sample t-test to compare its p-value with that of t
 t.test(X1, X2)
 ```
 
-In this example, the results are highly consistent. Both the exact Permutation Test ($p = 0.0179$) and the two-sample T-test ($p = 0.0192$) yield exceptionally close p-values.
+In this example, the results are highly consistent. Both the exact Permutation Test ($p = 0.0179$) and the two-sample T-test ($p = 0.0192$) yield close p-values.
 
 
