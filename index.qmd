@@ -85,6 +85,7 @@ I have contributed to [more than 40 peer-reviewed research papers](/publications
 
 ## Recent Posts
 Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;,
+&nbsp;[Statistics](posts.qmd#category=Statistics)&nbsp;,
 &nbsp;[Visualizations](posts.qmd#category=visualization)&nbsp;,
 &nbsp;[News](posts.qmd#category=news)&nbsp;, and &nbsp;[More »](/posts.qmd)
 
