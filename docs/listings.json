@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2025-15-12-permtest/index.html",
       "/posts/2025-11-30-qqplot/index.html",
       "/posts/2024-02-09-cambridge/index.html",
       "/posts/2024-02-07-covid/index.html",
@@ -11,6 +12,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2025-15-12-permtest/index.html",
       "/posts/2025-11-30-qqplot/index.html",
       "/posts/2024-02-09-cambridge/index.html",
       "/posts/2024-02-07-covid/index.html",
