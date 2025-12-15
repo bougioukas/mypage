@@ -1,6 +1,6 @@
 ---
 title: "Two-sample permutation test: How it works"
-description: "Permutation tests pproximate the null distribution of a test statistic by repeatedly resampling the data in a way that is consistent with the null hypothesis."
+description: "Permutation tests approximate the null distribution of a test statistic by repeatedly resampling the data in a way that is consistent with the null hypothesis."
 author: 
     - name: Konstantinos Bougioukas 
 date: "2025-12-15"
