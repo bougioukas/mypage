@@ -1,0 +1,398 @@
+---
+title: "Perceptron: the first artificial neuron"
+description: "The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1957 as a computational approach inspired by biological neurons."
+author: 
+    - name: Konstantinos Bougioukas 
+date: "2026-01-03"
+categories: [Statistics]
+image: "perceptron.png"
+css: /custom.css
+#draft: true
+---
+
+​
+
+## The perceptron
+
+The perceptron is one of the earliest and simplest models of an artificial neural network. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.
+
+At its heart, the perceptron learns to separate data into two classes by finding a linear boundary that divides the input space. Each prediction is obtained by combining the inputs linearly and passing the result through a threshold function that produces a discrete output.
+
+
+
+### How it works
+
+The *Perceptron* can be viewed as a simple directed graph, with edges connecting each input to the output and parameterized by weights. The output of the perceptron depends both on the values of the input nodes and on the weights associated with the incoming edges, which control how strongly each input influences the final decision.
+
+
+![Schematic of a simple Perceptron model.](perceptron.png){width=50%}
+
+​
+
+
+### Basic set up and notation
+
+The *Perceptron* takes multiple input features, multiplies each by an associated weight, sums these weighted inputs along with a bias term, and then applies a threshold decision (activation) function to determine the output class. This process can be described compactly using vector notation.
+
+Suppose our dataset consists of $P$ input-output pairs 
+
+$$(\mathbf{x_1}, y_1), (\mathbf{x_2}, y_2), ..., (\mathbf{x_P}, y_P)$$ 
+
+or equivalently, 
+
+
+$$\left\{ \left(\mathbf{x}_{p},y_{p}\right)\right\} _{p=1}^{P}$$
+
+where $\mathbf{x_p}$ and $y_p$ denote the input and output of the $p-$observation, respectively.
+
+Each input $\mathbf{x_p}$ is a column vector of length $N +1$, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model: 
+
+$$\mathbf{x_p} = \begin{bmatrix} 1 \\ x_{1,\ p} \\ x_{2,\ p} \\\vdots \\ x_{N,\ P} \end{bmatrix}$$
+
+The model parameters—the bias and feature weights—are collected into a single column vector:
+
+$$\mathbf{w} = \begin{bmatrix} w_0 \\ w_1 \\ w_2 \\ \vdots \\ w_N \end{bmatrix}$$
+
+
+The target labels are represented by a vector $\mathbf{y}$ of length $P$ : 
+
+$$\mathbf{y} = \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_P \end{bmatrix}$$
+
+
+### Linear Combination
+
+For a single observation $p$, the perceptron computes a net input $z_p$ by taking the dot product of the weight vector and the input vector:
+
+
+$$z_p = \mathbf{w}^{\mathsf{T}}\mathbf{x}_p$$
+
+where the superscript $\mathsf{T}$ denotes transposition.
+
+
+Expanding this expression makes the computation explicit:
+
+$$\begin{aligned}
+z_p &= \begin{bmatrix} w_0 & w_1 & \cdots & w_N \end{bmatrix} \begin{bmatrix} 1 \\ x_{1,\ p} \\ x_{2,\ p} \\\vdots \\ x_{N,\ P} \end{bmatrix} \\
+&= (w_0 \cdot 1) + (w_1 \cdot x_{1,p}) + \dots + (w_N \cdot x_{N,P})  \\
+&= \underbrace{\enspace w_0 \enspace}_{\text{bias}} + \underbrace{\sum_{n=1}^{N} w_{n} \cdot x_{n, p}}_{\text{sum of weights}}
+\end{aligned}$$
+
+
+Thus, the net input is simply a **weighted sum** of the input features plus a bias term.
+
+​
+
+Computing this quantity for all P observations yields the vector $\mathbf{z}$ with p-elements: 
+
+$$\mathbf{z}= \begin{bmatrix} z_1 \\ z_2 \\ \vdots \\ z_P \end{bmatrix}$$
+
+​
+
+
+### Activation function and model prediction
+
+In the classic perceptron, the **activation function** $f(\cdot)$ is a step function, which maps the continuous net input to one of two discrete class labels. A common choice is the **sign function**, which assigns a label based on whether the net input is non-negative or negative.
+
+
+The prediction vector $\mathbf{\hat{y}}$ is obtained by applying the activation function element-wise to $\mathbf{z}$:
+
+$$\mathbf{\hat{y}} = \text{sign}(\mathbf{z})$$
+
+In expanded form, this becomes
+
+$$\begin{bmatrix} \hat{y}_1 \\ \hat{y}_2 \\ \vdots \\ \hat{y}_P \end{bmatrix} = \begin{bmatrix} \text{sign}(z_1) \\ \text{sign}(z_2) \\ \vdots \\ \text{sign}(z_P) \end{bmatrix}$$
+
+
+Each individual prediction $\hat y_p$ is defined as
+
+$$\hat y_p = \text{sign}(z_p) = \begin{cases} 1 & \text{if } z_p \ge 0 \\ -1 & \text{if } z_p < 0 \end{cases}$$
+
+Through this simple rule, the perceptron partitions the input space into two regions separated by a linear decision boundary, classifying inputs on one side as $+1$ and those on the other side as $-1$, which is why it is considered a linear binary classifier; this decision boundary is defined as the set of points of the input space where the model’s net input is exactly zero, that is, $\mathbf{x}_p^{\mathsf{T}}\mathbf{w} = 0$.
+
+​
+
+### The Weight Update Rule
+
+The perceptron learns by iteratively adjusting its weights to reduce classification errors. Let $\mathbf{w}^{\text{old}}$ be the weight vector before the update, and $\mathbf{w}^{\text{new}}$ be the weight vector after the update. The learning rule is expressed as:
+
+$$\mathbf{w}^{\text{new}} = \mathbf{w}^{\text{old}} + \eta \, (y_p - \hat{y}_p) \, \mathbf{x}_p$$
+
+where $\eta > 0$ is the learning rate, controlling the step size of each update. The error term $(y_p - \hat{y}_p)$ is a discrete scalar that determines the nature of the weight update.
+
+
+The perceptron learning rule adjusts the weight vector in the direction that reduces the error for the specific example $p$:
+
+- **Correct prediction** ($y_p = \hat{y}_p$): Since $(y_p - \hat{y}_p) = 0$, the update term is zero. No change is made, as the model’s current boundary already correctly classifies the point.
+
+- **Incorrect prediction** ($y_p \neq \hat{y}_p$): The term $(y_p - \hat{y}_p)$ becomes either $+2$ or $-2$. The weights are "nudged" in the direction of $y_p \mathbf{x}_p$, moving the decision boundary.
+
+​
+
+### Convergence and separability
+
+Training proceeds in **epochs**, where each epoch corresponds to a complete pass through the training dataset. Because the perceptron updates its weights incrementally after each individual example, learning typically requires multiple epochs as the decision boundary is gradually adjusted to better separate the data. Whether this process eventually halts—reaching a state known as **convergence**—depends entirely on the linear separability of the training set.
+
+When the classes are **linearly separable**, meaning they can be perfectly divided by a straight line in two dimensions or a hyperplane in higher dimensions, the Perceptron Convergence Theorem guarantees that the algorithm will reach a finite weight vector that correctly classifies all training examples. At this point, the weights stabilize and no further updates occur. Conversely, if the data are not linearly separable, no such solution exists. The perceptron will continue updating its weights indefinitely, repeatedly shifting the decision boundary in an attempt to correct misclassifications. Fixing one misclassified point may cause another to become misclassified, producing oscillatory or “jittering” behavior. In practice, training on **non-separable** data is terminated after a fixed number of epochs to prevent unbounded computation.
+
+​
+
+## Perceptron example with R
+
+
+### Data Preparation
+
+We'll use the famous Iris dataset, focusing on two species (Versicolor and Virginica) to create a binary classification problem.
+
+```{r}
+#| warning: false
+#| message: false
+
+
+# load the packages 
+library(tidyverse)
+library(gganimate)
+```
+
+
+
+```{r}
+# load the dataset
+
+data(iris)
+df <- iris[iris$Species != "setosa", ] 
+df$y <- ifelse(df$Species == "versicolor", 1, -1)
+```
+
+​
+
+### Feature Scaling
+
+Standardization ensures all features have mean = 0 and standard deviation = 1. This helps the Perceptron converge faster and prevents features with larger scales from dominating the learning process.
+
+
+```{r}
+# Feature Scaling
+df_scaled <- df
+df_scaled[, 1:4] <- scale(df[, 1:4])
+df_scaled_final <- df_scaled[, c("Sepal.Length", "Petal.Length", "y")]
+```
+
+
+
+
+```{r}
+# Shuffle data for stochastic learning
+set.seed(1)
+df_shuffle <- df_scaled_final[sample(nrow(df_scaled_final)), ]
+X <- as.matrix(df_shuffle[, 1:2])
+X_augmented <- cbind(1, X) # leading 1 for bias
+y_vector <- df_shuffle$y
+```
+
+The augmented matrix includes a column of 1s, which allows us to incorporate the bias term $w_o$ directly into the weight vector.
+
+
+​
+
+### Implement the Perceptron Algorithm
+
+**Sign Activation Function**
+
+```{r}
+sign_func <- function(z) {
+  ifelse(z >= 0, 1, -1)
+}
+```
+
+​
+
+**Perceptron Training Function**
+
+The perceptron algorithm repeatedly cycles through training examples in a randomized order, iteratively adjusting weights only when a misclassification occurs. This process continues until the model achieves convergence (zero errors) or reaches a preset maximum number of epochs. Because the updates are incremental, a single data point may be processed multiple times across different epochs, gradually nudging the decision boundary until it successfully partitions the classes with a valid separating hyperplane.
+
+
+```{r}
+fit_perceptron_efficient <- function(X_aug, y, eta = 0.05, n_iter = 10) {
+  n_features <- ncol(X_aug)
+  
+  # Initialize with small random weights (mean 0, sd 0.1)
+  set.seed(42)
+  w <- rnorm(n_features, mean = 0, sd = 0.1) 
+  
+  history_list <- list()
+  epoch_errors <- numeric(n_iter)
+  step_total <- 0
+  
+  for (epoch in 1:n_iter) {
+    error_count <- 0
+    for (p in 1:nrow(X_aug)) {
+      step_total <- step_total + 1
+      x_p <- X_aug[p, ]
+      y_p <- y[p]
+      
+      # Linear Combination: z = w^T * x
+      z_p <- as.numeric(t(w) %*% x_p)
+      y_hat <- sign_func(z_p)
+      
+      is_error <- (y_hat != y_p)
+      if (is_error) {
+        # Update Rule from notes
+        w <- w + eta * (y_p - y_hat) * x_p
+        error_count <- error_count + 1
+      }
+      
+      # Calculate current accuracy
+      predictions <- sign_func(X_aug %*% w)
+      current_accuracy <- sum(predictions == y) / length(y) * 100
+      
+      # Record history for every step
+      history_list[[step_total]] <- data.frame(
+        Step = step_total, 
+        Epoch = epoch,
+        Iteration = p,
+        w0 = w[1], w1 = w[2], w2 = w[3],
+        x1_val = x_p[2], x2_val = x_p[3],
+        is_error = is_error,
+        current_acc = current_accuracy
+      )
+    }
+    
+    epoch_errors[epoch] <- error_count
+    cat(sprintf("Epoch %d: %d errors\n", epoch, error_count))
+    
+    # THE BREAK: Stop if the model perfectly separates the data
+    if (error_count == 0) {
+      cat(sprintf("--- Converged early at Epoch %d ---\n", epoch))
+      break
+    }
+  }
+  
+  return(list(
+    weights = w, 
+    errors = epoch_errors[1:epoch], 
+    history = do.call(rbind, history_list)
+  ))
+}
+
+```
+
+
+
+```{r}
+# Training
+results <- fit_perceptron_efficient(X_augmented, y_vector, n_iter = 10)
+history_df <- results$history
+errors <- results$errors
+w_final <- results$weights
+```
+
+The algorithm is not converging - the errors are oscillating between 4 and 6, never reaching zero. This means the data might not be perfectly linearly separable.
+
+
+```{r}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-cap: "Perceptron learning curve showing error reduction over epochs"
+
+# Error Reduction Plot
+plot(1:length(errors), errors, type = "o", pch = 16, 
+     col = "blue", lwd = 2, cex = 1.5,
+     main = "Learning Curve (Early Stop)", xlab = "Epoch", ylab = "Errors")
+```
+
+​
+
+**Animate the Learning Process**
+
+```{r}
+#| echo: false
+#| eval: false
+
+points_df <- data.frame(
+  x1 = X[, 1], x2 = X[, 2], 
+  Species = ifelse(y_vector == 1, "Versicolor", "Virginica")
+)
+
+x_limit <- range(points_df$x1)
+
+anim_data_extended <- history_df %>%
+  mutate(
+    denom = ifelse(w2 == 0, 1e-9, w2),
+    x_min = x_limit[1] - 0.5,
+    x_max = x_limit[2] + 0.5,
+    y_min = -(w0 + w1 * x_min) / denom,
+    y_max = -(w0 + w1 * x_max) / denom,
+    weights_text = sprintf("[%.3f, %.3f, %.3f]", w0, w1, w2),
+    frame_label = sprintf("Epoch: %d | Total Step: %d", Epoch, Step)
+  )
+
+p <- ggplot() +
+  geom_point(data = points_df, aes(x = x1, y = x2, color = Species), 
+             size = 1.5, alpha = 0.5) +
+  geom_segment(data = anim_data_extended, 
+               aes(x = x_min, y = y_min, xend = x_max, yend = y_max),
+               color = "black", linewidth = 1.0) +
+  geom_point(data = anim_data_extended, 
+             aes(x = x1_val, y = x2_val, fill = is_error), 
+             shape = 21, size = 1.5, color = "black", stroke = 1.5) +
+  scale_color_manual(values = c("Versicolor" = "blue", "Virginica" = "orange")) +
+  scale_fill_manual(values = c("TRUE" = "red", "FALSE" = "green"), 
+                    guide = "none") +
+  theme_minimal(base_size = 8) +
+  labs(x = "Sepal Length", y = "Petal Length",
+    title = "Perceptron Learning: Epoch {anim_data_extended$Epoch[as.integer(closest_state)]} | Iteration {anim_data_extended$Iteration[as.integer(closest_state)]}",
+    subtitle = "Weights [w0, w1, w2]: {anim_data_extended$weights_text[as.integer(closest_state)]}\nAccuracy: {round(anim_data_extended$current_acc[as.integer(closest_state)], 1)}% | Step: {as.integer(closest_state)}"
+  ) +
+  transition_states(Step, transition_length = 0, state_length = 1)
+
+anim <- animate(p, 
+        nframes = nrow(anim_data_extended), 
+        fps = 20, 
+        width = 800, 
+        height = 600, 
+        units = "px", # This prevents the 'inches' error
+        renderer = gifski_renderer())
+
+# Save to file
+anim_save("perceptron_learning.gif", animation = anim)
+```
+
+
+```{r}
+#| echo: false
+
+knitr::include_graphics("perceptron_learning.gif")
+```
+
+
+
+The decision boundary is the geometric representation of our learned classifier.
+
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 6
+#| fig-cap: "Final decision boundary separating Versicolor and Virginica"
+
+# Final Boundary Plot
+plot(X[, 1], X[, 2], col = ifelse(y_vector == 1, "blue", "orange"), pch = 19, cex = 1.2,
+     xlab = "Sepal Length (x1)", ylab = "Petal Length (x2)",
+     main = "Final Decision Boundary")
+
+x1_range <- seq(min(X[, 1]) - 0.5, max(X[, 1]) + 0.5, length.out = 100)
+# Rearranged: x2 = -(w0 + w1*x1) / w2
+x2_boundary <- -(w_final[1] + w_final[2] * x1_range) / w_final[3]
+lines(x1_range, x2_boundary, col = "black", lwd = 2.2)
+
+# Improved Label: Uses '+' sign for positive weights automatically
+eq_text <- sprintf("%.2f + %.2f*x1 + %.2f*x2 = 0", 
+                   w_final[1], w_final[2], w_final[3])
+# Clean up double signs like "+ -" if necessary
+eq_text <- gsub("\\+ -", "- ", eq_text)
+
+mtext(eq_text, side = 3, line = -1, cex = 1.1, font = 3)
+
+legend("topleft", legend = c("Versicolor (+1)", "Virginica (-1)", "Boundary"), 
+       col = c("blue", "orange", "black"), 
+       pch = c(19, 19, NA), lty = c(NA, NA, 2), cex = 1.1)
+```
