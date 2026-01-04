@@ -439,3 +439,4 @@ text(x = max(X[, 1]) - 0.5, y = min(X[, 2]) + 0.2,
 
 We observe 96% accuracy in Epoch 4, which means that at that specific point the model correctly classified 96 out of 100 points and only 4 points were misclassified (i.e., fell on the wrong side of the decision boundary).
 
+
