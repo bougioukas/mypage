@@ -57,7 +57,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -137,13 +157,13 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../custom.css">
 <meta property="og:title" content="Perceptron: the first artificial neuron – Konstantinos I. Bougioukas">
-<meta property="og:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1957 as a computational approach inspired by biological neurons.">
+<meta property="og:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.">
 <meta property="og:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
 <meta property="og:site_name" content="Konstantinos I. Bougioukas">
 <meta property="og:image:height" content="413">
 <meta property="og:image:width" content="513">
 <meta name="twitter:title" content="Perceptron: the first artificial neuron – Konstantinos I. Bougioukas">
-<meta name="twitter:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1957 as a computational approach inspired by biological neurons.">
+<meta name="twitter:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.">
 <meta name="twitter:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
 <meta name="twitter:image-height" content="413">
 <meta name="twitter:image-width" content="513">
@@ -264,7 +284,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1957 as a computational approach inspired by biological neurons.
+    The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.
   </div>
 </div>
 
@@ -296,7 +316,7 @@ window.Quarto = {
 <p>​</p>
 <section id="the-perceptron" class="level2">
 <h2 class="anchored" data-anchor-id="the-perceptron">The perceptron</h2>
-<p>The perceptron is one of the earliest and simplest models of an artificial neural network. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.</p>
+<p>The perceptron is one of the earliest and simplest models of an artificial neural network <span class="citation" data-cites="ROSENBLATT1958">(<a href="#ref-ROSENBLATT1958" role="doc-biblioref">Rosenblatt 1958</a>)</span>. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.</p>
 <p>At its heart, the perceptron learns to separate data into two classes by finding a linear boundary that divides the input space. Each prediction is obtained by combining the inputs linearly and passing the result through a threshold function that produces a discrete output.</p>
 <section id="how-it-works" class="level3">
 <h3 class="anchored" data-anchor-id="how-it-works">How it works</h3>
@@ -316,7 +336,7 @@ window.Quarto = {
 <p><span class="math display">\[(\mathbf{x_1}, y_1), (\mathbf{x_2}, y_2), ..., (\mathbf{x_P}, y_P)\]</span></p>
 <p>or equivalently,</p>
 <p><span class="math display">\[\left\{ \left(\mathbf{x}_{p},y_{p}\right)\right\} _{p=1}^{P}\]</span></p>
-<p>where <span class="math inline">\(\mathbf{x_p}\)</span> and <span class="math inline">\(y_p\)</span> denote the input and output of the <span class="math inline">\(p-\)</span>observation, respectively.</p>
+<p>where <span class="math inline">\(\mathbf{x_p}\)</span> denotes the input vector and <span class="math inline">\(y_p\)</span> represents the target classification label for the <span class="math inline">\(p-\)</span>observation.</p>
 <p>Each input <span class="math inline">\(\mathbf{x_p}\)</span> is a column vector of length <span class="math inline">\(N +1\)</span>, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model:</p>
 <p><span class="math display">\[\mathbf{x_p} = \begin{bmatrix} 1 \\ x_{1,\ p} \\ x_{2,\ p} \\\vdots \\ x_{N,\ P} \end{bmatrix}\]</span></p>
 <p>The model parameters—the bias and feature weights—are collected into a single column vector:</p>
@@ -350,7 +370,7 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <p><span class="math display">\[\begin{bmatrix} \hat{y}_1 \\ \hat{y}_2 \\ \vdots \\ \hat{y}_P \end{bmatrix} = \begin{bmatrix} \text{sign}(z_1) \\ \text{sign}(z_2) \\ \vdots \\ \text{sign}(z_P) \end{bmatrix}\]</span></p>
 <p>Each individual prediction <span class="math inline">\(\hat y_p\)</span> is defined as</p>
 <p><span class="math display">\[\hat y_p = \text{sign}(z_p) = \begin{cases} 1 &amp; \text{if } z_p \ge 0 \\ -1 &amp; \text{if } z_p &lt; 0 \end{cases}\]</span></p>
-<p>Through this simple rule, the perceptron partitions the input space into two regions separated by a linear decision boundary, classifying inputs on one side as <span class="math inline">\(+1\)</span> and those on the other side as <span class="math inline">\(-1\)</span>, which is why it is considered a linear binary classifier; this decision boundary is defined as the set of points of the input space where the model’s net input is exactly zero, that is, <span class="math inline">\(\mathbf{x}_p^{\mathsf{T}}\mathbf{w} = 0\)</span>.</p>
+<p>Through this simple rule, the perceptron partitions the input space into two regions separated by a linear decision boundary, classifying inputs on one side as <span class="math inline">\(+1\)</span> and those on the other side as <span class="math inline">\(-1\)</span>, which is why it is considered a linear binary classifier; this decision boundary is defined as the set of points of the input space where the model’s net input is exactly zero, that is, <span class="math inline">\(\mathbf{w}^{\mathsf{T}}\mathbf{x}_p = 0\)</span>.</p>
 <p>​</p>
 </section>
 <section id="the-weight-update-rule" class="level3">
@@ -384,10 +404,9 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the dataset</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> iris[iris<span class="sc">$</span>Species <span class="sc">!=</span> <span class="st">"setosa"</span>, ] </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(df<span class="sc">$</span>Species <span class="sc">==</span> <span class="st">"versicolor"</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> iris[iris<span class="sc">$</span>Species <span class="sc">!=</span> <span class="st">"setosa"</span>, ] </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(df<span class="sc">$</span>Species <span class="sc">==</span> <span class="st">"versicolor"</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>​</p>
 </section>
@@ -401,12 +420,10 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df_scaled_final <span class="ot">&lt;-</span> df_scaled[, <span class="fu">c</span>(<span class="st">"Sepal.Length"</span>, <span class="st">"Petal.Length"</span>, <span class="st">"y"</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shuffle data for stochastic learning</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df_shuffle <span class="ot">&lt;-</span> df_scaled_final[<span class="fu">sample</span>(<span class="fu">nrow</span>(df_scaled_final)), ]</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(df_shuffle[, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>X_augmented <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="dv">1</span>, X) <span class="co"># leading 1 for bias</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>y_vector <span class="ot">&lt;-</span> df_shuffle<span class="sc">$</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initial setup</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(df_scaled_final[, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>X_augmented <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="dv">1</span>, X) <span class="co"># leading 1 for bias</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>y_vector <span class="ot">&lt;-</span> df_scaled_final<span class="sc">$</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The augmented matrix includes a column of 1s, which allows us to incorporate the bias term <span class="math inline">\(w_o\)</span> directly into the weight vector.</p>
 <p>​</p>
@@ -423,105 +440,135 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <p><strong>Perceptron Training Function</strong></p>
 <p>The perceptron algorithm repeatedly cycles through training examples in a randomized order, iteratively adjusting weights only when a misclassification occurs. This process continues until the model achieves convergence (zero errors) or reaches a preset maximum number of epochs. Because the updates are incremental, a single data point may be processed multiple times across different epochs, gradually nudging the decision boundary until it successfully partitions the classes with a valid separating hyperplane.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fit_perceptron_efficient <span class="ot">&lt;-</span> <span class="cf">function</span>(X_aug, y, <span class="at">eta =</span> <span class="fl">0.05</span>, <span class="at">n_iter =</span> <span class="dv">10</span>) {</span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fit_perceptron <span class="ot">&lt;-</span> <span class="cf">function</span>(X_aug, y, <span class="at">eta =</span> <span class="fl">0.05</span>, <span class="at">n_iter =</span> <span class="dv">10</span>) {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  n_features <span class="ot">&lt;-</span> <span class="fu">ncol</span>(X_aug)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize with small random weights (mean 0, sd 0.1)</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  w <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_features, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="fl">0.1</span>) </span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  history_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  epoch_errors <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_iter)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  step_total <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (epoch <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_iter) {</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    error_count <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(X_aug)) {</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>      step_total <span class="ot">&lt;-</span> step_total <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      x_p <span class="ot">&lt;-</span> X_aug[p, ]</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>      y_p <span class="ot">&lt;-</span> y[p]</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Linear Combination: z = w^T * x</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      z_p <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">t</span>(w) <span class="sc">%*%</span> x_p)</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>      y_hat <span class="ot">&lt;-</span> <span class="fu">sign_func</span>(z_p)</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>      is_error <span class="ot">&lt;-</span> (y_hat <span class="sc">!=</span> y_p)</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (is_error) {</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Update Rule from notes</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>        w <span class="ot">&lt;-</span> w <span class="sc">+</span> eta <span class="sc">*</span> (y_p <span class="sc">-</span> y_hat) <span class="sc">*</span> x_p</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        error_count <span class="ot">&lt;-</span> error_count <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  n_obs <span class="ot">&lt;-</span> <span class="fu">nrow</span>(X_aug)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initialize weights</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(<span class="dv">842</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  w <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_features, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="fl">0.1</span>) </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  history_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  epoch_errors <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_iter)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  step_total <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (epoch <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_iter) {</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- REFINED: Shuffle data at the start of every epoch ---</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    indices <span class="ot">&lt;-</span> <span class="fu">sample</span>(n_obs)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    X_shuffled <span class="ot">&lt;-</span> X_aug[indices, ]</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    y_shuffled <span class="ot">&lt;-</span> y[indices]</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    error_count <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_obs) {</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>      step_total <span class="ot">&lt;-</span> step_total <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>      x_p <span class="ot">&lt;-</span> X_shuffled[p, ]</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>      y_p <span class="ot">&lt;-</span> y_shuffled[p]</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Linear Combination</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>      z_p <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">t</span>(w) <span class="sc">%*%</span> x_p)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>      y_hat <span class="ot">&lt;-</span> <span class="fu">sign_func</span>(z_p)</span>
 <span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Calculate current accuracy</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>      predictions <span class="ot">&lt;-</span> <span class="fu">sign_func</span>(X_aug <span class="sc">%*%</span> w)</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>      current_accuracy <span class="ot">&lt;-</span> <span class="fu">sum</span>(predictions <span class="sc">==</span> y) <span class="sc">/</span> <span class="fu">length</span>(y) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Record history for every step</span></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>      history_list[[step_total]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>        <span class="at">Step =</span> step_total, </span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>        <span class="at">Epoch =</span> epoch,</span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">Iteration =</span> p,</span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">w0 =</span> w[<span class="dv">1</span>], <span class="at">w1 =</span> w[<span class="dv">2</span>], <span class="at">w2 =</span> w[<span class="dv">3</span>],</span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">x1_val =</span> x_p[<span class="dv">2</span>], <span class="at">x2_val =</span> x_p[<span class="dv">3</span>],</span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>        <span class="at">is_error =</span> is_error,</span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>        <span class="at">current_acc =</span> current_accuracy</span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>    epoch_errors[epoch] <span class="ot">&lt;-</span> error_count</span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"Epoch %d: %d errors</span><span class="sc">\n</span><span class="st">"</span>, epoch, error_count))</span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>    <span class="co"># THE BREAK: Stop if the model perfectly separates the data</span></span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (error_count <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"--- Converged early at Epoch %d ---</span><span class="sc">\n</span><span class="st">"</span>, epoch))</span>
-<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(</span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">weights =</span> w, </span>
-<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">errors =</span> epoch_errors[<span class="dv">1</span><span class="sc">:</span>epoch], </span>
-<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>    <span class="at">history =</span> <span class="fu">do.call</span>(rbind, history_list)</span>
-<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>  ))</span>
-<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>      is_error <span class="ot">&lt;-</span> (y_hat <span class="sc">!=</span> y_p)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (is_error) {</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Perceptron Update Rule</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>        w <span class="ot">&lt;-</span> w <span class="sc">+</span> eta <span class="sc">*</span> (y_p <span class="sc">-</span> y_hat) <span class="sc">*</span> x_p</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>        error_count <span class="ot">&lt;-</span> error_count <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Calculate accuracy on full dataset for tracking</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>      predictions <span class="ot">&lt;-</span> <span class="fu">sign_func</span>(X_aug <span class="sc">%*%</span> w)</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>      current_accuracy <span class="ot">&lt;-</span> <span class="fu">sum</span>(predictions <span class="sc">==</span> y) <span class="sc">/</span> <span class="fu">length</span>(y) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Record history</span></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>      history_list[[step_total]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">Step =</span> step_total, </span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">Epoch =</span> epoch,</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">Iteration =</span> p,</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>        <span class="at">w0 =</span> w[<span class="dv">1</span>], <span class="at">w1 =</span> w[<span class="dv">2</span>], <span class="at">w2 =</span> w[<span class="dv">3</span>],</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">x1_val =</span> x_p[<span class="dv">2</span>], <span class="at">x2_val =</span> x_p[<span class="dv">3</span>], <span class="co"># Tracks the specific point being tested</span></span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>        <span class="at">is_error =</span> is_error,</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>        <span class="at">current_acc =</span> current_accuracy</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>    epoch_errors[epoch] <span class="ot">&lt;-</span> error_count</span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"Epoch %d: %d errors</span><span class="sc">\n</span><span class="st">"</span>, epoch, error_count))</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (error_count <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"--- Converged early at Epoch %d ---</span><span class="sc">\n</span><span class="st">"</span>, epoch))</span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(</span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">weights =</span> w, </span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">errors =</span> epoch_errors[<span class="dv">1</span><span class="sc">:</span>epoch], </span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">history =</span> <span class="fu">bind_rows</span>(history_list)</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>​</p>
+<p>Let’s train the perceptron model for 30 epochs and record how many times the weights are updated during each full pass through the training data in each Epoch (Epoch error).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Training</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">fit_perceptron_efficient</span>(X_augmented, y_vector, <span class="at">n_iter =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">fit_perceptron</span>(X_augmented, y_vector, <span class="at">n_iter =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Epoch 1: 12 errors
-Epoch 2: 8 errors
-Epoch 3: 7 errors
-Epoch 4: 6 errors
-Epoch 5: 4 errors
-Epoch 6: 6 errors
-Epoch 7: 4 errors
-Epoch 8: 6 errors
-Epoch 9: 4 errors
-Epoch 10: 6 errors</code></pre>
+<pre><code>Epoch 1: 14 errors
+Epoch 2: 12 errors
+Epoch 3: 8 errors
+Epoch 4: 11 errors
+Epoch 5: 13 errors
+Epoch 6: 9 errors
+Epoch 7: 8 errors
+Epoch 8: 7 errors
+Epoch 9: 3 errors
+Epoch 10: 8 errors
+Epoch 11: 10 errors
+Epoch 12: 8 errors
+Epoch 13: 7 errors
+Epoch 14: 6 errors
+Epoch 15: 10 errors
+Epoch 16: 9 errors
+Epoch 17: 10 errors
+Epoch 18: 8 errors
+Epoch 19: 6 errors
+Epoch 20: 4 errors
+Epoch 21: 7 errors
+Epoch 22: 9 errors
+Epoch 23: 9 errors
+Epoch 24: 7 errors
+Epoch 25: 8 errors
+Epoch 26: 5 errors
+Epoch 27: 8 errors
+Epoch 28: 11 errors
+Epoch 29: 7 errors
+Epoch 30: 5 errors</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>history_df <span class="ot">&lt;-</span> results<span class="sc">$</span>history</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>errors <span class="ot">&lt;-</span> results<span class="sc">$</span>errors</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>w_final <span class="ot">&lt;-</span> results<span class="sc">$</span>weights</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The algorithm is not converging - the errors are oscillating between 4 and 6, never reaching zero. This means the data might not be perfectly linearly separable.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Error Reduction Plot</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(errors), errors, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">pch =</span> <span class="dv">16</span>, </span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">cex =</span> <span class="fl">1.5</span>,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Learning Curve (Early Stop)"</span>, <span class="at">xlab =</span> <span class="st">"Epoch"</span>, <span class="at">ylab =</span> <span class="st">"Errors"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Learning Curve (30 epochs)"</span>, <span class="at">xlab =</span> <span class="st">"Epoch"</span>, <span class="at">ylab =</span> <span class="st">"Errors"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption>Perceptron learning curve showing error reduction over epochs</figcaption>
+<figcaption>Perceptron learning curve showing epoch error</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>The algorithm is not converging - the errors are oscillating between 3 and 14, never reaching zero. Correcting one misclassification inevitably leads to another, causing a never-ending cycle of updates. This behavior indicates that the data are <strong>not perfectly</strong> linearly separable.</p>
 <p>​</p>
 <p><strong>Animate the Learning Process</strong></p>
+<p>We define <em>current accuracy</em> the percentage of the <strong>total dataset</strong> correctly classified by the weights at any given <strong>moment</strong>.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"perceptron_learning.gif"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -530,7 +577,8 @@ Epoch 10: 6 errors</code></pre>
 </div>
 </div>
 </div>
-<p>The decision boundary is the geometric representation of our learned classifier.</p>
+<p>​</p>
+<p>The final decision boundary is the geometric representation of our learned classifier for the peak current accuracy.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -541,12 +589,18 @@ Epoch 10: 6 errors</code></pre>
 </div>
 </div>
 </div>
+<p>We observe 96% accuracy in Epoch 4, which means that at that specific point the model correctly classified 96 out of 100 points and only 4 points were misclassified (i.e., fell on the wrong side of the decision boundary).</p>
+
 
 
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ROSENBLATT1958" class="csl-entry" role="listitem">
+Rosenblatt, F. 1958. <span>“The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.”</span> <em>Psychol Rev</em> 65 (6): 386–408. <a href="https://doi.org/10.1037/h0042519">https://doi.org/10.1037/h0042519</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
