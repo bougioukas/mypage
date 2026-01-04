@@ -134,6 +134,13 @@ Training proceeds in **epochs**, where each epoch corresponds to a complete pass
 
 When the classes are **linearly separable**, meaning they can be perfectly divided by a straight line in two dimensions or a hyperplane in higher dimensions, the Perceptron Convergence Theorem guarantees that the algorithm will reach a finite weight vector that correctly classifies all training examples. At this point, the weights stabilize and no further updates occur. Conversely, if the data are not linearly separable, no such solution exists. The perceptron will continue updating its weights indefinitely, repeatedly shifting the decision boundary in an attempt to correct misclassifications. Fixing one misclassified point may cause another to become misclassified, producing oscillatory or “jittering” behavior. In practice, training on **non-separable** data is terminated after a fixed number of epochs to prevent unbounded computation.
 
+::: {layout-ncol=2}
+![Linearly separable dataset.](separated.png)
+
+![Non-separable dataset by a linear boundary.](notseparated.png)
+:::
+
+
 ​
 
 ## Perceptron example with R

@@ -389,6 +389,29 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <h3 class="anchored" data-anchor-id="convergence-and-separability">Convergence and separability</h3>
 <p>Training proceeds in <strong>epochs</strong>, where each epoch corresponds to a complete pass through the training dataset. Because the perceptron updates its weights incrementally after each individual example, learning typically requires multiple epochs as the decision boundary is gradually adjusted to better separate the data. Whether this process eventually halts—reaching a state known as <strong>convergence</strong>—depends entirely on the linear separability of the training set.</p>
 <p>When the classes are <strong>linearly separable</strong>, meaning they can be perfectly divided by a straight line in two dimensions or a hyperplane in higher dimensions, the Perceptron Convergence Theorem guarantees that the algorithm will reach a finite weight vector that correctly classifies all training examples. At this point, the weights stabilize and no further updates occur. Conversely, if the data are not linearly separable, no such solution exists. The perceptron will continue updating its weights indefinitely, repeatedly shifting the decision boundary in an attempt to correct misclassifications. Fixing one misclassified point may cause another to become misclassified, producing oscillatory or “jittering” behavior. In practice, training on <strong>non-separable</strong> data is terminated after a fixed number of epochs to prevent unbounded computation.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="separated.png" class="img-fluid figure-img"></p>
+<figcaption>Linearly separable dataset.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="notseparated.png" class="img-fluid figure-img"></p>
+<figcaption>Non-separable dataset.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <p>​</p>
 </section>
 </section>
@@ -566,9 +589,8 @@ Epoch 30: 5 errors</code></pre>
 <p>The algorithm is not converging - the errors are oscillating between 3 and 14, never reaching zero. Correcting one misclassification inevitably leads to another, causing a never-ending cycle of updates. This behavior indicates that the data are <strong>not perfectly</strong> linearly separable.</p>
 <p>​</p>
 <p><strong>Animate the Learning Process</strong></p>
-<p>We define <em>current accuracy</em> the percentage of the <strong>total dataset</strong> correctly classified by the weights at any given <strong>moment</strong>.</p>
+<p>We define <em>current accuracy</em> as the percentage of the <strong>entire dataset</strong> correctly classified by the weights at any given <strong>moment</strong>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"perceptron_learning.gif"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
