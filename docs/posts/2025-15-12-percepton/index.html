@@ -157,13 +157,13 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../custom.css">
 <meta property="og:title" content="Perceptron: the first artificial neuron – Konstantinos I. Bougioukas">
-<meta property="og:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.">
+<meta property="og:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons.">
 <meta property="og:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
 <meta property="og:site_name" content="Konstantinos I. Bougioukas">
 <meta property="og:image:height" content="413">
 <meta property="og:image:width" content="513">
 <meta name="twitter:title" content="Perceptron: the first artificial neuron – Konstantinos I. Bougioukas">
-<meta name="twitter:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.">
+<meta name="twitter:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons.">
 <meta name="twitter:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
 <meta name="twitter:image-height" content="413">
 <meta name="twitter:image-width" content="513">
@@ -258,8 +258,8 @@ window.Quarto = {
   <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
   <li><a href="#basic-set-up-and-notation" id="toc-basic-set-up-and-notation" class="nav-link" data-scroll-target="#basic-set-up-and-notation">Basic set up and notation</a></li>
   <li><a href="#linear-combination" id="toc-linear-combination" class="nav-link" data-scroll-target="#linear-combination">Linear Combination</a></li>
-  <li><a href="#activation-function-and-model-prediction" id="toc-activation-function-and-model-prediction" class="nav-link" data-scroll-target="#activation-function-and-model-prediction">Activation function and model prediction</a></li>
-  <li><a href="#the-weight-update-rule" id="toc-the-weight-update-rule" class="nav-link" data-scroll-target="#the-weight-update-rule">The Weight Update Rule</a></li>
+  <li><a href="#activation-function-and-decision-boundary" id="toc-activation-function-and-decision-boundary" class="nav-link" data-scroll-target="#activation-function-and-decision-boundary">Activation function and decision boundary</a></li>
+  <li><a href="#the-weight-update-rule" id="toc-the-weight-update-rule" class="nav-link" data-scroll-target="#the-weight-update-rule">The weight update rule</a></li>
   <li><a href="#convergence-and-separability" id="toc-convergence-and-separability" class="nav-link" data-scroll-target="#convergence-and-separability">Convergence and separability</a></li>
   </ul></li>
   <li><a href="#perceptron-example-with-r" id="toc-perceptron-example-with-r" class="nav-link" data-scroll-target="#perceptron-example-with-r">Perceptron example with R</a>
@@ -284,7 +284,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons.
+    The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons.
   </div>
 </div>
 
@@ -316,7 +316,7 @@ window.Quarto = {
 <p>​</p>
 <section id="the-perceptron" class="level2">
 <h2 class="anchored" data-anchor-id="the-perceptron">The perceptron</h2>
-<p>The perceptron is one of the earliest and simplest models of an artificial neural network <span class="citation" data-cites="ROSENBLATT1958">(<a href="#ref-ROSENBLATT1958" role="doc-biblioref">Rosenblatt 1958</a>)</span>. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.</p>
+<p>The perceptron is one of the earliest and simplest models of an artificial neural network <span class="citation" data-cites="McCulloch1943 ROSENBLATT1958">(<a href="#ref-McCulloch1943" role="doc-biblioref">McCulloch 1943</a>; <a href="#ref-ROSENBLATT1958" role="doc-biblioref">Rosenblatt 1958</a>)</span>. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.</p>
 <p>At its heart, the perceptron learns to separate data into two classes by finding a linear boundary that divides the input space. Each prediction is obtained by combining the inputs linearly and passing the result through a threshold function that produces a discrete output.</p>
 <section id="how-it-works" class="level3">
 <h3 class="anchored" data-anchor-id="how-it-works">How it works</h3>
@@ -357,25 +357,20 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 \end{aligned}\]</span></p>
 <p>Thus, the net input is simply a <strong>weighted sum</strong> of the input features plus a bias term.</p>
 <p>​</p>
-<p>Computing this quantity for all P observations yields the vector <span class="math inline">\(\mathbf{z}\)</span> with p-elements:</p>
-<p><span class="math display">\[\mathbf{z}= \begin{bmatrix} z_1 \\ z_2 \\ \vdots \\ z_P \end{bmatrix}\]</span></p>
-<p>​</p>
 </section>
-<section id="activation-function-and-model-prediction" class="level3">
-<h3 class="anchored" data-anchor-id="activation-function-and-model-prediction">Activation function and model prediction</h3>
-<p>In the classic perceptron, the <strong>activation function</strong> <span class="math inline">\(f(\cdot)\)</span> is a step function, which maps the continuous net input to one of two discrete class labels. A common choice is the <strong>sign function</strong>, which assigns a label based on whether the net input is non-negative or negative.</p>
-<p>The prediction vector <span class="math inline">\(\mathbf{\hat{y}}\)</span> is obtained by applying the activation function element-wise to <span class="math inline">\(\mathbf{z}\)</span>:</p>
-<p><span class="math display">\[\mathbf{\hat{y}} = \text{sign}(\mathbf{z})\]</span></p>
-<p>In expanded form, this becomes</p>
-<p><span class="math display">\[\begin{bmatrix} \hat{y}_1 \\ \hat{y}_2 \\ \vdots \\ \hat{y}_P \end{bmatrix} = \begin{bmatrix} \text{sign}(z_1) \\ \text{sign}(z_2) \\ \vdots \\ \text{sign}(z_P) \end{bmatrix}\]</span></p>
-<p>Each individual prediction <span class="math inline">\(\hat y_p\)</span> is defined as</p>
+<section id="activation-function-and-decision-boundary" class="level3">
+<h3 class="anchored" data-anchor-id="activation-function-and-decision-boundary">Activation function and decision boundary</h3>
+<p>In the classic perceptron, the <strong>activation function</strong> <span class="math inline">\(f(\cdot)\)</span> is a step function, which maps the continuous net input to one of two discrete class labels. One possible choice is the <strong>sign function</strong>, which assigns a label depending on whether the net input is non-negative or negative, as follows:</p>
+<p>​</p>
 <p><span class="math display">\[\hat y_p = \text{sign}(z_p) = \begin{cases} 1 &amp; \text{if } z_p \ge 0 \\ -1 &amp; \text{if } z_p &lt; 0 \end{cases}\]</span></p>
-<p>Through this simple rule, the perceptron partitions the input space into two regions separated by a linear decision boundary, classifying inputs on one side as <span class="math inline">\(+1\)</span> and those on the other side as <span class="math inline">\(-1\)</span>, which is why it is considered a linear binary classifier; this decision boundary is defined as the set of points of the input space where the model’s net input is exactly zero, that is, <span class="math inline">\(\mathbf{w}^{\mathsf{T}}\mathbf{x}_p = 0\)</span>.</p>
+<p>​</p>
+<p>Through this simple rule, the perceptron partitions the input space into two regions separated by a linear <strong>decision boundary</strong>, classifying inputs on one side as <span class="math inline">\(+1\)</span> and those on the other side as <span class="math inline">\(-1\)</span>, which is why it is considered a linear binary classifier; this decision boundary is defined as the input vectors for which the net input is zero, that is, <span class="math inline">\(\mathbf{w}^{\mathsf{T}}\mathbf{x}_p = 0\)</span>.</p>
 <p>​</p>
 </section>
 <section id="the-weight-update-rule" class="level3">
-<h3 class="anchored" data-anchor-id="the-weight-update-rule">The Weight Update Rule</h3>
-<p>The perceptron learns by iteratively adjusting its weights to reduce classification errors. Let <span class="math inline">\(\mathbf{w}^{\text{old}}\)</span> be the weight vector before the update, and <span class="math inline">\(\mathbf{w}^{\text{new}}\)</span> be the weight vector after the update. The learning rule is expressed as:</p>
+<h3 class="anchored" data-anchor-id="the-weight-update-rule">The weight update rule</h3>
+<p>The perceptron learning rule is an example of supervised training. For each input, the network produces an output (<span class="math inline">\(\hat y_p\)</span>), which is compared to the target value <span class="math inline">\(y\)</span>. The learning rule then updates the network’s weights of the network in order to move the network output closer to the target.</p>
+<p>Let <span class="math inline">\(\mathbf{w}^{\text{old}}\)</span> denote the weight vector before the update, and <span class="math inline">\(\mathbf{w}^{\text{new}}\)</span> denote the weight vector after the update. The learning rule is expressed as:</p>
 <p><span class="math display">\[\mathbf{w}^{\text{new}} = \mathbf{w}^{\text{old}} + \eta \, (y_p - \hat{y}_p) \, \mathbf{x}_p\]</span></p>
 <p>where <span class="math inline">\(\eta &gt; 0\)</span> is the learning rate, controlling the step size of each update. The error term <span class="math inline">\((y_p - \hat{y}_p)\)</span> is a discrete scalar that determines the nature of the weight update.</p>
 <p>The perceptron learning rule adjusts the weight vector in the direction that reduces the error for the specific example <span class="math inline">\(p\)</span>:</p>
@@ -387,7 +382,7 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 </section>
 <section id="convergence-and-separability" class="level3">
 <h3 class="anchored" data-anchor-id="convergence-and-separability">Convergence and separability</h3>
-<p>Training proceeds in <strong>epochs</strong>, where each epoch corresponds to a complete pass through the training dataset. Because the perceptron updates its weights incrementally after each individual example, learning typically requires multiple epochs as the decision boundary is gradually adjusted to better separate the data. Whether this process eventually halts—reaching a state known as <strong>convergence</strong>—depends entirely on the linear separability of the training set.</p>
+<p>Training begins by assigning initial values to the network parameters. The perceptron learns by iteratively adjusting its weights to minimize classification errors. Learning proceeds in <strong>epochs</strong>, with each epoch representing a complete pass through the training dataset. During an epoch, the order of training examples may be randomly shuffled to improve generalization and prevent bias from the data sequence. Because weight updates are made incrementally after each individual example, multiple epochs are typically required for the decision boundary to gradually adjust and better separate the data. Whether this process eventually halts—achieving convergence—depends entirely on the linear separability of the training set.</p>
 <p>When the classes are <strong>linearly separable</strong>, meaning they can be perfectly divided by a straight line in two dimensions or a hyperplane in higher dimensions, the Perceptron Convergence Theorem guarantees that the algorithm will reach a finite weight vector that correctly classifies all training examples. At this point, the weights stabilize and no further updates occur. Conversely, if the data are not linearly separable, no such solution exists. The perceptron will continue updating its weights indefinitely, repeatedly shifting the decision boundary in an attempt to correct misclassifications. Fixing one misclassified point may cause another to become misclassified, producing oscillatory or “jittering” behavior. In practice, training on <strong>non-separable</strong> data is terminated after a fixed number of epochs to prevent unbounded computation.</p>
 <div>
 
@@ -476,7 +471,7 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  step_total <span class="ot">&lt;-</span> <span class="dv">0</span></span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (epoch <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_iter) {</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- REFINED: Shuffle data at the start of every epoch ---</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- Shuffle data at the start of every epoch ---</span></span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    indices <span class="ot">&lt;-</span> <span class="fu">sample</span>(n_obs)</span>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    X_shuffled <span class="ot">&lt;-</span> X_aug[indices, ]</span>
 <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    y_shuffled <span class="ot">&lt;-</span> y[indices]</span>
@@ -619,6 +614,9 @@ Epoch 30: 5 errors</code></pre>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-McCulloch1943" class="csl-entry" role="listitem">
+McCulloch, Pitts, W. S. 1943. <span>“A Logical Calculus of the Ideas Immanent in Nervous Activity.”</span> <em>Bulletin of Mathematical Biophysics</em>, no. 5: 115–33. <a href="https://doi.org/10.1007/BF02478259">https://doi.org/10.1007/BF02478259</a>.
+</div>
 <div id="ref-ROSENBLATT1958" class="csl-entry" role="listitem">
 Rosenblatt, F. 1958. <span>“The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.”</span> <em>Psychol Rev</em> 65 (6): 386–408. <a href="https://doi.org/10.1037/h0042519">https://doi.org/10.1037/h0042519</a>.
 </div>

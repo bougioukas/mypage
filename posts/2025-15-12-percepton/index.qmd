@@ -1,6 +1,6 @@
 ---
 title: "Perceptron: the first artificial neuron"
-description: "The perceptron is one of the earliest and simplest models of an artificial neuron, introduced by Frank Rosenblatt in 1958 as a computational approach inspired by biological neurons."
+description: "The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons."
 author: 
     - name: Konstantinos Bougioukas 
 date: "2026-01-03"
@@ -14,7 +14,7 @@ css: /custom.css
 
 ## The perceptron
 
-The perceptron is one of the earliest and simplest models of an artificial neural network [@ROSENBLATT1958]. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.
+The perceptron is one of the earliest and simplest models of an artificial neural network [@McCulloch1943; @ROSENBLATT1958]. Conceptually, it corresponds to a single artificial neuron that makes binary decisions. Despite its simplicity, the perceptron introduced the core ideas of weighted inputs, linear decision boundaries, and supervised learning for classification tasks—ideas that remain central to modern deep learning.
 
 At its heart, the perceptron learns to separate data into two classes by finding a linear boundary that divides the input space. Each prediction is obtained by combining the inputs linearly and passing the result through a threshold function that produces a discrete output.
 
@@ -80,45 +80,33 @@ z_p &= \begin{bmatrix} w_0 & w_1 & \cdots & w_N \end{bmatrix} \begin{bmatrix} 1 
 
 Thus, the net input is simply a **weighted sum** of the input features plus a bias term.
 
-​
-
-Computing this quantity for all P observations yields the vector $\mathbf{z}$ with p-elements: 
-
-$$\mathbf{z}= \begin{bmatrix} z_1 \\ z_2 \\ \vdots \\ z_P \end{bmatrix}$$
 
 ​
 
 
-### Activation function and model prediction
+### Activation function and decision boundary
 
-In the classic perceptron, the **activation function** $f(\cdot)$ is a step function, which maps the continuous net input to one of two discrete class labels. A common choice is the **sign function**, which assigns a label based on whether the net input is non-negative or negative.
+In the classic perceptron, the **activation function** $f(\cdot)$ is a step function, which maps the continuous net input to one of two discrete class labels. One possible choice is the **sign function**, which assigns a label depending on whether the net input is non-negative or negative, as follows:
 
-
-The prediction vector $\mathbf{\hat{y}}$ is obtained by applying the activation function element-wise to $\mathbf{z}$:
-
-$$\mathbf{\hat{y}} = \text{sign}(\mathbf{z})$$
-
-In expanded form, this becomes
-
-$$\begin{bmatrix} \hat{y}_1 \\ \hat{y}_2 \\ \vdots \\ \hat{y}_P \end{bmatrix} = \begin{bmatrix} \text{sign}(z_1) \\ \text{sign}(z_2) \\ \vdots \\ \text{sign}(z_P) \end{bmatrix}$$
-
-
-Each individual prediction $\hat y_p$ is defined as
+​
 
 $$\hat y_p = \text{sign}(z_p) = \begin{cases} 1 & \text{if } z_p \ge 0 \\ -1 & \text{if } z_p < 0 \end{cases}$$
 
-Through this simple rule, the perceptron partitions the input space into two regions separated by a linear decision boundary, classifying inputs on one side as $+1$ and those on the other side as $-1$, which is why it is considered a linear binary classifier; this decision boundary is defined as the set of points of the input space where the model’s net input is exactly zero, that is, $\mathbf{w}^{\mathsf{T}}\mathbf{x}_p = 0$.
+​
+
+Through this simple rule, the perceptron partitions the input space into two regions separated by a linear **decision boundary**, classifying inputs on one side as $+1$ and those on the other side as $-1$, which is why it is considered a linear binary classifier; this decision boundary is defined as the input vectors for which the net input is zero, that is, $\mathbf{w}^{\mathsf{T}}\mathbf{x}_p = 0$.
 
 ​
 
-### The Weight Update Rule
+### The weight update rule
 
-The perceptron learns by iteratively adjusting its weights to reduce classification errors. Let $\mathbf{w}^{\text{old}}$ be the weight vector before the update, and $\mathbf{w}^{\text{new}}$ be the weight vector after the update. The learning rule is expressed as:
+The perceptron learning rule is an example of supervised training. For each input, the network produces an output ($\hat y_p$), which is compared to the target value $y$. The learning rule then updates the network’s weights of the network in order to move the network output closer to the target.
+
+Let $\mathbf{w}^{\text{old}}$ denote the weight vector before the update, and $\mathbf{w}^{\text{new}}$ denote the weight vector after the update. The learning rule is expressed as:
 
 $$\mathbf{w}^{\text{new}} = \mathbf{w}^{\text{old}} + \eta \, (y_p - \hat{y}_p) \, \mathbf{x}_p$$
 
 where $\eta > 0$ is the learning rate, controlling the step size of each update. The error term $(y_p - \hat{y}_p)$ is a discrete scalar that determines the nature of the weight update.
-
 
 The perceptron learning rule adjusts the weight vector in the direction that reduces the error for the specific example $p$:
 
@@ -130,7 +118,7 @@ The perceptron learning rule adjusts the weight vector in the direction that red
 
 ### Convergence and separability
 
-Training proceeds in **epochs**, where each epoch corresponds to a complete pass through the training dataset. Because the perceptron updates its weights incrementally after each individual example, learning typically requires multiple epochs as the decision boundary is gradually adjusted to better separate the data. Whether this process eventually halts—reaching a state known as **convergence**—depends entirely on the linear separability of the training set.
+Training begins by assigning initial values to the network parameters. The perceptron learns by iteratively adjusting its weights to minimize classification errors. Learning proceeds in **epochs**, with each epoch representing a complete pass through the training dataset. During an epoch, the order of training examples may be randomly shuffled to improve generalization and prevent bias from the data sequence. Because weight updates are made incrementally after each individual example, multiple epochs are typically required for the decision boundary to gradually adjust and better separate the data. Whether this process eventually halts—achieving convergence—depends entirely on the linear separability of the training set.
 
 When the classes are **linearly separable**, meaning they can be perfectly divided by a straight line in two dimensions or a hyperplane in higher dimensions, the Perceptron Convergence Theorem guarantees that the algorithm will reach a finite weight vector that correctly classifies all training examples. At this point, the weights stabilize and no further updates occur. Conversely, if the data are not linearly separable, no such solution exists. The perceptron will continue updating its weights indefinitely, repeatedly shifting the decision boundary in an attempt to correct misclassifications. Fixing one misclassified point may cause another to become misclassified, producing oscillatory or “jittering” behavior. In practice, training on **non-separable** data is terminated after a fixed number of epochs to prevent unbounded computation.
 
@@ -229,7 +217,7 @@ fit_perceptron <- function(X_aug, y, eta = 0.05, n_iter = 10) {
   step_total <- 0
   
   for (epoch in 1:n_iter) {
-    # --- REFINED: Shuffle data at the start of every epoch ---
+    # --- Shuffle data at the start of every epoch ---
     indices <- sample(n_obs)
     X_shuffled <- X_aug[indices, ]
     y_shuffled <- y[indices]
