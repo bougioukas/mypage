@@ -43,9 +43,9 @@ or equivalently,
 
 $$\left\{ \left(\mathbf{x}_{p},y_{p}\right)\right\} _{p=1}^{P}$$
 
-where $\mathbf{x_p}$ denotes the input vector and $y_p$ represents the target classification label for the $p-$observation.
+where $\mathbf{x_p}$ denotes the input feature vector for the $p-$observation and $y_p \in \{-1, +1\}$ represents the corresponding binary target label.
 
-Each input $\mathbf{x_p}$ is a column vector of length $N +1$, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model: 
+Each input $\mathbf{x_p}$ is a column vector of length $N + 1$, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model: 
 
 $$\mathbf{x_p} = \begin{bmatrix} 1 \\ x_{1,\ p} \\ x_{2,\ p} \\\vdots \\ x_{N,\ P} \end{bmatrix}$$
 

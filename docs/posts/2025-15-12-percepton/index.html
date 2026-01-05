@@ -160,13 +160,13 @@ window.Quarto = {
 <meta property="og:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons.">
 <meta property="og:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
 <meta property="og:site_name" content="Konstantinos I. Bougioukas">
-<meta property="og:image:height" content="413">
-<meta property="og:image:width" content="513">
+<meta property="og:image:height" content="410">
+<meta property="og:image:width" content="566">
 <meta name="twitter:title" content="Perceptron: the first artificial neuron – Konstantinos I. Bougioukas">
 <meta name="twitter:description" content="The perceptron is one of the earliest and simplest models of an artificial neuron, introduced first by Warren McCulloch and Walter Pitts in 1943, and later by Frank Rosenblatt in 1958, as a computational approach inspired by biological neurons.">
 <meta name="twitter:image" content="https://bougioukas.github.io/posts/2025-15-12-percepton/perceptron.png">
-<meta name="twitter:image-height" content="413">
-<meta name="twitter:image-width" content="513">
+<meta name="twitter:image-height" content="410">
+<meta name="twitter:image-width" content="566">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -336,8 +336,8 @@ window.Quarto = {
 <p><span class="math display">\[(\mathbf{x_1}, y_1), (\mathbf{x_2}, y_2), ..., (\mathbf{x_P}, y_P)\]</span></p>
 <p>or equivalently,</p>
 <p><span class="math display">\[\left\{ \left(\mathbf{x}_{p},y_{p}\right)\right\} _{p=1}^{P}\]</span></p>
-<p>where <span class="math inline">\(\mathbf{x_p}\)</span> denotes the input vector and <span class="math inline">\(y_p\)</span> represents the target classification label for the <span class="math inline">\(p-\)</span>observation.</p>
-<p>Each input <span class="math inline">\(\mathbf{x_p}\)</span> is a column vector of length <span class="math inline">\(N +1\)</span>, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model:</p>
+<p>where <span class="math inline">\(\mathbf{x_p}\)</span> denotes the input feature vector for the <span class="math inline">\(p-\)</span>observation and <span class="math inline">\(y_p \in \{-1, +1\}\)</span> represents the corresponding binary target label.</p>
+<p>Each input <span class="math inline">\(\mathbf{x_p}\)</span> is a column vector of length <span class="math inline">\(N + 1\)</span>, where the leading component is fixed to 1 in order to incorporate the bias term directly into the model:</p>
 <p><span class="math display">\[\mathbf{x_p} = \begin{bmatrix} 1 \\ x_{1,\ p} \\ x_{2,\ p} \\\vdots \\ x_{N,\ P} \end{bmatrix}\]</span></p>
 <p>The model parameters—the bias and feature weights—are collected into a single column vector:</p>
 <p><span class="math display">\[\mathbf{w} = \begin{bmatrix} w_0 \\ w_1 \\ w_2 \\ \vdots \\ w_N \end{bmatrix}\]</span></p>
