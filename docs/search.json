@@ -175,11 +175,11 @@
     "text": "Comparison to the classic two-sample T-test\nLet’s formally apply the two-sample t-test to compare its p-value with that of the permutation test.\n\nt.test(X1, X2)\n\n\n    Welch Two Sample t-test\n\ndata:  X1 and X2\nt = 2.6686, df = 13.108, p-value = 0.0192\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n  2.054571 19.445429\nsample estimates:\nmean of x mean of y \n   64.125    53.375 \n\n\nIn this example, the results are highly consistent. Both the exact Permutation Test (\\(p = 0.0179\\)) and the two-sample T-test (\\(p = 0.0192\\)) yield close p-values."
   },
   {
-    "objectID": "publications.html#total-citations-as-of-december-2025",
-    "href": "publications.html#total-citations-as-of-december-2025",
+    "objectID": "publications.html#total-citations-as-of-january-2025",
+    "href": "publications.html#total-citations-as-of-january-2025",
     "title": "Publications and metrics",
-    "section": "Total citations as of December 2025",
-    "text": "Total citations as of December 2025\n\n\n\n\nGoogle Scholar: 2025 (h-index = 18)\nScopus: 1416 (h-index = 15)\nWeb of Science: 1324 (h-index = 14)\nResearch Gate: 1717 (h-index = 16)"
+    "section": "Total citations as of January 2025",
+    "text": "Total citations as of January 2025\n\n\n\n\nGoogle Scholar: 2052 (h-index = 18)\nScopus: 1431 (h-index = 15)\nWeb of Science: 1351 (h-index = 14)\nResearch Gate: 1738 (h-index = 17)"
   },
   {
     "objectID": "publications.html#peer-reviewed-journal-papers",
