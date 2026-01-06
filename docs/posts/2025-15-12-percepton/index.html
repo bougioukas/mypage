@@ -332,7 +332,7 @@ window.Quarto = {
 <section id="basic-set-up-and-notation" class="level3">
 <h3 class="anchored" data-anchor-id="basic-set-up-and-notation">Basic set up and notation</h3>
 <p>The <em>Perceptron</em> takes multiple input features, multiplies each by an associated weight, sums these weighted inputs along with a bias term, and then applies a threshold decision (activation) function to determine the output class. This process can be described compactly using vector notation.</p>
-<p>Suppose our dataset consists of <span class="math inline">\(P\)</span> input-output pairs</p>
+<p>Suppose our dataset consists of <span class="math inline">\(P\)</span> input-target pairs</p>
 <p><span class="math display">\[(\mathbf{x_1}, y_1), (\mathbf{x_2}, y_2), ..., (\mathbf{x_P}, y_P)\]</span></p>
 <p>or equivalently,</p>
 <p><span class="math display">\[\left\{ \left(\mathbf{x}_{p},y_{p}\right)\right\} _{p=1}^{P}\]</span></p>
@@ -414,7 +414,13 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <h2 class="anchored" data-anchor-id="perceptron-example-with-r">Perceptron example with R</h2>
 <section id="data-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
-<p>We’ll use the famous Iris dataset, focusing on two species (Versicolor and Virginica) to create a binary classification problem.</p>
+<p>For this example, we’ll work with the well-known Iris dataset, one of the most commonly used datasets in machine learning. To simplify the task into a binary classification problem, we’ll focus on just two species: Iris versicolor and Iris virginica. Using the measurements of sepal length and petal length, we’ll explore how these features can be used to distinguish between the two species.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="iris.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Sepal and peta lengths of iris dataset.</figcaption>
+</figure>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the packages </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>

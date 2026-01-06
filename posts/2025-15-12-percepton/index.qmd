@@ -34,7 +34,7 @@ The *Perceptron* can be viewed as a simple directed graph, with edges connecting
 
 The *Perceptron* takes multiple input features, multiplies each by an associated weight, sums these weighted inputs along with a bias term, and then applies a threshold decision (activation) function to determine the output class. This process can be described compactly using vector notation.
 
-Suppose our dataset consists of $P$ input-output pairs 
+Suppose our dataset consists of $P$ input-target pairs 
 
 $$(\mathbf{x_1}, y_1), (\mathbf{x_2}, y_2), ..., (\mathbf{x_P}, y_P)$$ 
 
@@ -136,7 +136,10 @@ When the classes are **linearly separable**, meaning they can be perfectly divid
 
 ### Data Preparation
 
-We'll use the famous Iris dataset, focusing on two species (Versicolor and Virginica) to create a binary classification problem.
+For this example, we’ll work with the well-known Iris dataset, one of the most commonly used datasets in machine learning. To simplify the task into a binary classification problem, we’ll focus on just two species: Iris versicolor and Iris virginica. Using the measurements of sepal length and petal length, we’ll explore how these features can be used to distinguish between the two species.
+
+![Sepal and peta lengths of iris dataset.](iris.png){width=70%}
+
 
 ```{r}
 #| warning: false
