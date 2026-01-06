@@ -572,7 +572,7 @@ Epoch 30: 5 errors</code></pre>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>w_final <span class="ot">&lt;-</span> results<span class="sc">$</span>weights</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Error Reduction Plot</span></span>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Epoch error plot</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(errors), errors, <span class="at">type =</span> <span class="st">"o"</span>, <span class="at">pch =</span> <span class="dv">16</span>, </span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">cex =</span> <span class="fl">1.5</span>,</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Learning Curve (30 epochs)"</span>, <span class="at">xlab =</span> <span class="st">"Epoch"</span>, <span class="at">ylab =</span> <span class="st">"Errors"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -587,8 +587,8 @@ Epoch 30: 5 errors</code></pre>
 </div>
 <p>The algorithm is not converging - the errors are oscillating between 3 and 14, never reaching zero. Correcting one misclassification inevitably leads to another, causing a never-ending cycle of updates. This behavior indicates that the data are <strong>not perfectly</strong> linearly separable.</p>
 <p>​</p>
-<p><strong>Animate the Learning Process</strong></p>
-<p>We define <em>current accuracy</em> as the percentage of the <strong>entire dataset</strong> correctly classified by the weights at any given <strong>moment</strong>.</p>
+<p><strong>Simulate the Learning Process</strong></p>
+<p>We’ll simulate the training process and compute <em>current accuracy</em>, defined as the percentage of the <strong>entire dataset</strong> that is correctly classified by the weights at any given <strong>moment</strong>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

@@ -297,7 +297,7 @@ w_final <- results$weights
 #| fig-height: 5
 #| fig-cap: "Perceptron learning curve showing epoch error"
 
-# Error Reduction Plot
+# Epoch error plot
 plot(1:length(errors), errors, type = "o", pch = 16, 
      col = "blue", lwd = 2, cex = 1.5,
      main = "Learning Curve (30 epochs)", xlab = "Epoch", ylab = "Errors")
@@ -308,9 +308,9 @@ The algorithm is not converging - the errors are oscillating between 3 and 14, n
 
 ​
 
-**Animate the Learning Process**
+**Simulate the Learning Process**
 
-We define *current accuracy* as the percentage of the **entire dataset** correctly classified by the weights at any given **moment**.
+We’ll simulate the training process and compute *current accuracy*, defined as the percentage of the **entire dataset** that is correctly classified by the weights at any given **moment**.
 
 
 ```{r}
@@ -424,7 +424,7 @@ mtext(eq_text, side = 3, line = 0.5, cex = 1, font = 3, col = "darkred")
 
 # --- Add Legend and Accuracy Info ---
 legend("topleft", 
-       legend = c("Versicolor (+1)", "Virginica (-1)", "Decision Boundary"), 
+       legend = c("Versicolor", "Virginica", "Decision Boundary"), 
        col = c("blue", "orange", "black"), 
        pch = c(19, 19, NA), 
        lty = c(NA, NA, 1), 
