@@ -136,6 +136,8 @@ When the classes are **linearly separable**, meaning they can be perfectly divid
 
 ### Data Preparation
 
+**Dataset**
+
 For this example, we’ll work with the well-known Iris dataset, one of the most commonly used datasets in machine learning. To simplify the task into a binary classification problem, we’ll focus on just two species: Iris versicolor and Iris virginica. Using the measurements of sepal length and petal length, we’ll explore how these features can be used to distinguish between the two species.
 
 ![Sepal and peta lengths of iris dataset.](iris.png){width=70%}
@@ -162,7 +164,7 @@ df$y <- ifelse(df$Species == "versicolor", 1, -1)
 
 ​
 
-### Feature Scaling
+**Feature Scaling**
 
 Standardization ensures all features have mean = 0 and standard deviation = 1. This helps the Perceptron converge faster and prevents features with larger scales from dominating the learning process.
 

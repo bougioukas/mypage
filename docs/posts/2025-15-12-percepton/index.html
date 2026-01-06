@@ -265,7 +265,6 @@ window.Quarto = {
   <li><a href="#perceptron-example-with-r" id="toc-perceptron-example-with-r" class="nav-link" data-scroll-target="#perceptron-example-with-r">Perceptron example with R</a>
   <ul class="collapse">
   <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
-  <li><a href="#feature-scaling" id="toc-feature-scaling" class="nav-link" data-scroll-target="#feature-scaling">Feature Scaling</a></li>
   <li><a href="#implement-the-perceptron-algorithm" id="toc-implement-the-perceptron-algorithm" class="nav-link" data-scroll-target="#implement-the-perceptron-algorithm">Implement the Perceptron Algorithm</a></li>
   </ul></li>
   </ul>
@@ -414,6 +413,7 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <h2 class="anchored" data-anchor-id="perceptron-example-with-r">Perceptron example with R</h2>
 <section id="data-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
+<p><strong>Dataset</strong></p>
 <p>For this example, we’ll work with the well-known Iris dataset, one of the most commonly used datasets in machine learning. To simplify the task into a binary classification problem, we’ll focus on just two species: Iris versicolor and Iris virginica. Using the measurements of sepal length and petal length, we’ll explore how these features can be used to distinguish between the two species.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -433,9 +433,7 @@ z_p &amp;= \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_N \end{bmatrix} \b
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(df<span class="sc">$</span>Species <span class="sc">==</span> <span class="st">"versicolor"</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>​</p>
-</section>
-<section id="feature-scaling" class="level3">
-<h3 class="anchored" data-anchor-id="feature-scaling">Feature Scaling</h3>
+<p><strong>Feature Scaling</strong></p>
 <p>Standardization ensures all features have mean = 0 and standard deviation = 1. This helps the Perceptron converge faster and prevents features with larger scales from dominating the learning process.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature Scaling</span></span>
