@@ -73,6 +73,12 @@ $$Y_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: b_1 \cdot g_2$$
 
 
 $$Y_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: g_1 \cdot h_2$$
+​
+
+Additionally, the autoregressive indirect effects are:
+
+$$X_{T1} \Rightarrow X_{T2} \Rightarrow X_{T3}: a_1 \cdot a_2$$
+$$Y_{T1} \Rightarrow Y_{T2} \Rightarrow Y_{T3}: b_1 \cdot b_2$$
 
 
 ​
@@ -155,6 +161,9 @@ my_model <- '
   bm1_wb2_wb3 := g1 * a2
   bm1_bm2_wb3 := b1 * g2
   bm1_wb2_bm3 := g1 * h2
+  
+  wb1_wb2_wb3 := a1 * a2
+  bm1_bm2_bm3 := b1 * b2
 '
 
 ```

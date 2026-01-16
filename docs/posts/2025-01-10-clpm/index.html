@@ -348,7 +348,9 @@ Figure&nbsp;1: Schematic of a bivariate CLPM for three waves and two observed va
 <p><span class="math display">\[X_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: h_1 \cdot g_2\]</span></p>
 <p><span class="math display">\[Y_{T1} \Rightarrow X_{T2} \Rightarrow X_{T3}: g_1 \cdot a_2\]</span></p>
 <p><span class="math display">\[Y_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: b_1 \cdot g_2\]</span></p>
-<p><span class="math display">\[Y_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: g_1 \cdot h_2\]</span></p>
+<p><span class="math display">\[Y_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: g_1 \cdot h_2\]</span> ​</p>
+<p>Additionally, the autoregressive indirect effects are:</p>
+<p><span class="math display">\[X_{T1} \Rightarrow X_{T2} \Rightarrow X_{T3}: a_1 \cdot a_2\]</span> <span class="math display">\[Y_{T1} \Rightarrow Y_{T2} \Rightarrow Y_{T3}: b_1 \cdot b_2\]</span></p>
 <p>​</p>
 </section>
 </section>
@@ -434,7 +436,10 @@ Figure&nbsp;2: Schematic of cross-lagged panel model (CLPM) assessing the associ
 <span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="st">  bm1_wb2_wb3 := g1 * a2</span></span>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="st">  bm1_bm2_wb3 := b1 * g2</span></span>
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="st">  bm1_wb2_bm3 := g1 * h2</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="st">  </span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="st">  wb1_wb2_wb3 := a1 * a2</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="st">  bm1_bm2_bm3 := b1 * b2</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>​</p>
 <p><strong>sem() function</strong></p>
@@ -557,7 +562,9 @@ Defined Parameters:
     wb1_bm2_wb3       0.001    0.001    1.811    0.070    0.001    0.001
     bm1_wb2_wb3       0.009    0.004    2.473    0.013    0.009    0.039
     bm1_bm2_wb3       0.009    0.004    2.216    0.027    0.009    0.038
-    bm1_wb2_bm3       0.001    0.001    1.636    0.102    0.001    0.001</code></pre>
+    bm1_wb2_bm3       0.001    0.001    1.636    0.102    0.001    0.001
+    wb1_wb2_wb3       0.693    0.022   31.665    0.000    0.693    0.695
+    bm1_bm2_bm3       0.894    0.015   60.464    0.000    0.894    0.882</code></pre>
 </div>
 </div>
 <p>​</p>
@@ -636,13 +643,15 @@ Defined Parameters:
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pull only the indirect effects you defined at the bottom of your syntax</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">subset</span>(estimates, op <span class="sc">==</span> <span class="st">":="</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>           lhs op   rhs       label   est    se     z pvalue ci.lower ci.upper
-24 wb1_wb2_bm3 := a1*h2 wb1_wb2_bm3 0.077 0.036 2.177  0.029    0.008    0.147
-25 wb1_bm2_bm3 := h1*b2 wb1_bm2_bm3 0.142 0.045 3.140  0.002    0.053    0.231
-26 wb1_bm2_wb3 := h1*g2 wb1_bm2_wb3 0.001 0.001 1.811  0.070    0.000    0.003
-27 bm1_wb2_wb3 := g1*a2 bm1_wb2_wb3 0.009 0.004 2.473  0.013    0.002    0.017
-28 bm1_bm2_wb3 := b1*g2 bm1_bm2_wb3 0.009 0.004 2.216  0.027    0.001    0.018
-29 bm1_wb2_bm3 := g1*h2 bm1_wb2_bm3 0.001 0.001 1.636  0.102    0.000    0.002</code></pre>
+<pre><code>           lhs op   rhs       label   est    se      z pvalue ci.lower ci.upper
+24 wb1_wb2_bm3 := a1*h2 wb1_wb2_bm3 0.077 0.036  2.177  0.029    0.008    0.147
+25 wb1_bm2_bm3 := h1*b2 wb1_bm2_bm3 0.142 0.045  3.140  0.002    0.053    0.231
+26 wb1_bm2_wb3 := h1*g2 wb1_bm2_wb3 0.001 0.001  1.811  0.070    0.000    0.003
+27 bm1_wb2_wb3 := g1*a2 bm1_wb2_wb3 0.009 0.004  2.473  0.013    0.002    0.017
+28 bm1_bm2_wb3 := b1*g2 bm1_bm2_wb3 0.009 0.004  2.216  0.027    0.001    0.018
+29 bm1_wb2_bm3 := g1*h2 bm1_wb2_bm3 0.001 0.001  1.636  0.102    0.000    0.002
+30 wb1_wb2_wb3 := a1*a2 wb1_wb2_wb3 0.693 0.022 31.665  0.000    0.650    0.736
+31 bm1_bm2_bm3 := b1*b2 bm1_bm2_bm3 0.894 0.015 60.464  0.000    0.865    0.923</code></pre>
 </div>
 </div>
 <p>All four indirect effects are statistically significant (p&lt;0.05).</p>
