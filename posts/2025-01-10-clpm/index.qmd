@@ -283,7 +283,7 @@ Cross-lag ($h_2 = 0.094$): This is the most important coefficient for testing ou
 
 
 ```{r}
-# Pull only the indirect effects you defined at the bottom of your syntax
+# Pull only the indirect effects
 subset(estimates, op == ":=")
 ```
 
@@ -333,7 +333,7 @@ graph_data$edges <- graph_data$edges %>%
       is.na(p_raw) ~ "",                  # Fallback for paths not found
       p_raw < 0.001 ~ "***",
       p_raw < 0.01  ~ "**",
-      p_raw < 0.05  ~ "*",                # 0.013 correctly hits here
+      p_raw < 0.05  ~ "*",                
       TRUE          ~ ""
     ),
     
@@ -342,7 +342,7 @@ graph_data$edges <- graph_data$edges %>%
     is_cov = !is.na(curvature) & curvature != 0,
     is_variance = from == to,
     
-    # LABEL: Use Rounded Est + Correct Stars for paths; only Est for variances
+    # LABEL: Use Rounded Est + new Stars for paths; only Est for variances
     label = ifelse(is_variance, 
                    round(as.numeric(est), 2), 
                    paste0(round(as.numeric(est), 3), new_stars)),
@@ -353,7 +353,7 @@ graph_data$edges <- graph_data$edges %>%
     linetype = ifelse(is_cov, 2, 1)
   )
 
-# --- NODE LABELING LOGIC (Unchanged) ---
+# --- NODE LABELING  ---
 intercept_table <- parameterEstimates(fit) |> filter(op == "~1")
 int_lookup <- setNames(intercept_table$est, intercept_table$lhs)
 r2_values <- inspect(fit, "rsquare")
@@ -411,10 +411,10 @@ graph_data_std$edges <- graph_data_std$edges |>
       is.na(p_raw) ~ "",                  # Handle missing p-values
       p_raw < 0.001 ~ "***",
       p_raw < 0.01  ~ "**",
-      p_raw < 0.05  ~ "*",                # 0.013 will correctly get one *
+      p_raw < 0.05  ~ "*",                
       TRUE          ~ ""
     ),
-    # Overwrite the label with rounded estimate + our precise stars
+    # Overwrite the label with rounded estimate + precise stars
     label = paste0(round(as.numeric(est_std), 2), new_stars)
   )
 
