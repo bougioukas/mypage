@@ -1,0 +1,429 @@
+---
+title: "The Cross-Lagged Panel Model: A starting point for understanding longitudinal SEM"
+description: "The cross-lagged panel model (CLPM) is a path analysis model that is typically estimated within the Structural Equation Modeling (SEM) framework for analyzing dynamic associations between variables measured at multiple time points."
+author: 
+    - name: Konstantinos Bougioukas 
+date: "2026-01-10"
+categories: [Statistics]
+image: "clpm.png"
+css: /custom.css
+#draft: true
+---
+
+​
+
+## The Cross-Lagged Panel Model
+
+The Cross-Lagged Panel Model (CLPM) is a type of path analysis within the discrete-time structural equation modeling (SEM) framework used to analyze panel (longitudinal) data where the same variables are measured repeatedly across multiple time points [@Kenny1975]. We will explore the traditional CLPM in this analysis, recognizing that while it has important limitations due to its relative simplicity [@Hamaker2015], it remains a useful starting point for understanding fundamental concepts in longitudinal modeling.
+
+
+@fig-clpm shows a model with three time points ($T1$, $T2$, and $T3$), often called **waves**. The squares represent the observed variables, $X$ and $Y$, at each time point. Single-headed arrows indicate **regression effects** (directional effects), and double-headed arrows indicate **correlations** or **(co)variances**.
+
+​
+
+![Schematic of a bivariate CLPM for three waves and two observed variables.](clpm.png){#fig-clpm width=90%}
+
+​
+
+More specific, a CLPM typically includes:
+
+- The single-headed **horizontal** arrows (labeled $a$ and $b$) represent **autoregressive effects**, also known as **stability paths**. Specifically, paths $a_1$ and $a_2$ indicate how well variable $X$ at one time point predicts its own value at the next wave. Similarly, paths $b_1$ and $b_2$ indicate the longitudinal stability of variable $Y$ over time. Notably, higher coefficients in these paths suggest that the variable is highly stable and doesn't change much between waves.
+
+
+- The single-headed **diagonal** arrows represent the core of the model: the **cross-lagged effects**. Based on the specific configuration of this model, paths $h_1$ and $h_2$ show the influence of $X$ on future changes in $Y$. Conversely, paths $g_1$ and $g_2$ show the influence of $Y$ on future changes in $X$. These pathways make it possible to evaluate the "directional" influence between the two variables over time.
+
+- Within-time **correlations**: associations between variables at the same measurement occasion.
+
+
+​
+
+### Direct paths and indirect effects
+
+To further detail the mechanics of the cross-lagged panel model, the associations between waves can be mathematically expressed through direct paths and indirect effects (mediation paths). These equations illustrate how the variables at a later time point are a function of the variables from the preceding wave.
+
+
+**Direct path equations**
+
+
+$$X_{T2} = (intercept) + a_1\cdot X_{T1} + g_1 \cdot Y_{T1}$$
+$$Y_{T2} = (intercept) + b_1\cdot Y_{T1} + h_1 \cdot X_{T1}$$
+
+
+$$X_{T3} = (intercept) + a_2\cdot X_{T2} + g_2 \cdot Y_{T2}$$
+$$Y_{T3} = (intercept) + b_2\cdot y_{T2} + h_2 \cdot X_{T2}$$
+
+
+
+**Indirect effects (Mediation Paths)**
+
+
+
+$$X_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: a_1 \cdot h_2$$
+$$X_{T1} \Rightarrow Y_{T2} \Rightarrow Y_{T3}: h_1 \cdot b_2$$
+
+
+$$Y_{T1} \Rightarrow X_{T2} \Rightarrow X_{T3}: g_1 \cdot a_2$$
+
+$$Y_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: b_1 \cdot g_2$$
+
+
+
+
+​
+
+## CLPM with R
+
+
+### Data Preparation
+
+**Dataset**
+
+For this example, we examine the bidirectional association of weight bias internalization (WBIS) with BMI over time. Using a longitudinal design, data were collected from 925 participants across three distinct time points, or waves ($T_1, T_2, \text{and } T_3$) (@fig-clpm2). WBIS is defined as the internalization of negative stereotypes and beliefs about one’s own body weight.
+
+​
+
+![Schematic of cross-lagged panel model (CLPM) assessing the association of weight bias internalization (WBIS) with Body Mass Index (BMI) over three timepoints.](clpm2.png){#fig-clpm2 width=90%}
+
+​
+
+```{r}
+#| warning: false
+#| message: false
+
+# Load necessary libraries
+library(lavaan)
+library(tidySEM)
+library(ggplot2)
+library(dplyr)
+```
+
+
+
+```{r}
+#| warning: false
+#| message: false
+
+# load the dataset
+library(readr)
+dat <- read_csv("WBIS_BMI.csv")
+dat
+```
+
+​
+
+
+### Cross-Lagged Panel Model
+
+
+**Model syntax**
+
+The following syntax defines a 3-Wave Cross-Lagged Panel Model (CLPM) to examine the longitudinal association between Weight Bias Internalization (WBIS) and BMI. The code organizes the analysis into three primary dynamics: 
+
+1. regressions (denoted by `~`) represent both autoregressive paths, which measure the stability of a variable over time, and cross-lagged paths, which test if one variable predicts subsequent changes in the other.
+
+2. within-wave correlations (denoted by `~~`) account for the shared variance between WBIS and BMI at each time point.
+
+3. indirect effects (using `:=` operator) to estimate longitudinal mediation pathways by calculating whether an initial measurement at Time 1 influences an outcome at Time 3 through a mediation effect at Time 2.
+
+```{r}
+# --- Define the Model ---
+
+my_model <- '
+  # Regressions (Direct Paths)
+  WBIS_T2 ~ a1*WBIS_T1 + g1*BMI_T1
+  BMI_T2  ~ b1*BMI_T1  + h1*WBIS_T1
+  
+  WBIS_T3 ~ a2*WBIS_T2 + g2*BMI_T2
+  BMI_T3  ~ b2*BMI_T2  + h2*WBIS_T2
+
+  # Covariances (Within-Wave Associations)
+  WBIS_T1 ~~ BMI_T1
+  WBIS_T2 ~~ BMI_T2
+  WBIS_T3 ~~ BMI_T3
+
+  # Indirect Effects
+  wb1_wb2_bm3 := a1 * h2
+  wb1_bm2_bm3 := h1 * b2
+  
+  bm1_wb2_wb3 := g1 * a2
+  bm1_bm2_wb3 := b1 * g2
+'
+
+```
+
+
+
+​
+
+**sem() function**
+
+The `sem()` function from the **_lavaan_** package is used to fit the model to the dataset by estimating the associations defined in the model syntax. Within this function, `fixed.x = FALSE` ensures that the Time 1 variables are treated as observed rather than fixed, which is necessary for estimating baseline correlations, and `meanstructure = TRUE` includes intercepts in the estimation to account for the average levels of $WBIS$ and $BMI$ across waves. 
+
+
+```{r}
+# --- Fit the Model ---
+fit <- sem(my_model, data = dat, fixed.x = FALSE, meanstructure = TRUE)
+```
+
+​
+
+Once the model is fitted, the `summary()` function is used to evaluate the results. By including the `standardized = TRUE` argument, the output displays a `Std.all` column containing the standardized coefficients (Beta weights), which are essential for comparing the relative strength of the paths between WBIS and BMI. Additionally, `fit.measures = TRUE` generates the necessary indices (such as CFI, TLI, and RMSEA) required to report the model's overall "goodness-of-fit".
+
+```{r}
+# --- View Results ---
+summary(fit, standardized = TRUE, fit.measures = TRUE, rsquare = TRUE)
+```
+
+
+​
+
+### Understanding the output from lavaan
+
+While the **_lavaan_** output is notoriously comprehensive and can be overwhelming at first glance, it is structured logically to provide a complete view of our model’s performance. It is helpful to view the output in three distinct stages: 
+
+**The global model fit**
+
+```{r}
+fitMeasures(fit, c("cfi", "tli", "rmsea", "srmr"))
+```
+
+
+According to @hu1999, an acceptable fit is achieved when CFI $\ge$ 0.95 and SRMR $\le$ 0.08—a guideline known as the combination rule. This recommendation, however, remains a topic of debate, as these cut-offs can be overly restrictive for complex models or those with smaller sample sizes.
+
+​
+
+**Direct path equations**
+
+Using the `parameterEstimates()` function allows us to extract the direct path parameters of the model.
+
+
+```{r}
+# Pull the estimates
+estimates <- parameterEstimates(fit)
+```
+
+​
+
+*The intercepts*
+
+The following code extracts the intercept for each equation:
+
+```{r}
+# intercepts
+subset(estimates, op == "~1")[, c("lhs", "est")]
+```
+
+​
+
+*The regression coefficients*
+
+We obtain the regression coefficients (the $B$ weights) from the unstandardized `est` column:
+
+```{r}
+# regressions
+subset(estimates, op == "~")
+```
+
+​
+​
+
+*Regression equations*
+
+Based on the unstandardized parameter estimates, the longitudinal dynamics between Weight Bias Internalization (WBIS) and Body Mass Index (BMI) are defined by the following regression equations.
+
+*Wave 2 Predictions:*
+
+$$WBIS\_T2 = 0.388 + 0.820 \cdot WBIS\_{T1} + 0.011 \cdot BMI\_{T1}$$
+
+
+$$BMI\_{T2} = 1.867 + 0.920 \cdot BMI\_{T1} + 0.146 \cdot WBIS\_{T1}$$
+
+
+*Wave 3 Predictions:*
+
+$$WBIS\_{T3} = 0.268 + 0.846 \cdot WBIS\_{T2} + 0.010 \cdot BMI\_{T2}$$
+
+
+$$BMI\_{T3} = 0.615 + 0.971 \cdot BMI\_{T2} + 0.094 \cdot WBIS\_{T2}$$
+
+
+​
+
+Now, let's interpret the BMI Wave 3 Prediction:
+
+$$BMI\_{T3} = 0.615 + 0.971 \cdot BMI\_{T2} + 0.094 \cdot WBIS\_{T2}$$
+
+The intercept is the constant or the "starting value" for $BMI_{T3}$ when all other predictors in the equation are zero. It is the base level for BMI at Wave 3.
+
+Stability ($b_2 = 0.971$): For every 1-unit increase in BMI at Wave 2, BMI at Wave 3 is predicted to increase by 0.971 units, adjusting for Weight Bias Internalization at wave 2.
+
+
+Cross-lag ($h_2 = 0.094$): This is the most important coefficient for testing our theoretical model, as it represents the effect of one variable on a different variable over time. For every 1-unit increase in the Weight Bias Internalization Scale (WBIS) at Wave 2, BMI at Wave 3 is predicted to increase by 0.094 units, adjusting the previous BMI.
+
+​
+
+**Indirect effects**
+
+
+```{r}
+# Pull only the indirect effects you defined at the bottom of your syntax
+subset(estimates, op == ":=")
+```
+
+All four indirect effects are statistically significant (p<0.05).
+
+
+​
+
+
+## Path diagram
+
+In Structural Equation Modeling (SEM) frmamwork and path analysis, a graph—often called a path diagram—is not just an illustration; it is a mathematical map of the theory. Using the **_tidySEM_** and **_lavaan_** package in R allows us to translate these mathematical theories into informative visualizations. We will visualize both unstandardized and standardized coefficients.
+
+
+**Graph with Unstandardized Coefficients**
+
+```{r}
+
+# --- Visualization with tidySEM: Unstandardized estimates ---
+
+# Define the spatial layout
+lay <- get_layout(
+  "WBIS_T1", "WBIS_T2", "WBIS_T3",
+  "BMI_T1",  "BMI_T2",  "BMI_T3", 
+  rows = 2
+)
+
+# --- PREPARE GRAPH DATA ---
+res <- table_results(fit, standardized = FALSE)
+graph_data <- prepare_graph(fit, layout = lay, results = res)
+
+# --- GET RAW P-VALUES FROM SEM() ---
+# Align lavaan terminology (lhs/rhs) with tidySEM terminology (from/to)
+raw_pvals <- parameterEstimates(fit) %>%
+  filter(op == "~" | op == "~~") %>%
+  mutate(from = ifelse(op == "~", rhs, lhs),
+         to = ifelse(op == "~", lhs, rhs)) %>%
+  select(from, to, op, p_raw = pvalue)
+
+# --- FORMAT EDGES ---
+graph_data$edges <- graph_data$edges %>%
+  left_join(raw_pvals, by = c("from", "to", "op")) %>%
+  mutate(
+    # Recalculate stars based on precise p_raw
+    new_stars = case_when(
+      from == to ~ "",                    # No stars for variances
+      is.na(p_raw) ~ "",                  # Fallback for paths not found
+      p_raw < 0.001 ~ "***",
+      p_raw < 0.01  ~ "**",
+      p_raw < 0.05  ~ "*",                # 0.013 correctly hits here
+      TRUE          ~ ""
+    ),
+    
+    # Check significance for styling
+    is_sig = !is.na(p_raw) & p_raw < 0.05,
+    is_cov = !is.na(curvature) & curvature != 0,
+    is_variance = from == to,
+    
+    # LABEL: Use Rounded Est + Correct Stars for paths; only Est for variances
+    label = ifelse(is_variance, 
+                   round(as.numeric(est), 2), 
+                   paste0(round(as.numeric(est), 3), new_stars)),
+    
+    # STYLE: Colors based on precise p-value
+    color = ifelse(is_sig | is_variance, "black", "grey75"),
+    linewidth = 0.5,
+    linetype = ifelse(is_cov, 2, 1)
+  )
+
+# --- NODE LABELING LOGIC (Unchanged) ---
+intercept_table <- parameterEstimates(fit) |> filter(op == "~1")
+int_lookup <- setNames(intercept_table$est, intercept_table$lhs)
+r2_values <- inspect(fit, "rsquare")
+
+graph_data$nodes <- graph_data$nodes |> 
+  mutate(
+    node_width = 1.8, node_height = 1.2,
+    label = sapply(name, function(x) {
+      val_est <- if(x %in% names(int_lookup)) round(int_lookup[x], 2) else NA
+      if (is.na(val_est)) return(gsub("_", " ", x))
+      if (grepl("T1", x)) {
+        paste0(gsub("_", " ", x), "\nMean: ", val_est)
+      } else {
+        val_r2 <- if(x %in% names(r2_values)) round(r2_values[x], 2) else 0
+        paste0(gsub("_", " ", x), "\nInt: ", val_est, "\nR²: ", val_r2)
+      }
+    })
+  )
+
+# --- FINAL PLOT ---
+plot(graph_data) + 
+  labs(
+    title = "Unstandardized Regression Coefficients",
+    subtitle = "Significant paths highlighted with asterisks
+    (*p < .05, **p < .01, ***p < .001)",
+    caption = "Solid lines = Regressions; Dashed lines = Covariances; 
+    Circles = Variances."
+  )
+```
+
+​
+
+**Graph with Standardized Coefficients**
+
+```{r}
+
+# Prepare the graph data
+graph_data_std <- prepare_graph(fit, layout = lay, standardized = TRUE)
+
+# Get high-precision p-values from lavaan
+# IMPORTANT: In lavaan Y ~ X, lhs is Y (to) and rhs is X (from).
+raw_pvals <- parameterEstimates(fit) |>
+  filter(op == "~" | op == "~~") |> 
+  mutate(from = ifelse(op == "~", rhs, lhs),
+         to = ifelse(op == "~", lhs, rhs)) |>
+  select(from, to, p_raw = pvalue)
+
+# Merge and create the label
+graph_data_std$edges <- graph_data_std$edges |>
+  left_join(raw_pvals, by = c("from", "to")) |>
+  mutate(
+    # Create the stars based on the high-precision p_raw
+    new_stars = case_when(
+      from == to ~ "",                    # No stars for variances
+      is.na(p_raw) ~ "",                  # Handle missing p-values
+      p_raw < 0.001 ~ "***",
+      p_raw < 0.01  ~ "**",
+      p_raw < 0.05  ~ "*",                # 0.013 will correctly get one *
+      TRUE          ~ ""
+    ),
+    # Overwrite the label with rounded estimate + our precise stars
+    label = paste0(round(as.numeric(est_std), 2), new_stars)
+  )
+
+# Standard Node Formatting
+graph_data_std$nodes <- graph_data_std$nodes |> 
+  mutate(
+    node_width = 1.5, node_height = 1.0,
+    label = sapply(name, function(x) {
+      clean_name <- gsub("_", " ", x)
+      if (grepl("T1", x)) return(clean_name)
+      val_r2 <- if(x %in% names(r2_values)) round(r2_values[x], 2) else 0
+      paste0(clean_name, "\nR²: ", val_r2)
+    })
+  )
+
+# Plot
+plot(graph_data_std) + 
+labs(
+    title = "Standardized Regression Coefficients",
+    subtitle = "Significant paths highlighted with asterisks
+    (*p < .05, **p < .01, ***p < .001)",
+    caption = "Solid lines = Regressions; Dashed lines = Covariances; 
+    Circles = Variances."
+  )
+```
+
+
+
+
