@@ -17,6 +17,8 @@ css: /custom.css
 The Cross-Lagged Panel Model (CLPM) is a type of path analysis within the discrete-time structural equation modeling (SEM) framework used to analyze panel (longitudinal) data where the same variables are measured repeatedly across multiple time points [@Kenny1975]. We will explore the traditional CLPM in this analysis, recognizing that while it has important limitations due to its relative simplicity [@Hamaker2015], it remains a useful starting point for understanding fundamental concepts in longitudinal modeling.
 
 
+### Basic concepts
+
 @fig-clpm shows a model with three time points ($T1$, $T2$, and $T3$), often called **waves**. The squares represent the observed variables, $X$ and $Y$, at each time point. Single-headed arrows indicate **regression effects** (directional effects), and double-headed arrows indicate **correlations** or **(co)variances**.
 
 ​
@@ -61,12 +63,16 @@ $$Y_{T3} = (intercept) + b_2\cdot y_{T2} + h_2 \cdot X_{T2}$$
 $$X_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: a_1 \cdot h_2$$
 $$X_{T1} \Rightarrow Y_{T2} \Rightarrow Y_{T3}: h_1 \cdot b_2$$
 
+$$X_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: h_1 \cdot g_2$$
+
+
 
 $$Y_{T1} \Rightarrow X_{T2} \Rightarrow X_{T3}: g_1 \cdot a_2$$
 
 $$Y_{T1} \Rightarrow Y_{T2} \Rightarrow X_{T3}: b_1 \cdot g_2$$
 
 
+$$Y_{T1} \Rightarrow X_{T2} \Rightarrow Y_{T3}: g_1 \cdot h_2$$
 
 
 ​
@@ -144,9 +150,11 @@ my_model <- '
   # Indirect Effects
   wb1_wb2_bm3 := a1 * h2
   wb1_bm2_bm3 := h1 * b2
+  wb1_bm2_wb3 := h1 * g2
   
   bm1_wb2_wb3 := g1 * a2
   bm1_bm2_wb3 := b1 * g2
+  bm1_wb2_bm3 := g1 * h2
 '
 
 ```
