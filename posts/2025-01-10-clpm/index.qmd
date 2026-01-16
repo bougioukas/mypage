@@ -317,15 +317,15 @@ graph_data <- prepare_graph(fit, layout = lay, results = res)
 
 # --- GET RAW P-VALUES FROM SEM() ---
 # Align lavaan terminology (lhs/rhs) with tidySEM terminology (from/to)
-raw_pvals <- parameterEstimates(fit) %>%
-  filter(op == "~" | op == "~~") %>%
+raw_pvals <- parameterEstimates(fit) |> 
+  filter(op == "~" | op == "~~") |> 
   mutate(from = ifelse(op == "~", rhs, lhs),
-         to = ifelse(op == "~", lhs, rhs)) %>%
+         to = ifelse(op == "~", lhs, rhs)) |> 
   select(from, to, op, p_raw = pvalue)
 
 # --- FORMAT EDGES ---
-graph_data$edges <- graph_data$edges %>%
-  left_join(raw_pvals, by = c("from", "to", "op")) %>%
+graph_data$edges <- graph_data$edges |> 
+  left_join(raw_pvals, by = c("from", "to", "op")) |> 
   mutate(
     # Recalculate stars based on precise p_raw
     new_stars = case_when(

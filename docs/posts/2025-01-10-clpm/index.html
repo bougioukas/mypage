@@ -678,15 +678,15 @@ Defined Parameters:
 <span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="co"># --- GET RAW P-VALUES FROM SEM() ---</span></span>
 <span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Align lavaan terminology (lhs/rhs) with tidySEM terminology (from/to)</span></span>
-<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>raw_pvals <span class="ot">&lt;-</span> <span class="fu">parameterEstimates</span>(fit) <span class="sc">%&gt;%</span></span>
-<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(op <span class="sc">==</span> <span class="st">"~"</span> <span class="sc">|</span> op <span class="sc">==</span> <span class="st">"~~"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>raw_pvals <span class="ot">&lt;-</span> <span class="fu">parameterEstimates</span>(fit) <span class="sc">|&gt;</span> </span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(op <span class="sc">==</span> <span class="st">"~"</span> <span class="sc">|</span> op <span class="sc">==</span> <span class="st">"~~"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">from =</span> <span class="fu">ifelse</span>(op <span class="sc">==</span> <span class="st">"~"</span>, rhs, lhs),</span>
-<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>         <span class="at">to =</span> <span class="fu">ifelse</span>(op <span class="sc">==</span> <span class="st">"~"</span>, lhs, rhs)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>         <span class="at">to =</span> <span class="fu">ifelse</span>(op <span class="sc">==</span> <span class="st">"~"</span>, lhs, rhs)) <span class="sc">|&gt;</span> </span>
 <span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(from, to, op, <span class="at">p_raw =</span> pvalue)</span>
 <span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="co"># --- FORMAT EDGES ---</span></span>
-<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>graph_data<span class="sc">$</span>edges <span class="ot">&lt;-</span> graph_data<span class="sc">$</span>edges <span class="sc">%&gt;%</span></span>
-<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(raw_pvals, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"from"</span>, <span class="st">"to"</span>, <span class="st">"op"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>graph_data<span class="sc">$</span>edges <span class="ot">&lt;-</span> graph_data<span class="sc">$</span>edges <span class="sc">|&gt;</span> </span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(raw_pvals, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"from"</span>, <span class="st">"to"</span>, <span class="st">"op"</span>)) <span class="sc">|&gt;</span> </span>
 <span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Recalculate stars based on precise p_raw</span></span>
 <span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">new_stars =</span> <span class="fu">case_when</span>(</span>
