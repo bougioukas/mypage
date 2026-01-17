@@ -3,7 +3,7 @@ title: "The Cross-Lagged Panel Model: A starting point for understanding longitu
 description: "The cross-lagged panel model (CLPM) is a path analysis model that is typically estimated within the Structural Equation Modeling (SEM) framework for analyzing dynamic associations between variables measured at multiple time points."
 author: 
     - name: Konstantinos Bougioukas 
-date: "2026-01-10"
+date: "2026-01-16"
 categories: [Statistics]
 image: "clpm.png"
 css: /custom.css
