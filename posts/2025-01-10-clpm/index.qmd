@@ -287,7 +287,7 @@ Cross-lag ($h_2 = 0.094$): This is the most important coefficient for testing ou
 subset(estimates, op == ":=")
 ```
 
-All four indirect effects are statistically significant (p<0.05).
+
 
 
 ​
